@@ -1,0 +1,25 @@
+﻿@page "/"
+
+<h1>Contador</h1>
+
+<p>Valor actual del contador: @contador</p>
+
+<button class="btn btn-primary" @onclick="IncrementarContador">Incrementar</button>
+
+<button class="btn btn-danger" @onclick="ResetearContador">Resetear</button>
+
+@code {
+    private int contador = 0;
+
+    private void IncrementarContador()
+    {
+        contador++;
+        StateHasChanged(); // Forzar la actualización de la interfaz de usuario
+    }
+
+    private void ResetearContador()
+    {
+        contador = 0;
+        StateHasChanged(); // Forzar la actualización de la interfaz de usuario
+    }
+}
