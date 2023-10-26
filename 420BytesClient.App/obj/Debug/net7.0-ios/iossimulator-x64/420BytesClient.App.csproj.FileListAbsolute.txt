@@ -569,7 +569,6 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\l
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.DT.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.DT.pdb
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\staticwebassets\msbuild.420BytesClient.App.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\staticwebassets\msbuild.build.420BytesClient.App.props
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\staticwebassets\msbuild.buildMultiTargeting.420BytesClient.App.props
