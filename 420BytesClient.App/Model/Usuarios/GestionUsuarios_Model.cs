@@ -103,7 +103,7 @@ namespace _420BytesClient.App.Model.Usuarios
                 }
             }
             catch (Exception ex)
-            {
+                {
                 logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
             }
             return new List<Usuario>();

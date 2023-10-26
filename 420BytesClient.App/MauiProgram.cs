@@ -32,7 +32,6 @@ namespace _420BytesClient.App
             builder.Services.AddBlazorWebViewDeveloperTools();
 		builder.Logging.AddDebug();
 #endif
-            //builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.envi.BaseAddress) });
             builder.Services.AddSingleton<IConexionRest, ConexionRest>();
             builder.Services.AddHttpClient();
             builder.Services.AddAuthorizationCore();

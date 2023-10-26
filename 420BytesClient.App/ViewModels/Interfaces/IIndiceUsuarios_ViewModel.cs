@@ -17,6 +17,6 @@ namespace _420BytesClient.App.ViewModels.Interfaces
 
         Task RegitrarUsuario(Usuario usuario);
         Task ActualizarUsuario(Usuario usuario);
-        Task BorrarUsuario(int Cedula);
+        Task<bool> BorrarUsuario(int Cedula);
     }
 }
