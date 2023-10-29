@@ -8,7 +8,6 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.System;
 
 namespace _420BytesClient.App.ViewModels
 {
