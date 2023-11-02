@@ -1,4 +1,5 @@
 ﻿using _420BytesClient.App.Helpers.Interfaces;
+using _420BytesClient.App.Hub;
 using _420BytesClient.App.Model.Interfaces;
 using _420BytesClient.App.Model.Usuarios.Interfaces;
 using _420BytesClient.DT.Usuario;
@@ -13,6 +14,7 @@ namespace _420BytesClient.App.Model.Usuarios
         private readonly IConexionRest ConexionRest;
         private readonly ISettings ISettings;
         private readonly ILogger<IGestionUsuariosModel> logger;
+        private readonly UpdateUserListHubConnection UpdateUserListHubConnection;
         public GestionUsuarios_Model(IConexionRest conexionRest, ILogger<IGestionUsuariosModel> logger, ISettings ISettings)
         {
             this.ConexionRest = conexionRest;   

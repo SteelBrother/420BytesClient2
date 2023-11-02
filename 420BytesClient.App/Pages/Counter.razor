@@ -1,8 +1,8 @@
 ﻿@page "/counter"
 @inject IIndiceUsuarios_ViewModel IIndiceUsuarios_ViewModel
-@using System.Globalization
-@using _420BytesClient.App.ViewModels.Interfaces;
+@using System.Globalization;
 @using _420BytesClient.DT.Usuario;
+@using _420BytesClient.App.ViewModels.Usuarios.Interfaces;
 @inject IJSRuntime js
 
 <div class="container">
@@ -14,8 +14,14 @@
                 <EditForm Model="UsuarioLlenar" OnValidSubmit="RegistrarUsuario">
 
                     <p>Registrar usuario</p>
-                    <input type="text" @bind="@UsuarioLlenar.Cedula" />
-                    <input type="text" @bind="@UsuarioLlenar.Nombre" />
+                    <input placeholder="Cedula" type="text" @bind="@UsuarioLlenar.Cedula" />
+                    <input placeholder="Nombre" type="text" @bind="@UsuarioLlenar.Nombre" />
+                    <input placeholder="Email" type="text" @bind="@UsuarioLlenar.Email" />
+                    <input placeholder="Password" type="text" @bind="@UsuarioLlenar.Password" />
+                    <input placeholder="Ciudad" type="text" @bind="@UsuarioLlenar.Ciudad" />
+                    <input placeholder="Pais" type="text" @bind="@UsuarioLlenar.Pais" />
+                    <input placeholder="NickName" type="text" @bind="@UsuarioLlenar.NickName" />
+                    <input placeholder="FechaNaciemiento" type="text" @bind="@UsuarioLlenar.BirthDate" />
 
                     <input value="Guardar" Type="submit">
 
@@ -23,6 +29,7 @@
 
 
             </div>
+
         </div>
     </div>
     @if (IIndiceUsuarios_ViewModel.Usuarios != null)
@@ -30,7 +37,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div>
-                    <table class="default">
+                    <table class="default" id="TablaUsuarios">
 
                         <tr>
                             <td>Cedula</td>
@@ -52,9 +59,8 @@
             </div>
         </div>
     }
-    
-</div>
 
+</div>
 @code {
     private string CedulaIngresadaF { get; set; }
     private string NombreIngresadoF { get; set; }

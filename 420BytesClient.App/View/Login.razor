@@ -1,0 +1,39 @@
+﻿@page "/login"
+@using _420BytesClient.App.ViewModels.Auth.Interfaces;
+@using _420BytesClient.DT.Usuario;
+@inject IAuth_ViewModel IAuth_ViewModel_
+
+<EditForm Model="@IAuth_ViewModel_.Usuario" OnValidSubmit="AuthUsuario">
+    <DataAnnotationsValidator />
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first">
+            </div>
+            <br>
+            <div class="fadeIn first">
+                <h4>¡Hola, por favor ingresa tus credenciales para poder continuar.</h4>
+            </div>
+            <input class="fadeIn third" id="NickName" @bind="@IAuth_ViewModel_.Usuario.NickName" name="NickName" placeholder="NickName" />
+            @* <InputPassword class="fadeIn third" id="password" @bind="@IAuth_ViewModel_.Usuario.Password" name="password" placeholder="Contraseña" /> *@
+            <input type="password" @bind="@IAuth_ViewModel_.Usuario.Password" />
+            <input type="submit" class="fadeIn fourth" value="Ingresar">
+            <div id="formFooter">
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code
+{
+    public Usuario _Usuario { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        // await CambiarContrasenaViewModel.InicializaViewModel();
+    }
+
+    public async Task AuthUsuario()
+    {
+        await IAuth_ViewModel_.Login();
+        // await IIndiceUsuarios_ViewModel.
+    }
+}

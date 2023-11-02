@@ -50,22 +50,29 @@
     </ItemGroup>
 
     <ItemGroup>
+      <AndroidResource Remove="Views\**" />
+      <Compile Remove="Views\**" />
+      <Content Remove="Views\**" />
+      <EmbeddedResource Remove="Views\**" />
+      <MauiXaml Remove="Views\**" />
+      <None Remove="Views\**" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Bootstrap" Version="5.3.2" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="7.0.13" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.12" />
         <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
         <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-        <PackageReference Include="Syncfusion.Blazor" Version="18.1.0.36-beta" />
-        <PackageReference Include="Syncfusion.Blazor.Schedule" Version="23.1.36" />
-        <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.36" />
+        <PackageReference Include="Syncfusion.Blazor.Schedule" Version="19.4.0.50" />
+        <PackageReference Include="Syncfusion.Blazor.Themes" Version="19.4.0.50" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\420BytesClient.DT\420BytesClient.DT.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Views\" />
     </ItemGroup>
 
 </Project>

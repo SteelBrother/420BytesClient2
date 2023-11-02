@@ -29,33 +29,33 @@
     <AppXManifest Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-26T18:39:29.514</Modified>
+      <Modified>2023-11-01T01:45:38.575</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-26T18:35:41.133</Modified>
+      <Modified>2023-11-01T01:13:12.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.runtimeconfig.json">
       <PackagePath>420BytesClient.App.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-24T04:50:38.073</Modified>
+      <Modified>2023-10-31T21:20:05.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.dll">
       <PackagePath>420BytesClient.App.dll</PackagePath>
-      <Modified>2023-10-26T18:39:28.199</Modified>
+      <Modified>2023-11-01T01:33:03.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>420BytesClient.App.exe</PackagePath>
-      <Modified>2023-10-26T18:39:28.209</Modified>
+      <Modified>2023-11-01T01:33:03.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\appsettings.json">
       <PackagePath>appsettings.json</PackagePath>
-      <Modified>2023-10-08T04:31:21.440</Modified>
+      <Modified>2023-10-27T18:33:23.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.deps.json">
       <PackagePath>420BytesClient.App.deps.json</PackagePath>
-      <Modified>2023-10-24T05:49:52.768</Modified>
+      <Modified>2023-11-01T01:13:11.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.12\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -813,13 +813,29 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.authorization\7.0.12\lib\net7.0\Microsoft.AspNetCore.Authorization.dll">
-      <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
-      <Modified>2023-09-30T02:11:20.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.authentication.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Authentication.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:29:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.components\7.0.12\lib\net7.0\Microsoft.AspNetCore.Components.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.authentication.core\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Core.dll">
+      <PackagePath>Microsoft.AspNetCore.Authentication.Core.dll</PackagePath>
+      <Modified>2018-11-12T17:29:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.authorization\7.0.13\lib\net7.0\Microsoft.AspNetCore.Authorization.dll">
+      <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
+      <Modified>2023-10-20T17:29:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.authorization.policy\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.Policy.dll">
+      <PackagePath>Microsoft.AspNetCore.Authorization.Policy.dll</PackagePath>
+      <Modified>2018-11-12T17:39:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.components\7.0.13\lib\net7.0\Microsoft.AspNetCore.Components.dll">
       <PackagePath>Microsoft.AspNetCore.Components.dll</PackagePath>
-      <Modified>2023-09-30T02:10:38.000</Modified>
+      <Modified>2023-10-20T17:28:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.components.authorization\7.0.13\lib\net7.0\Microsoft.AspNetCore.Components.Authorization.dll">
+      <PackagePath>Microsoft.AspNetCore.Components.Authorization.dll</PackagePath>
+      <Modified>2023-10-20T17:29:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.components.forms\7.0.12\lib\net7.0\Microsoft.AspNetCore.Components.Forms.dll">
       <PackagePath>Microsoft.AspNetCore.Components.Forms.dll</PackagePath>
@@ -849,9 +865,9 @@
       <PackagePath>Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</PackagePath>
       <Modified>2018-11-12T17:30:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.http\2.2.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.http\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll">
       <PackagePath>Microsoft.AspNetCore.Http.dll</PackagePath>
-      <Modified>2019-01-24T23:18:54.000</Modified>
+      <Modified>2018-11-12T17:29:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
@@ -865,17 +881,37 @@
       <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
       <Modified>2018-11-12T17:28:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.localization\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Localization.dll">
-      <PackagePath>Microsoft.AspNetCore.Localization.dll</PackagePath>
-      <Modified>2018-11-12T17:39:20.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.metadata\7.0.12\lib\net7.0\Microsoft.AspNetCore.Metadata.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.metadata\7.0.13\lib\net7.0\Microsoft.AspNetCore.Metadata.dll">
       <PackagePath>Microsoft.AspNetCore.Metadata.dll</PackagePath>
-      <Modified>2023-09-30T02:10:02.000</Modified>
+      <Modified>2023-10-20T17:29:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.mvc.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Mvc.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:40:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.mvc.core\2.2.5\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll">
+      <PackagePath>Microsoft.AspNetCore.Mvc.Core.dll</PackagePath>
+      <Modified>2019-04-19T23:24:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.responsecaching.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:37:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.routing\2.2.0\lib\netcoreapp2.2\Microsoft.AspNetCore.Routing.dll">
+      <PackagePath>Microsoft.AspNetCore.Routing.dll</PackagePath>
+      <Modified>2018-11-12T17:38:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.routing.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Routing.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Routing.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:38:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.webutilities\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll">
       <PackagePath>Microsoft.AspNetCore.WebUtilities.dll</PackagePath>
       <Modified>2018-11-12T17:29:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.dotnet.platformabstractions\2.1.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll">
+      <PackagePath>Microsoft.DotNet.PlatformAbstractions.dll</PackagePath>
+      <Modified>2018-05-15T21:01:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -905,6 +941,10 @@
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2022-10-18T16:15:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.dependencymodel\2.1.0\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll">
+      <PackagePath>Microsoft.Extensions.DependencyModel.dll</PackagePath>
+      <Modified>2018-05-15T21:01:34.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.fileproviders.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.FileProviders.Abstractions.dll</PackagePath>
       <Modified>2022-10-18T16:15:16.000</Modified>
@@ -932,10 +972,6 @@
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.http\7.0.0\lib\net7.0\Microsoft.Extensions.Http.dll">
       <PackagePath>Microsoft.Extensions.Http.dll</PackagePath>
       <Modified>2022-10-18T16:16:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.localization.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll">
-      <PackagePath>Microsoft.Extensions.Localization.Abstractions.dll</PackagePath>
-      <Modified>2018-11-12T17:39:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -1041,77 +1077,69 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-11-27T18:07:34.000</Modified>
+      <Modified>2016-06-13T23:06:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\lib\netstandard2.1\Syncfusion.Blazor.dll">
-      <PackagePath>Syncfusion.Blazor.dll</PackagePath>
-      <Modified>2020-03-18T15:35:08.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.buttons\23.1.36\lib\net7.0\Syncfusion.Blazor.Buttons.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.buttons\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Buttons.dll">
       <PackagePath>Syncfusion.Blazor.Buttons.dll</PackagePath>
-      <Modified>2023-09-13T04:09:06.000</Modified>
+      <Modified>2022-02-07T08:58:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\23.1.36\lib\net7.0\Syncfusion.Blazor.Calendars.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Calendars.dll">
       <PackagePath>Syncfusion.Blazor.Calendars.dll</PackagePath>
-      <Modified>2023-09-13T04:11:12.000</Modified>
+      <Modified>2022-02-07T08:59:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\lib\net7.0\Syncfusion.Blazor.Core.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Core.dll">
       <PackagePath>Syncfusion.Blazor.Core.dll</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+      <Modified>2022-02-07T08:58:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.data\23.1.36\lib\net7.0\Syncfusion.Blazor.Data.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.data\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Data.dll">
       <PackagePath>Syncfusion.Blazor.Data.dll</PackagePath>
-      <Modified>2023-09-13T04:08:56.000</Modified>
+      <Modified>2022-02-07T08:58:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\23.1.36\lib\net7.0\Syncfusion.Blazor.DropDowns.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\19.4.0.50\lib\net6.0\Syncfusion.Blazor.DropDowns.dll">
       <PackagePath>Syncfusion.Blazor.DropDowns.dll</PackagePath>
-      <Modified>2023-09-13T04:11:28.000</Modified>
+      <Modified>2022-02-07T08:59:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\lib\net7.0\Syncfusion.Blazor.Inputs.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Inputs.dll">
       <PackagePath>Syncfusion.Blazor.Inputs.dll</PackagePath>
-      <Modified>2023-09-13T04:10:50.000</Modified>
+      <Modified>2022-02-07T08:59:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.lists\23.1.36\lib\net7.0\Syncfusion.Blazor.Lists.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.lists\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Lists.dll">
       <PackagePath>Syncfusion.Blazor.Lists.dll</PackagePath>
-      <Modified>2023-09-13T04:11:00.000</Modified>
+      <Modified>2022-02-07T08:59:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\lib\net7.0\Syncfusion.Blazor.Navigations.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Navigations.dll">
       <PackagePath>Syncfusion.Blazor.Navigations.dll</PackagePath>
-      <Modified>2023-09-13T04:11:42.000</Modified>
+      <Modified>2022-02-07T08:59:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.notifications\23.1.36\lib\net7.0\Syncfusion.Blazor.Notifications.dll">
-      <PackagePath>Syncfusion.Blazor.Notifications.dll</PackagePath>
-      <Modified>2023-09-13T04:10:08.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.popups\23.1.36\lib\net7.0\Syncfusion.Blazor.Popups.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.popups\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Popups.dll">
       <PackagePath>Syncfusion.Blazor.Popups.dll</PackagePath>
-      <Modified>2023-09-13T04:10:18.000</Modified>
+      <Modified>2022-02-07T08:59:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.schedule\23.1.36\lib\net7.0\Syncfusion.Blazor.Schedule.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.schedule\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Schedule.dll">
       <PackagePath>Syncfusion.Blazor.Schedule.dll</PackagePath>
-      <Modified>2023-09-13T04:13:00.000</Modified>
+      <Modified>2022-02-07T09:00:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.spinner\23.1.36\lib\net7.0\Syncfusion.Blazor.Spinner.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.spinner\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Spinner.dll">
       <PackagePath>Syncfusion.Blazor.Spinner.dll</PackagePath>
-      <Modified>2023-09-13T04:09:26.000</Modified>
+      <Modified>2022-02-07T08:58:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.splitbuttons\23.1.36\lib\net7.0\Syncfusion.Blazor.SplitButtons.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.splitbuttons\19.4.0.50\lib\net6.0\Syncfusion.Blazor.SplitButtons.dll">
       <PackagePath>Syncfusion.Blazor.SplitButtons.dll</PackagePath>
-      <Modified>2023-09-13T04:10:28.000</Modified>
+      <Modified>2022-02-07T08:59:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\lib\net7.0\Syncfusion.Blazor.Themes.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\lib\net6.0\Syncfusion.Blazor.Themes.dll">
       <PackagePath>Syncfusion.Blazor.Themes.dll</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.excelexport.net.core\23.1.36\lib\net7.0\Syncfusion.ExcelExport.Net.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.excelexport.net.core\19.4.0.50\lib\net5.0\Syncfusion.ExcelExport.Net.dll">
       <PackagePath>Syncfusion.ExcelExport.Net.dll</PackagePath>
-      <Modified>2023-09-10T23:25:56.000</Modified>
+      <Modified>2022-02-07T08:49:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.licensing\23.1.36\lib\net7.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.licensing\19.4.0.50\lib\net5.0-windows10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
-      <Modified>2023-09-10T23:17:12.000</Modified>
+      <Modified>2022-02-07T08:59:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\system.io.pipelines\7.0.0\lib\net7.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
@@ -1127,7 +1155,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.DT\bin\Debug\net6.0\420BytesClient.DT.dll">
       <PackagePath>420BytesClient.DT.dll</PackagePath>
-      <Modified>2023-10-26T00:34:27.857</Modified>
+      <Modified>2023-11-01T01:13:00.750</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.96\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1143,75 +1171,75 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-10-08T02:58:01.419</Modified>
+      <Modified>2023-10-27T18:33:23.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\420BytesClient.App.styles.css">
       <PackagePath>wwwroot\420BytesClient.App.styles.css</PackagePath>
-      <Modified>2023-10-24T04:48:30.259</Modified>
+      <Modified>2023-10-31T21:15:48.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\420BytesClient.App.bundle.scp.css">
       <PackagePath>wwwroot\420BytesClient.App.bundle.scp.css</PackagePath>
-      <Modified>2023-10-24T04:48:30.263</Modified>
+      <Modified>2023-10-31T21:15:48.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
-      <Modified>2023-10-08T02:58:00.878</Modified>
+      <Modified>2023-10-27T18:33:33.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
-      <Modified>2023-10-08T02:58:00.882</Modified>
+      <Modified>2023-10-27T18:33:33.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
-      <Modified>2023-10-08T02:58:00.887</Modified>
+      <Modified>2023-10-27T18:33:33.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
       <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
-      <Modified>2023-10-08T02:58:01.143</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.eot</PackagePath>
-      <Modified>2023-10-08T02:58:01.153</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.otf</PackagePath>
-      <Modified>2023-10-08T02:58:01.314</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.svg</PackagePath>
-      <Modified>2023-10-08T02:58:01.351</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.ttf</PackagePath>
-      <Modified>2023-10-08T02:58:01.361</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
-      <Modified>2023-10-08T02:58:01.366</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\FONT-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
-      <Modified>2023-10-08T02:58:00.898</Modified>
+      <Modified>2023-10-27T18:33:33.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\ICON-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
-      <Modified>2023-10-08T02:58:01.082</Modified>
+      <Modified>2023-10-27T18:33:33.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
-      <Modified>2023-10-08T02:58:01.132</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
-      <Modified>2023-10-08T02:58:01.634</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2023-10-25T23:10:24.909</Modified>
+      <Modified>2023-10-27T23:25:29.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\js\Utilidades.js">
       <PackagePath>wwwroot\js\Utilidades.js</PackagePath>
-      <Modified>2023-10-24T04:48:07.882</Modified>
+      <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css">
       <PackagePath>wwwroot\css\bootstrap.css</PackagePath>
@@ -1389,693 +1417,473 @@
       <PackagePath>wwwroot\js\bootstrap.min.js.map</PackagePath>
       <Modified>2023-09-14T15:48:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.buttons\23.1.36\staticwebassets\scripts\sf-floating-action-button.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Buttons\scripts\sf-floating-action-button.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\19.4.0.50\staticwebassets\scripts\sf-calendarbase-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-calendarbase-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.buttons\23.1.36\staticwebassets\scripts\sf-speeddial.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Buttons\scripts\sf-speeddial.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\19.4.0.50\staticwebassets\scripts\sf-datepicker-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-datepicker-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\23.1.36\staticwebassets\scripts\sf-calendar.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-calendar.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\19.4.0.50\staticwebassets\scripts\sf-daterangepicker-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-daterangepicker-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\23.1.36\staticwebassets\scripts\sf-datepicker.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-datepicker.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\19.4.0.50\staticwebassets\scripts\sf-timepicker-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-timepicker-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\23.1.36\staticwebassets\scripts\sf-daterangepicker.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-daterangepicker.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\compression-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\compression-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.calendars\23.1.36\staticwebassets\scripts\sf-timepicker.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-timepicker.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\excelexport-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\excelexport-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\compression.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\compression.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\fileutils-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\fileutils-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\excelexport.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\excelexport.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\pdfexport-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\pdfexport-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\fileutils.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\fileutils.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\popup-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\popup-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\pdfexport.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\pdfexport.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\popupsbase-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\popupsbase-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\popup.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\popup.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\sf-import-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\sf-import-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\popupsbase.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\popupsbase.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\sf-import-ie-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\sf-import-ie-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\sf-svg-export.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\sf-svg-export.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\sf-svg-export-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\sf-svg-export-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\svgbase.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\svgbase.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\svgbase-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\svgbase-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\syncfusion-blazor.min.js">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\syncfusion-blazor.min.js">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\syncfusion-blazor-base.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor-base.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\syncfusion-blazor-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\23.1.36\staticwebassets\scripts\syncfusion-blazor-extended.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor-extended.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.core\19.4.0.50\staticwebassets\scripts\syncfusion-blazor-extended-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor-extended-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.data\23.1.36\staticwebassets\scripts\data.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Data\scripts\data.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.data\19.4.0.50\staticwebassets\scripts\data-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Data\scripts\data-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\23.1.36\staticwebassets\scripts\sf-dropdownlist.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-dropdownlist.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\19.4.0.50\staticwebassets\scripts\sf-dropdownlist-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-dropdownlist-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\23.1.36\staticwebassets\scripts\sf-listbox.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-listbox.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\19.4.0.50\staticwebassets\scripts\sf-listbox-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-listbox-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\23.1.36\staticwebassets\scripts\sf-mention.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-mention.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\19.4.0.50\staticwebassets\scripts\sf-multiselect-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-multiselect-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\23.1.36\staticwebassets\scripts\sf-multiselect.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sf-multiselect.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\19.4.0.50\staticwebassets\scripts\sortable-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sortable-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.dropdowns\23.1.36\staticwebassets\scripts\sortable.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.DropDowns\scripts\sortable.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-colorpicker-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-colorpicker-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-colorpicker.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-colorpicker.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-maskedtextbox-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-maskedtextbox-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-maskedtextbox.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-maskedtextbox.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-numerictextbox-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-numerictextbox-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-numerictextbox.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-numerictextbox.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-signature-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-signature-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-rating.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-rating.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-slider-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-slider-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-signature.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-signature.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-textbox-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-textbox-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-slider.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-slider.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\19.4.0.50\staticwebassets\scripts\sf-uploader-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-uploader-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-textbox.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-textbox.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.lists\19.4.0.50\staticwebassets\scripts\sf-listview-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Lists\scripts\sf-listview-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.inputs\23.1.36\staticwebassets\scripts\sf-uploader.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-uploader.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\navigationsbase-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\navigationsbase-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.lists\23.1.36\staticwebassets\scripts\sf-listview.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Lists\scripts\sf-listview.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-accordion-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-accordion-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\navigationsbase.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\navigationsbase.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-breadcrumb-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-breadcrumb-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-accordion.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-accordion.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-contextmenu-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-contextmenu-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-breadcrumb.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-breadcrumb.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-menu-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-menu-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-carousel.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-carousel.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-sidebar-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-sidebar-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-contextmenu.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-contextmenu.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-tab-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-tab-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-menu.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-menu.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-toolbar-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-toolbar-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-pager.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-pager.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\19.4.0.50\staticwebassets\scripts\sf-treeview-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-treeview-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-sidebar.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-sidebar.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.popups\19.4.0.50\staticwebassets\scripts\sf-dialog-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Popups\scripts\sf-dialog-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-tab.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-tab.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.popups\19.4.0.50\staticwebassets\scripts\sf-tooltip-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Popups\scripts\sf-tooltip-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-toolbar.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-toolbar.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.schedule\19.4.0.50\staticwebassets\scripts\sf-schedule-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Schedule\scripts\sf-schedule-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.navigations\23.1.36\staticwebassets\scripts\sf-treeview.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Navigations\scripts\sf-treeview.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.spinner\19.4.0.50\staticwebassets\scripts\sf-spinner-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Spinner\scripts\sf-spinner-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.notifications\23.1.36\staticwebassets\scripts\sf-toast.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Notifications\scripts\sf-toast.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.spinner\19.4.0.50\staticwebassets\scripts\spinner-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Spinner\scripts\spinner-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.popups\23.1.36\staticwebassets\scripts\sf-dialog.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Popups\scripts\sf-dialog.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.splitbuttons\19.4.0.50\staticwebassets\scripts\sf-drop-down-button-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.SplitButtons\scripts\sf-drop-down-button-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.popups\23.1.36\staticwebassets\scripts\sf-tooltip.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Popups\scripts\sf-tooltip.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.splitbuttons\19.4.0.50\staticwebassets\scripts\splitbuttonsbase-7eb9d3.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.SplitButtons\scripts\splitbuttonsbase-7eb9d3.min.js</PackagePath>
+      <Modified>2022-02-07T08:58:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.schedule\23.1.36\staticwebassets\scripts\sf-schedule.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Schedule\scripts\sf-schedule.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.spinner\23.1.36\staticwebassets\scripts\sf-spinner.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Spinner\scripts\sf-spinner.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.spinner\23.1.36\staticwebassets\scripts\spinner.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Spinner\scripts\spinner.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.splitbuttons\23.1.36\staticwebassets\scripts\sf-drop-down-button.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.SplitButtons\scripts\sf-drop-down-button.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.splitbuttons\23.1.36\staticwebassets\scripts\splitbuttonsbase.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.SplitButtons\scripts\splitbuttonsbase.min.js</PackagePath>
-      <Modified>2023-09-13T04:08:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\bootstrap.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\bootstrap.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\bootstrap4.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\bootstrap4.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap4.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\bootstrap5.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\bootstrap5.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap5.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\bootstrap5-dark.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\bootstrap5-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap5-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\bootstrap-dark.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\bootstrap-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\fabric.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\fabric.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fabric.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\fabric-dark.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\fabric-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fabric-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\fluent.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fluent.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\fluent-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fluent-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\highcontrast.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\highcontrast.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\highcontrast.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\material.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\material.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\material3.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material3.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\material3-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material3-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\material-dark.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\material-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\tailwind.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\tailwind.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\tailwind.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\23.1.36\staticwebassets\tailwind-dark.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor.themes\19.4.0.50\staticwebassets\tailwind-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\tailwind-dark.css</PackagePath>
-      <Modified>2023-09-13T04:06:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\barcodegenerator-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\barcodegenerator-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\buttons-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\buttons-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\calendars-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\calendars-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\charts-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\charts-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\circulargauge-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\circulargauge-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\compression-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\compression-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\data-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\data-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\diagrams-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\diagrams-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\documenteditor-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\documenteditor-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\drawings-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\drawings-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\dropdowns-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\dropdowns-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\excelexport-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\excelexport-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\filemanager-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\filemanager-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\fileutils-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\fileutils-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\gantt-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\gantt-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\grids-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\grids-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\heatmap-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\heatmap-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\inplaceeditor-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\inplaceeditor-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\inputs-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\inputs-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\kanban-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\kanban-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\layouts-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\layouts-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\lineargauge-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\lineargauge-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\lists-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\lists-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\maps-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\maps-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\navigations-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\navigations-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\notifications-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\notifications-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\officechart-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\officechart-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\pdfexport-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\pdfexport-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\pdfviewer-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\pdfviewer-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\pivotview-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\pivotview-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\popups-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\popups-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\progressbar-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\progressbar-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\querybuilder-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\querybuilder-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\richtexteditor-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\richtexteditor-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\schedule-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\schedule-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\splitbuttons-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\splitbuttons-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\svgbase-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\svgbase-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\syncfusion-blazor.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\syncfusion-blazor.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\treegrid-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\treegrid-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\scripts\treemap-3452e3.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\treemap-3452e3.min.js</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\styles\bootstrap.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap.css</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\styles\bootstrap4.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap4.css</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\styles\fabric.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric.css</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\styles\highcontrast.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\highcontrast.css</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\staticwebassets\styles\material.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material.css</PackagePath>
-      <Modified>2020-03-18T15:18:04.000</Modified>
+      <Modified>2022-02-07T08:57:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:40.712</Modified>
+      <Modified>2023-10-31T21:20:02.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:40.735</Modified>
+      <Modified>2023-10-31T21:20:02.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:40.763</Modified>
+      <Modified>2023-10-31T21:20:02.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:40.804</Modified>
+      <Modified>2023-10-31T21:20:02.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:40.964</Modified>
+      <Modified>2023-10-31T21:20:02.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-10-08T02:58:01.411</Modified>
+      <Modified>2023-10-27T18:33:23.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-10-24T04:48:41.014</Modified>
+      <Modified>2023-10-31T21:20:02.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.394</Modified>
+      <Modified>2023-10-31T21:20:02.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.411</Modified>
+      <Modified>2023-10-31T21:20:02.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.424</Modified>
+      <Modified>2023-10-31T21:20:02.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.445</Modified>
+      <Modified>2023-10-31T21:20:02.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.529</Modified>
+      <Modified>2023-10-31T21:20:02.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.123</Modified>
+      <Modified>2023-10-31T21:20:02.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.153</Modified>
+      <Modified>2023-10-31T21:20:02.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.175</Modified>
+      <Modified>2023-10-31T21:20:02.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.159</Modified>
+      <Modified>2023-10-31T21:20:02.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.166</Modified>
+      <Modified>2023-10-31T21:20:02.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.088</Modified>
+      <Modified>2023-10-31T21:20:02.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.094</Modified>
+      <Modified>2023-10-31T21:20:02.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.116</Modified>
+      <Modified>2023-10-31T21:20:02.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.100</Modified>
+      <Modified>2023-10-31T21:20:02.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.105</Modified>
+      <Modified>2023-10-31T21:20:02.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.028</Modified>
+      <Modified>2023-10-31T21:20:02.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.033</Modified>
+      <Modified>2023-10-31T21:20:02.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.039</Modified>
+      <Modified>2023-10-31T21:20:02.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.044</Modified>
+      <Modified>2023-10-31T21:20:02.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.051</Modified>
+      <Modified>2023-10-31T21:20:02.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.056</Modified>
+      <Modified>2023-10-31T21:20:02.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.060</Modified>
+      <Modified>2023-10-31T21:20:02.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.082</Modified>
+      <Modified>2023-10-31T21:20:02.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.067</Modified>
+      <Modified>2023-10-31T21:20:02.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.072</Modified>
+      <Modified>2023-10-31T21:20:02.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.244</Modified>
+      <Modified>2023-10-31T21:20:02.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.251</Modified>
+      <Modified>2023-10-31T21:20:02.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.259</Modified>
+      <Modified>2023-10-31T21:20:02.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.271</Modified>
+      <Modified>2023-10-31T21:20:02.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.292</Modified>
+      <Modified>2023-10-31T21:20:02.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.209</Modified>
+      <Modified>2023-10-31T21:20:02.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.214</Modified>
+      <Modified>2023-10-31T21:20:02.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.219</Modified>
+      <Modified>2023-10-31T21:20:02.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.225</Modified>
+      <Modified>2023-10-31T21:20:02.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.237</Modified>
+      <Modified>2023-10-31T21:20:02.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.181</Modified>
+      <Modified>2023-10-31T21:20:02.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.185</Modified>
+      <Modified>2023-10-31T21:20:02.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.190</Modified>
+      <Modified>2023-10-31T21:20:02.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.195</Modified>
+      <Modified>2023-10-31T21:20:02.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.203</Modified>
+      <Modified>2023-10-31T21:20:02.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.299</Modified>
+      <Modified>2023-10-31T21:20:02.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.309</Modified>
+      <Modified>2023-10-31T21:20:02.744</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.322</Modified>
+      <Modified>2023-10-31T21:20:02.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.339</Modified>
+      <Modified>2023-10-31T21:20:02.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.382</Modified>
+      <Modified>2023-10-31T21:20:02.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.073</Modified>
+      <Modified>2023-10-31T21:20:02.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.085</Modified>
+      <Modified>2023-10-31T21:20:02.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.102</Modified>
+      <Modified>2023-10-31T21:20:02.480</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.147</Modified>
+      <Modified>2023-10-31T21:20:02.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-10-24T04:48:41.221</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\syncfusion.blazor\18.1.0.36-beta\contentFiles\any\netstandard2.1\Nuget.Config">
-      <PackagePath>Nuget.Config</PackagePath>
-      <Modified>2020-03-18T15:30:36.000</Modified>
+      <Modified>2023-10-31T21:20:02.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>
-      <Modified>2023-10-08T02:58:01.557</Modified>
+      <Modified>2023-10-27T18:33:23.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>
-      <Modified>2023-10-08T02:58:01.572</Modified>
+      <Modified>2023-10-27T18:33:23.631</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,16 @@
+let connection = new signalR.HubConnectionBuilder()
+    .withUrl("/UserUpdatesHub")
+    .build();
 
+connection.on("ReceiveMessage", function (user, message) {
+    // Actualiza la lista de usuarios en el DOM aquí 
+});
+
+connection.start().then(function () {
+    console.log("Conectado");
+}).catch(function (err) {
+    return console.error(err.toString());
+});
 
 //function mostrarMensajeConfirmacion(title, text, icon) {
 //    return new Promise(resolve => {

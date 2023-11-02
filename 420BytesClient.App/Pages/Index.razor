@@ -1,25 +1,45 @@
 ﻿@page "/"
-
-<h1>Contador</h1>
-
-<p>Valor actual del contador: @contador</p>
-
-<button class="btn btn-primary" @onclick="IncrementarContador">Incrementar</button>
-
-<button class="btn btn-danger" @onclick="ResetearContador">Resetear</button>
+@using Syncfusion.Blazor.Buttons
+@using _420BytesClient.App.ViewModels.Scheduler.Interfaces;
+@using _420BytesClient.DT.Scheduler;
+@inject IAppointment_ViewModel IAppointment_ViewModel
+<SfSchedule TValue="AppointmentData" Height="600px" Width="650px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
+    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
+    <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
+    <ScheduleViews>
+        <ScheduleView Option="View.Day"></ScheduleView>
+        <ScheduleView Option="View.Week"></ScheduleView>
+        <ScheduleView Option="View.Month"></ScheduleView>
+        <ScheduleView Option="View.Agenda"></ScheduleView>
+        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+        <ScheduleView Option="View.TimelineDay"></ScheduleView>
+        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+        <ScheduleView Option="View.Year"></ScheduleView>
+    </ScheduleViews>
+</SfSchedule>
 
 @code {
-    private int contador = 0;
-
-    private void IncrementarContador()
+    public void OnActionBegin(ActionEventArgs<AppointmentData> args)
     {
-        contador++;
-        StateHasChanged(); // Forzar la actualización de la interfaz de usuario
+        switch (args.ActionType)                
+        {
+            case ActionType.EventCreate:
+                    var x = 1;
+                break;
+            case ActionType.EventRemove:
+                    var y = 1;
+                break;
+            case ActionType.EventChange:
+                    var z = 1;
+                break;
+            case ActionType.DateNavigate:
+                    var w = 1;
+                break;
+            case ActionType.ViewNavigate:
+                    var g = 1;
+                break;
+            default:
+                break;
+        }  
     }
-
-    private void ResetearContador()
-    {
-        contador = 0;
-        StateHasChanged(); // Forzar la actualización de la interfaz de usuario
-    }
-}
+} 

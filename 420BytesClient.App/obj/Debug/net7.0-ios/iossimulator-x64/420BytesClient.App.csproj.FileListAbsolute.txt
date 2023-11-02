@@ -301,8 +301,12 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\a
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.runtimeconfig.json
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.pdb
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Authentication.Core.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Authorization.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Authorization.Policy.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Components.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Components.Forms.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Components.Web.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Components.WebAssembly.dll
@@ -314,9 +318,14 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\M
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Http.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Http.Extensions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Http.Features.dll
-C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Localization.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Metadata.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Routing.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.Routing.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.AspNetCore.WebUtilities.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Binder.dll
@@ -324,6 +333,7 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\M
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Json.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.DependencyInjection.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.DependencyModel.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Composite.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.FileProviders.Embedded.dll
@@ -331,7 +341,6 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\M
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Http.dll
-C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Logging.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Logging.Debug.dll
@@ -343,7 +352,6 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\M
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Net.Http.Headers.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Newtonsoft.Json.dll
-C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Buttons.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Calendars.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Core.dll
@@ -352,7 +360,6 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\S
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Inputs.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Lists.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Navigations.dll
-C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Notifications.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Popups.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Schedule.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\Syncfusion.Blazor.Spinner.dll

@@ -81,6 +81,14 @@
               "target": "Package",
               "version": "[5.3.2, )"
             },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -93,6 +101,10 @@
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -122,17 +134,13 @@
               "version": "[7.0.96, )",
               "autoReferenced": true
             },
-            "Syncfusion.Blazor": {
-              "target": "Package",
-              "version": "[18.1.0.36-beta, )"
-            },
             "Syncfusion.Blazor.Schedule": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             },
             "Syncfusion.Blazor.Themes": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -227,6 +235,14 @@
               "target": "Package",
               "version": "[5.3.2, )"
             },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -239,6 +255,10 @@
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -268,17 +288,13 @@
               "version": "[7.0.96, )",
               "autoReferenced": true
             },
-            "Syncfusion.Blazor": {
-              "target": "Package",
-              "version": "[18.1.0.36-beta, )"
-            },
             "Syncfusion.Blazor.Schedule": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             },
             "Syncfusion.Blazor.Themes": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             }
           },
           "imports": [
@@ -318,6 +334,14 @@
               "target": "Package",
               "version": "[5.3.2, )"
             },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -330,6 +354,10 @@
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -359,17 +387,13 @@
               "version": "[7.0.96, )",
               "autoReferenced": true
             },
-            "Syncfusion.Blazor": {
-              "target": "Package",
-              "version": "[18.1.0.36-beta, )"
-            },
             "Syncfusion.Blazor.Schedule": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             },
             "Syncfusion.Blazor.Themes": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             }
           },
           "imports": [
@@ -410,6 +434,14 @@
               "target": "Package",
               "version": "[5.3.2, )"
             },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -422,6 +454,10 @@
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -461,17 +497,13 @@
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
             },
-            "Syncfusion.Blazor": {
-              "target": "Package",
-              "version": "[18.1.0.36-beta, )"
-            },
             "Syncfusion.Blazor.Schedule": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             },
             "Syncfusion.Blazor.Themes": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[19.4.0.50, )"
             }
           },
           "imports": [
