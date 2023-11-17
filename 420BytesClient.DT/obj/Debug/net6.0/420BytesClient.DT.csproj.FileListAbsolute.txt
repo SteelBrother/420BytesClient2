@@ -1,6 +1,7 @@
 C:\Git\420BytesClient\420BytesClient.DT\bin\Debug\net6.0\420BytesClient.DT.deps.json
 C:\Git\420BytesClient\420BytesClient.DT\bin\Debug\net6.0\420BytesClient.DT.dll
 C:\Git\420BytesClient\420BytesClient.DT\bin\Debug\net6.0\420BytesClient.DT.pdb
+C:\Git\420BytesClient\420BytesClient.DT\obj\Debug\net6.0\420BytesClient.DT.csproj.AssemblyReference.cache
 C:\Git\420BytesClient\420BytesClient.DT\obj\Debug\net6.0\420BytesClient.DT.GeneratedMSBuildEditorConfig.editorconfig
 C:\Git\420BytesClient\420BytesClient.DT\obj\Debug\net6.0\420BytesClient.DT.AssemblyInfoInputs.cache
 C:\Git\420BytesClient\420BytesClient.DT\obj\Debug\net6.0\420BytesClient.DT.AssemblyInfo.cs

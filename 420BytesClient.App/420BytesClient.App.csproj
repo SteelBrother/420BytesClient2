@@ -29,6 +29,18 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
         <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+        <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+        <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+        <PackageCertificateThumbprint>B29B2D2DC7C86DC7F57F17FFBD24BAF91770949D</PackageCertificateThumbprint>
+        <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+        <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+        <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+        <GenerateTestArtifacts>True</GenerateTestArtifacts>
+        <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+      <AndroidPackageFormat>apk</AndroidPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
@@ -60,15 +72,19 @@
 
     <ItemGroup>
         <PackageReference Include="Bootstrap" Version="5.3.2" />
-        <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.3" />
+        <PackageReference Include="MatBlazor" Version="2.8.0" />
         <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="7.0.13" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.12" />
         <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.13" />
         <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+        <PackageReference Include="Quick.AspNetCore.Components.Web.Extensions" Version="6.0.2" />
         <PackageReference Include="Syncfusion.Blazor.Schedule" Version="19.4.0.50" />
         <PackageReference Include="Syncfusion.Blazor.Themes" Version="19.4.0.50" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+        <PackageReference Include="System.Reactive.Linq" Version="6.0.0" />
     </ItemGroup>
 
     <ItemGroup>

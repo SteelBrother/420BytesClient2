@@ -1,16 +1,15 @@
-﻿using _420BytesClient.App.Auth.Interfaces;
+﻿using _420BytesClient.App.Auth;
+using _420BytesClient.App.Auth.Interfaces;
 using _420BytesClient.App.Helpers.Interfaces;
 using _420BytesClient.App.Model.Auth.Interfaces;
 using _420BytesClient.App.Model.Interfaces;
 using _420BytesClient.DT.DTOs;
 using _420BytesClient.DT.Usuario;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace _420BytesClient.App.Model.Auth
 {
@@ -22,13 +21,17 @@ namespace _420BytesClient.App.Model.Auth
         private readonly ISettings ISettings;
         private readonly NavigationManager navigationManager;
         private readonly ILogger<IConexionRest> logger;
-        public Login_Model(IConexionRest conexionRest, NavigationManager navigationManager, ILogger<IConexionRest> logger, ISettings ISettings , IProveedorAutenticacionJWT authModel)
+        private readonly AuthenticationStateProvider authStateProvider;
+        public Login_Model(IConexionRest conexionRest, NavigationManager navigationManager, ILogger<IConexionRest> logger, ISettings ISettings ,
+            IProveedorAutenticacionJWT authModel, 
+            AuthenticationStateProvider authStateProvider)
         {
             this.ConexionRest = conexionRest;
             this.logger = logger;
             this.ISettings = ISettings;
             this.authModel = authModel;
             this.navigationManager = navigationManager;
+            this.authStateProvider = authStateProvider;
         }
         public async Task<string> LoginUsuario(UserInfo userInfo)
         {

@@ -1,0 +1,1 @@
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppPackages\420BytesClient.App_0.1.1.0_Debug_Test\420BytesClient.App_0.1.1.0_x86_Debug.msix

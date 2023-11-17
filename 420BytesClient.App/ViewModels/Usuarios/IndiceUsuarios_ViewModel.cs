@@ -1,13 +1,11 @@
-﻿using _420BytesClient.App.Helpers.Interfaces;
+﻿using _420BytesClient.App.Hub.Interfaces;
 using _420BytesClient.App.Model.Usuarios.Interfaces;
 using _420BytesClient.App.ViewModels.Usuarios.Interfaces;
 using _420BytesClient.DT.Usuario;
-using System;
-using System.Collections.Generic;
+using Microsoft.AspNetCore.SignalR.Client;
+using Microsoft.JSInterop;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _420BytesClient.App.ViewModels.Usuarios
 {
@@ -15,10 +13,15 @@ namespace _420BytesClient.App.ViewModels.Usuarios
     {
         private readonly IGestionUsuariosModel IGestionUsuariosModel;
         //private readonly IMostrarMensajes MostrarMensajes;
-        public IndiceUsuarios_ViewModel(IGestionUsuariosModel IGestionUsuariosModel)
+        //private IUserUpdatesService IUserUpdatesService;
+        //private HubConnection _connection;
+        private readonly IJSRuntime js;
+        public IndiceUsuarios_ViewModel(IGestionUsuariosModel IGestionUsuariosModel, IJSRuntime js)
         {
             this.IGestionUsuariosModel = IGestionUsuariosModel;
             //this.MostrarMensajes = MostrarMensajes;
+            this.js = js;
+            Usuarios = new List<Usuario>();
         }
 
         private List<Usuario> _Usuarios;
@@ -35,29 +38,28 @@ namespace _420BytesClient.App.ViewModels.Usuarios
                 }
             }
         }
+
         public Usuario Usuario { get; set; }
         public bool Respuesta { get; set; } = false;
-
+       
         public event PropertyChangedEventHandler PropertyChanged;
+
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public async Task InitializeAsync()
+        {
+            await ObtenerListaUsuariosAsync();
+        }
+
+   
         public async Task ActualizarUsuario(Usuario usuario)
         {
             Respuesta = await IGestionUsuariosModel.ActualizarUsuario(usuario);
             await ObtenerListaUsuariosAsync();
-            //if (Respuesta)
-            //{
-            //    await MostrarMensajes.MostrarMensajeExitoso("Usuario actualizado con exito");
-            //}
-            //else
-            //{
-            //    await MostrarMensajes.MostrarMensajeExitoso("Error actualizando el usuario");
-            //}
         }
-
         public async Task<bool> BorrarUsuario(int Cedula)
         {
             try
@@ -73,37 +75,18 @@ namespace _420BytesClient.App.ViewModels.Usuarios
             }
 
         }
-
         public async Task ConsultarUsuarioPorCedulaAsync(int Cedula)
         {
-            Usuario = await IGestionUsuariosModel.ConsultarUsuarioPorCedula(Cedula);
-            //if (Usuario == null)
-            //{
-            //    await MostrarMensajes.MostrarMensajeExitoso("Error consultando el usuario");
-            //}        
+            Usuario = await IGestionUsuariosModel.ConsultarUsuarioPorCedula(Cedula);      
         }
-
         public async Task ObtenerListaUsuariosAsync()
         {
             Usuarios = await IGestionUsuariosModel.ConsultarUsuarios();
-            //if (!Respuesta)
-            //{
-            //    await MostrarMensajes.MostrarMensajeExitoso("Error consultando los usuarios");
-            //}
         }
-
         public async Task RegitrarUsuario(Usuario Usuario)
         {
             Respuesta = await IGestionUsuariosModel.RegistrarUsuario(Usuario);
             await ObtenerListaUsuariosAsync();
-            //if (Respuesta)
-            //{
-            //    await MostrarMensajes.MostrarMensajeExitoso("Usuario registrado con exito");
-            //}
-            //else
-            //{
-            //    await MostrarMensajes.MostrarMensajeExitoso("Error registrando el usuario");
-            //}
         }
     }
 }

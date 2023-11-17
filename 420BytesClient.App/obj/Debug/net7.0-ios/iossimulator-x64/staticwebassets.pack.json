@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
       "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -63,6 +67,10 @@
     {
       "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\js\\Utilidades.js",
       "PackagePath": "staticwebassets\\js\\Utilidades.js"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\js\\signalr.js",
+      "PackagePath": "staticwebassets\\js\\signalr.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",

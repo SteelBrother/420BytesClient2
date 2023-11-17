@@ -13,7 +13,9 @@ namespace _420BytesClient.App.Helpers
     {
         public string GetApiUrl()
         {
-            string ApiUrl = "https://localhost:7205/api";
+            //string ApiUrl = "https://localhost:7205/api";
+            //string ApiUrl = "https://ganjapp.azurewebsites.net/api";
+            string ApiUrl = "https://ganjappserver.azurewebsites.net/api";
             return ApiUrl;
         }
     }

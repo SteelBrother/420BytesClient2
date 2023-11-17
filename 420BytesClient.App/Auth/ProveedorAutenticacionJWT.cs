@@ -35,8 +35,9 @@ namespace _420BytesClient.App.Auth
 
         public AuthenticationState ConstruirAuthenticationState(string token)
         {
-            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
-            return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(token), "jwt")));
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var AuthenticationState = new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(token), "jwt")));
+            return AuthenticationState;
         }
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
@@ -105,7 +106,7 @@ namespace _420BytesClient.App.Auth
                 if (DebeRenovarToken(tiempoExpiracion))
                 {
                     var token = await js.GetFromLocalStorage(TOKENKEY);
-                    var nuevoToken = await RenovarToken(token,user);
+                    var nuevoToken = await RenovarToken(token, user);
                     var authState = ConstruirAuthenticationState(nuevoToken);
                     NotifyAuthenticationStateChanged(Task.FromResult(authState));
                 }
@@ -196,5 +197,8 @@ namespace _420BytesClient.App.Auth
             }
             return token;
         }
+
+
+
     }
 }

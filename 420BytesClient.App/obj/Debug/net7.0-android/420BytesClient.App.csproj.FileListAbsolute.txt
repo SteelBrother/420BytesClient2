@@ -1117,6 +1117,7 @@ C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\420BytesClient
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\420BytesClient.App.AssemblyInfoInputs.cache
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\420BytesClient.App.AssemblyInfo.cs
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\420BytesClient.App.csproj.CoreCompileInputs.cache
+<<<<<<< HEAD
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-android\appsettings.json
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-android\420BytesClient.App.runtimeconfig.json
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-android\420BytesClient.App.dll
@@ -2121,3 +2122,5 @@ C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\stamp\_Convert
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+=======
+>>>>>>> 6d00a26fa5542132b398b07cc06b0dbaef7ac8e4

@@ -1,9 +1,8 @@
 ﻿@page "/counter"
 @inject IIndiceUsuarios_ViewModel IIndiceUsuarios_ViewModel
-@using System.Globalization;
-@using _420BytesClient.DT.Usuario;
+@* @using Microsoft.AspNetCore.SignalR.Client *@
 @using _420BytesClient.App.ViewModels.Usuarios.Interfaces;
-@inject IJSRuntime js
+@using _420BytesClient.DT.Usuario;
 
 <div class="container">
     <div class="row">
@@ -22,6 +21,14 @@
                     <input placeholder="Pais" type="text" @bind="@UsuarioLlenar.Pais" />
                     <input placeholder="NickName" type="text" @bind="@UsuarioLlenar.NickName" />
                     <input placeholder="FechaNaciemiento" type="text" @bind="@UsuarioLlenar.BirthDate" />
+                    <input type="text" @bind="@UsuarioLlenar.Cedula" />
+                    <input type="text" @bind="@UsuarioLlenar.Nombre" />
+                    <input type="text" @bind="@UsuarioLlenar.Email" />
+                    <input type="text" @bind="@UsuarioLlenar.Password" />
+                    <input type="text" @bind="@UsuarioLlenar.Ciudad" />
+                    <input type="text" @bind="@UsuarioLlenar.Pais" />
+                    <input type="text" @bind="@UsuarioLlenar.NickName" />
+                    <input type="text" @bind="@UsuarioLlenar.FechaNacimiento" />
 
                     <input value="Guardar" Type="submit">
 
@@ -32,7 +39,7 @@
 
         </div>
     </div>
-    @if (IIndiceUsuarios_ViewModel.Usuarios != null)
+    @if (IIndiceUsuarios_ViewModel.Usuarios != null && IIndiceUsuarios_ViewModel.Usuarios.Count > 0)
     {
         <div class="row">
             <div class="col-sm-12">
@@ -64,12 +71,13 @@
 @code {
     private string CedulaIngresadaF { get; set; }
     private string NombreIngresadoF { get; set; }
-
+    List<Usuario> Usuarios = new List<Usuario>();
     Usuario UsuarioLlenar = new Usuario();
+
 
     protected async override Task OnInitializedAsync()
     {
-        await IIndiceUsuarios_ViewModel.ObtenerListaUsuariosAsync();
+        await IIndiceUsuarios_ViewModel.InitializeAsync();
     }
 
     public async Task RegistrarUsuario()
@@ -85,5 +93,4 @@
     {
         await IIndiceUsuarios_ViewModel.BorrarUsuario(Cedula);
     }
-
 }

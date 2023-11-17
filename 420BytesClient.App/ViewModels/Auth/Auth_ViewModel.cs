@@ -1,27 +1,29 @@
-﻿using _420BytesClient.App.Model.Auth.Interfaces;
+using _420BytesClient.App.Model.Auth.Interfaces;
 using _420BytesClient.App.ViewModels.Auth.Interfaces;
 using _420BytesClient.DT.DTOs;
 using _420BytesClient.DT.Usuario;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _420BytesClient.App.ViewModels.Auth
 {
     public class Auth_ViewModel : IAuth_ViewModel, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         private readonly ILoginModel _ILoginModel;
 
         public Auth_ViewModel(ILoginModel ILoginModel)
         {
             this._ILoginModel = ILoginModel;
             this._Usuario = new Usuario();
-            //this.MostrarMensajes = MostrarMensajes;
+        }
+
+        private readonly IAuthUsuario_Model _IAuthUsuario_Model;
+
+        public Auth_ViewModel(IAuthUsuario_Model IAuthUsuario_Model)
+        {
+            this._IAuthUsuario_Model = IAuthUsuario_Model;
+
         }
 
         private Usuario _Usuario;
@@ -44,7 +46,6 @@ namespace _420BytesClient.App.ViewModels.Auth
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-
         public async Task Login()
         {
             if (Usuario != null)
@@ -56,6 +57,10 @@ namespace _420BytesClient.App.ViewModels.Auth
                 };
                 await _ILoginModel.LoginUsuario(userInfo);
             }
+        }
+        public async Task Login(string NickName, string Password)
+        {
+            Usuario = await _IAuthUsuario_Model.Login(NickName, Password);
 
         }
     }

@@ -1,0 +1,33 @@
+medidor-container {
+    width: 300px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.medidor {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+/* Estilos adicionales para el input de humedad */
+
+.input-container input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,85 @@
+
+/* Estilos comunes */
+.calendar-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    max-width: 100%; /* Evita que se extienda más allá del ancho de la pantalla */
+}
+
+.calendar {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding: 2vw 0; /* Ajuste del espacio usando vw */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff;
+    width: 90%; /* Porcentaje del ancho del contenedor padre */
+    max-width: 100%; /* Evita que se extienda más allá del ancho de la pantalla */
+    margin: 0 auto; /* Centra el calendario */
+}
+
+.month {
+    margin-bottom: 1vw; /* Ajuste del espacio usando vw */
+    font-size: 3vw; /* Tamaño de fuente relativo */
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+.navigation {
+    font-size: 2vw; /* Tamaño de fuente relativo */
+    margin-bottom: 1vw;
+}
+
+.days-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw;
+}
+
+.day {
+    width: 10vw; /* Tamaño relativo del día */
+    height: 10vw; /* Tamaño relativo del día */
+    border: 1px solid #4b4b4b;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    padding: 2vw; /* Espaciado relativo del día */
+    margin: 1vw; /* Margen relativo del día */
+    cursor: pointer;
+    border-radius: 6px;
+    color: #4b4b4b;
+    background-color: #d9f7be;
+}
+
+.selected {
+    background-color: #37a270;
+    border-color: #37a270;
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+    .calendar {
+        width: 95%; /* Reducir el ancho para pantallas más pequeñas */
+    }
+
+    .month {
+        font-size: 5vw;
+    }
+
+    .navigation {
+        font-size: 3vw;
+    }
+
+    .day {
+        width: 20vw;
+        height: 20vw;
+        padding: 3vw;
+        margin: 2vw;
+    }
+}
+
+/* Otras media queries según sea necesario... */

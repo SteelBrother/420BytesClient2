@@ -1,0 +1,42 @@
+﻿@page "/usuarios"
+@using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
+@using _420BytesClient.App.ViewModels.Usuarios;
+
+@* @inject IGestionAmbientes_ViewModel IGestionAmbientes_ViewModel *@
+@inherits UsuariosViewModel 
+
+@if (RegistroTemperaturaAmbiente == null || RegistroTemperaturaAmbiente.Temperatura == 0)
+{
+    <p>Obteniendo lectura de los sensores de temperatura...</p>
+  
+}
+else
+{
+    <h1>Temperatura Ambiente Actual: @RegistroTemperaturaAmbiente.Temperatura C° </h1>
+    
+}
+
+@if (RegistroHumedadAmbiente == null || RegistroHumedadAmbiente.Humedad == 0)
+{
+
+    <p>Obteniendo lectura de los sensores de humedad...</p>
+}
+else
+{
+    
+    <h1>Humedad Ambiente Actual: @RegistroHumedadAmbiente.Humedad %</h1>
+}
+@if (RegistroIntensidadLuz == null )
+{
+
+    <p>Obteniendo lectura de los sensores de Luz...</p>
+}
+else
+{
+
+    <h1>Porcentaje Luz Ambiente Actual: @RegistroIntensidadLuz.Porcentaje %</h1>
+}
+
+@code {
+
+}

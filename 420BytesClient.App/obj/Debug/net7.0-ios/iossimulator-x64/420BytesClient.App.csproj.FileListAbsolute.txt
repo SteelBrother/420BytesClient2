@@ -297,6 +297,7 @@ C:\Users\lenovo\source\repos\420BytesClient\420BytesClient.App\obj\Debug\net7.0-
 C:\Users\lenovo\source\repos\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.pdb
 C:\Users\lenovo\source\repos\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.genruntimeconfig.cache
 C:\Users\lenovo\source\repos\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\ref\420BytesClient.App.dll
+<<<<<<< HEAD
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\appsettings.json
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.runtimeconfig.json
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.dll
@@ -576,6 +577,8 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\l
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.DT.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-ios\iossimulator-x64\420BytesClient.DT.pdb
+=======
+>>>>>>> 6d00a26fa5542132b398b07cc06b0dbaef7ac8e4
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\staticwebassets\msbuild.420BytesClient.App.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\staticwebassets\msbuild.build.420BytesClient.App.props
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\staticwebassets\msbuild.buildMultiTargeting.420BytesClient.App.props
@@ -631,10 +634,3 @@ C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\4
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.AssemblyInfo.cs
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.csproj.CoreCompileInputs.cache
 C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.MvcApplicationPartsAssemblyInfo.cache
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\XamlC.stamp
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.csproj.CopyComplete
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.dll
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\refint\420BytesClient.App.dll
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.pdb
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\420BytesClient.App.genruntimeconfig.cache
-C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-ios\iossimulator-x64\ref\420BytesClient.App.dll

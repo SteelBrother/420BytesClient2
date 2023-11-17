@@ -1,5 +1,6 @@
 ﻿using _420BytesClient.DT.Scheduler;
 using Microsoft.AspNetCore.Mvc;
+using Syncfusion.Blazor.Schedule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,9 +26,9 @@ namespace _420BytesClient.App.ViewModels.Scheduler.Interfaces
         DateTime CurrentDate { get; set; }
         List<AppointmentData> DataSource { get; set; }
 
-        Task<IActionResult> ObtenerTodoPorNickNameAsync(string NickName);
-        Task<IActionResult> AgregarCitaAsync(string NickName);
-        Task<IActionResult> ActualizarCitaAsync(string NickName,int id);
-        Task<IActionResult> BorrarCitaAsync(string NickName,int id);
+        Task ObtenerTodoPorDocumentoAsync();
+        Task AgregarCitaAsync(AppointmentData AppointmentData);
+        Task ActualizarCitaAsync(AppointmentData AppointmentData);
+        Task BorrarCitaAsync(int Id);
     }
 }

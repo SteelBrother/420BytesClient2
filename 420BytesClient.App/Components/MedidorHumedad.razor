@@ -1,0 +1,8 @@
+﻿<div class="medidor-container">
+    <div class="medidor" style="width: @($"{ValorHumedad * 100}%")"></div>
+</div>
+
+@code {
+    [Parameter]
+    public decimal ValorHumedad { get; set; }
+}

@@ -9,7 +9,10 @@ namespace _420BytesClient.App.ViewModels.Auth.Interfaces
 {
     public interface IAuth_ViewModel
     {
+
         Task Login();
+
+        Task Login(string NickName, string Password);
         Usuario Usuario { get; set; }
 
     }

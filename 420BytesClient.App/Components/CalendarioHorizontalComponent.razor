@@ -1,0 +1,119 @@
+﻿@inherits CalendarioHorizontalComponentBase
+
+<div class="calendar-container">
+    <div class="calendar">
+        <div class="month">November 2023</div>
+        <div class="navigation">
+            <button onclick="previousMonth()">Mes Anterior</button>
+            <button onclick="nextMonth()">Mes Siguiente</button>
+        </div>
+        <div class="days-container"></div>
+    </div>
+</div>
+
+<script>
+    var currentMonth = new Date().getMonth(); // Inicialmente, el mes actual
+    function initializeCalendar() {
+        var calendarContainers = document.getElementsByClassName('calendar-container');
+
+        for (var i = 0; i < calendarContainers.length; i++) {
+            var container = calendarContainers[i];
+            var calendar = container.getElementsByClassName('calendar')[0];
+            var daysContainer = calendar.getElementsByClassName('days-container')[0];
+            var currentMonth = new Date().getMonth(); // Obtener el mes actual
+
+            // Establecer el número de días y el nombre del mes
+            var daysInMonth = new Date(2023, currentMonth + 1, 0).getDate();
+            var monthName = new Date(2023, currentMonth, 1).toLocaleString('default', { month: 'long' });
+
+            // Mostrar el nombre del mes
+            var monthElement = calendar.getElementsByClassName('month')[0];
+            monthElement.textContent = monthName + ' 2023';
+
+            // Generar los días del mes
+            daysContainer.innerHTML = ''; // Limpiar el contenedor de días antes de generarlos
+
+            for (var j = 1; j <= daysInMonth; j++) {
+                var dayElement = document.createElement('div');
+                dayElement.classList.add('day');
+                dayElement.textContent = j;
+
+                // Agregar cada día al contenedor de días
+                daysContainer.appendChild(dayElement);
+            }
+        }
+    }
+    <script>
+        var currentMonth = new Date().getMonth(); // Inicialmente, el mes actual
+    function initializeCalendar() {
+        var calendarContainers = document.getElementsByClassName('calendar-container');
+
+        for (var i = 0; i < calendarContainers.length; i++) {
+            var container = calendarContainers[i];
+            var calendar = container.getElementsByClassName('calendar')[0];
+            var daysContainer = calendar.getElementsByClassName('days-container')[0];
+            var currentMonth = new Date().getMonth(); // Obtener el mes actual
+
+            // Establecer el número de días y el nombre del mes
+            var daysInMonth = new Date(2023, currentMonth + 1, 0).getDate();
+            var monthName = new Date(2023, currentMonth, 1).toLocaleString('default', { month: 'long' });
+
+            // Mostrar el nombre del mes
+            var monthElement = calendar.getElementsByClassName('month')[0];
+            monthElement.textContent = monthName + ' 2023';
+
+            // Generar los días del mes
+            daysContainer.innerHTML = ''; // Limpiar el contenedor de días antes de generarlos
+
+            for (var j = 1; j <= daysInMonth; j++) {
+                var dayElement = document.createElement('div');
+                dayElement.classList.add('day');
+                dayElement.textContent = j;
+
+                // Agregar cada día al contenedor de días
+                daysContainer.appendChild(dayElement);
+            }
+        }
+    }
+
+    function generateMonth(month) {
+        var calendarContainers = document.getElementsByClassName('calendar-container');
+
+        for (var i = 0; i < calendarContainers.length; i++) {
+            var container = calendarContainers[i];
+            var calendar = container.getElementsByClassName('calendar')[0];
+            var daysContainer = calendar.getElementsByClassName('days-container')[0];
+
+            var daysInMonth = new Date(2023, month + 1, 0).getDate();
+            var monthName = new Date(2023, month, 1).toLocaleString('default', { month: 'long' });
+
+            var monthElement = calendar.getElementsByClassName('month')[0];
+            monthElement.textContent = monthName + ' 2023';
+
+            daysContainer.innerHTML = '';
+
+            for (var j = 1; j <= daysInMonth; j++) {
+                var dayElement = document.createElement('div');
+                dayElement.classList.add('day');
+                dayElement.textContent = j;
+
+                daysContainer.appendChild(dayElement);
+            }
+        }
+    }
+
+    function previousMonth() {
+        currentMonth--;
+        generateMonth(currentMonth);
+    }
+
+    function nextMonth() {
+        currentMonth++;
+        generateMonth(currentMonth);
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        initializeCalendar();
+    });
+</script>
