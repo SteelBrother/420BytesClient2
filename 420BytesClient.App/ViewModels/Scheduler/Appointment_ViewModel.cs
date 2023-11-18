@@ -16,7 +16,7 @@ using _420BytesClient.DT.Usuario;
 
 namespace _420BytesClient.App.ViewModels.Scheduler
 {
-    public class Appointment_ViewModel : IAppointment_ViewModel
+    public class Appointment_ViewModel : IAppointment_ViewModel, INotifyPropertyChanged
     {
         public static readonly string CEDULA = "CEDULA";
         private readonly IAppointment_Model IAppointment_Model;
@@ -110,7 +110,7 @@ namespace _420BytesClient.App.ViewModels.Scheduler
                 AppointmentData = AppointmentData
             };
             var x = await IAppointment_Model.AgregarCitaAsync(AppointmentDTO);
-            await ObtenerTodoPorDocumentoAsync();
+            //await ObtenerTodoPorDocumentoAsync();
         }
 
         public async Task ActualizarCitaAsync(AppointmentData AppointmentData)

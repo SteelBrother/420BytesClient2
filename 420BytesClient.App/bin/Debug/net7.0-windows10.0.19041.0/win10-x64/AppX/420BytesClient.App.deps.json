@@ -11,7 +11,6 @@
         "dependencies": {
           "420BytesClient.DT": "1.0.0",
           "bootstrap": "5.3.2",
-          "MatBlazor": "2.8.0",
           "Microsoft.AspNetCore.Components.Authorization": "7.0.13",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.12",
           "Microsoft.AspNetCore.Components.WebView.Maui": "7.0.96",
@@ -26,6 +25,7 @@
           "Microsoft.Maui.Graphics": "7.0.96",
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.96",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
+          "MudBlazor": "6.11.0",
           "Quick.AspNetCore.Components.Web.Extensions": "6.0.2",
           "Syncfusion.Blazor.Schedule": "19.4.0.50",
           "Syncfusion.Blazor.Themes": "19.4.0.50",
@@ -1032,15 +1032,15 @@
         }
       },
       "bootstrap/5.3.2": {},
-      "MatBlazor/2.8.0": {
+      "MatBlazor/2.10.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "7.0.13",
           "Microsoft.AspNetCore.Components.Web": "7.0.12"
         },
         "runtime": {
-          "lib/netstandard2.1/MatBlazor.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.0.0"
+          "lib/net6.0/MatBlazor.dll": {
+            "assemblyVersion": "2.10.0.0",
+            "fileVersion": "2.10.0.0"
           }
         }
       },
@@ -1655,6 +1655,28 @@
           }
         }
       },
+      "Microsoft.Extensions.Localization/7.0.5": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
+          "Microsoft.Extensions.Options": "7.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.523.17410"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.523.17410"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -1896,6 +1918,19 @@
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MudBlazor/6.11.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.13",
+          "Microsoft.AspNetCore.Components.Web": "7.0.12",
+          "Microsoft.Extensions.Localization": "7.0.5"
+        },
+        "runtime": {
+          "lib/net7.0/MudBlazor.dll": {
+            "assemblyVersion": "6.11.0.0",
+            "fileVersion": "6.11.0.0"
           }
         }
       },
@@ -2579,7 +2614,7 @@
       },
       "420BytesClient.DT/1.0.0": {
         "dependencies": {
-          "MatBlazor": "2.8.0"
+          "MatBlazor": "2.10.0"
         },
         "runtime": {
           "420BytesClient.DT.dll": {}
@@ -2630,12 +2665,12 @@
       "path": "bootstrap/5.3.2",
       "hashPath": "bootstrap.5.3.2.nupkg.sha512"
     },
-    "MatBlazor/2.8.0": {
+    "MatBlazor/2.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NAbkrLR6YdEXNtQQreJOAdZEqTBeG6wXiTxs9ItHBCLnoCouX//VELHakDXcMtK27QzmeB8uGRwWIkglvhpKLg==",
-      "path": "matblazor/2.8.0",
-      "hashPath": "matblazor.2.8.0.nupkg.sha512"
+      "sha512": "sha512-VyxrSrtNxsj4XmFu5QI5CcBGGRMcFXfYmVGrTwuMhRkT052qXQii4c0lSgUMgTo4Ii11dMw/xr1wjosh3mA7LA==",
+      "path": "matblazor/2.10.0",
+      "hashPath": "matblazor.2.10.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "type": "package",
@@ -2987,6 +3022,20 @@
       "path": "microsoft.extensions.http/7.0.0",
       "hashPath": "microsoft.extensions.http.7.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Localization/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F5aAQlf29mSTEl13OnJ3f3mBOyjYQ4P9RVC0lIVyhqP2pP7ZdjyWpaGrHjx1rR0g8IRaeM1I8fDYI0nnkanksA==",
+      "path": "microsoft.extensions.localization/7.0.5",
+      "hashPath": "microsoft.extensions.localization.7.0.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9aKOv6iaYLhCLsLIYIZePKLQ8LYpnasoqjg5lv2RCOz+jkLp/A7YmtNrYfhhmNARX2sq8427KQOyvkFIf8uLaw==",
+      "path": "microsoft.extensions.localization.abstractions/7.0.5",
+      "hashPath": "microsoft.extensions.localization.abstractions.7.0.5.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3126,6 +3175,13 @@
       "sha512": "sha512-1Y8KDCmUqytdduubaQhRz6aqaP7YhVSPE/fHeqLMsK3DrV+eBThrqkM6R/8N2lu0mwkNfKSTSAhixrTR72nyWA==",
       "path": "microsoft.windowsappsdk/1.2.221209.1",
       "hashPath": "microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512"
+    },
+    "MudBlazor/6.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gP97w+oP0G0slw2P+EKfHfhN126GBHJpL61haQJy3iAo9JSWMkzlcEQ1yFlHSWJQeI9jOZ6pb1IK9XggFOI7lA==",
+      "path": "mudblazor/6.11.0",
+      "hashPath": "mudblazor.6.11.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.0": {
       "type": "package",

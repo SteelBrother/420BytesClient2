@@ -1,160 +1,71 @@
 ﻿@page "/"
+@using MatBlazor
 @using Syncfusion.Blazor.Buttons
 @using _420BytesClient.App.ViewModels.Scheduler.Interfaces;
 @using _420BytesClient.DT.Scheduler;
 @inject IAppointment_ViewModel IAppointment_ViewModel
 @inject IJSRuntime js
-
-<div class="calendar-container" style="width: 100%; overflow-x: scroll;">
-    <div class="calendar">
-        <div class="month">November 2023</div>
-        <div class="navigation">
-            <button onclick="previousMonth()">&lt;</button>
-            <button onclick="nextMonth()">&gt;</button>
-        </div>
-        <div class="days-container" style="display: flex; flex-direction: row; justify-content: flex-start;"></div>
-    </div>
+@*
+<MudTabs Outlined="true" @bind-ActivePanelIndex="activeIndex" Centered="true">
+    <MudTabPanel Text="Ambiente 1" Icon="@Icons.Material.Filled.FilterVintage" />
+    <MudTabPanel Text="Ambiente 2" Icon="@Icons.Material.Filled.FilterVintage" />
+    <MudTabPanel Text="Ambiente 3" Icon="@Icons.Material.Filled.FilterVintage" />
+</MudTabs>
+<br />
+<MudTabs Outlined="true" @bind-ActivePanelIndex="activeIndex2" Centered="true">
+    <MudTabPanel Text="Planta 1" Icon="@Icons.Material.Filled.Yard" />
+    <MudTabPanel Text="Planta 2" Icon="@Icons.Material.Filled.Yard" />
+    <MudTabPanel Text="Planta 3" Icon="@Icons.Material.Filled.Yard" />
+</MudTabs> *@
+<div style="max-width:100%">
+    <h2 style="width:100%">Fecha+ Ciudad + Datos Climaticos</h2>
+    <MudCarousel Class="mud-width-full" @ref="_carousel" ItemsSource="@_source" @bind-SelectedIndex="selectedIndex" Style="height:1000px;" ShowArrows="@_arrows" ShowBullets="@_bullets" EnableSwipeGesture="@_enableSwipeGesture" AutoCycle="@_autocycle">
+        <ItemTemplate>
+            <div class="d-flex flex-column flex-column justify-center" style="height:100%">
+                <MudText Align="@Align.Center" Class="mx-auto">@context</MudText>
+                <br />
+                <MudTabs Elevation="4" Rounded="true" Color="@Color.Success">
+                    <MudTabPanel Text="Planta 1" />
+                    <MudTabPanel Text="Planta 2" />
+                </MudTabs>
+                <br>
+                <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
+                    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
+                    <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
+                    <ScheduleViews>
+                        <ScheduleView Option="View.Day"></ScheduleView>
+                        <ScheduleView Option="View.Week"></ScheduleView>
+                        <ScheduleView Option="View.Month"></ScheduleView>
+                        <ScheduleView Option="View.Agenda"></ScheduleView>
+                        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+                        <ScheduleView Option="View.TimelineDay"></ScheduleView>
+                        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+                        <ScheduleView Option="View.Year"></ScheduleView>
+                    </ScheduleViews>
+                </SfSchedule>
+            </div>
+        </ItemTemplate>
+    </MudCarousel>
 </div>
 
-<style>
-    /* Estilos comunes */
-    .calendar-container {
-        overflow-x: scroll;
-        /* white-space: wrap; */
-        width: 100%;
-        font-family: Arial, sans-serif;
-        max-width: 100%; /* Evita que se extienda más allá del ancho de la pantalla */
-    }
 
-    .calendar {
-        display: inline-block;
-        box-sizing: border-box;
-        white-space: nowrap;
-        padding: 2vw 0; /* Ajuste del espacio usando vw */
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        background-color: #333;
-        width: 90%; /* Porcentaje del ancho del contenedor padre */
-        max-width: 100%; /* Evita que se extienda más allá del ancho de la pantalla */
-        margin: 0 auto; /* Centra el calendario */
-    }
+@*
+<MudTabs Elevation="4" Rounded="true" Color="@Color.Success" PrevIcon="@Icons.Material.Filled.SkipPrevious" NextIcon="@Icons.Material.Filled.SkipNext">
+    <MudTabPanel Text="Ambiente 1" Icon="@Icons.Material.Filled.FilterVintage" />
+    <MudTabPanel Text="Ambiente 2" Icon="@Icons.Material.Filled.FilterVintage"  />
+    <MudTabPanel Text="Ambiente 3" Icon="@Icons.Material.Filled.FilterVintage" />
+    <MudTabPanel Text="Ambiente 4" Icon="@Icons.Material.Filled.FilterVintage" />
+</MudTabs>
+ *@
+@* <MudTabs Elevation="4" Rounded="true" Color="@Color.Success">
+    <MudTabPanel Text="Planta 1" />
+    <MudTabPanel Text="Planta 2" />
+</MudTabs>
+<br />
+<hr>
+<br /> *@
 
-    .month {
-        margin-bottom: 1vw; /* Ajuste del espacio usando vw */
-        font-size: 3vw; /* Tamaño de fuente relativo */
-        font-weight: bold;
-        color: #4b4b4b;
-    }
-
-    .navigation {
-        font-size: 2vw; /* Tamaño de fuente relativo */
-        margin-bottom: 1vw;
-    }
-
-    .days-container {
-        display: flex;
-        justify-content: center;      
-        padding: 2vw;
-        overflow-x: scroll; /* Modified to enable horizontal scrolling */
-        max-width: 100%;
-       
-    }
-
-
-    .day {
-        height: 30px;
-        margin: 5px;
-        border: 1px solid #ccc;
-        padding: 5px;
-        background-image: linear-gradient(to right, #023B89, #37004D);
-        border-color: transparent;
-    }
-
-    .selected {
-        background-color: #37a270;
-        border-color: #37a270;
-    }
-
-    /* Otras media queries según sea necesario... */
-</style>
-<script>
-    var currentMonth = new Date().getMonth(); // Inicialmente, el mes actual
-    function initializeCalendar() {
-        var calendarContainers = document.getElementsByClassName('calendar-container');
-
-        for (var i = 0; i < calendarContainers.length; i++) {
-            var container = calendarContainers[i];
-            var calendar = container.getElementsByClassName('calendar')[0];
-            var daysContainer = calendar.getElementsByClassName('days-container')[0];
-            var currentMonth = new Date().getMonth(); // Obtener el mes actual
-
-            // Establecer el número de días y el nombre del mes
-            var daysInMonth = new Date(2023, currentMonth + 1, 0).getDate();
-            var monthName = new Date(2023, currentMonth, 1).toLocaleString('default', { month: 'long' });
-
-            // Mostrar el nombre del mes
-            var monthElement = calendar.getElementsByClassName('month')[0];
-            monthElement.textContent = monthName + ' 2023';
-
-            // Generar los días del mes
-            daysContainer.innerHTML = ''; // Limpiar el contenedor de días antes de generarlos
-
-            for (var j = 1; j <= daysInMonth; j++) {
-                var dayElement = document.createElement('div');
-                dayElement.classList.add('day');
-                dayElement.textContent = j;
-
-                // Agregar cada día al contenedor de días
-                daysContainer.appendChild(dayElement);
-            }
-        }
-    }
-
-    function generateMonth(month) {
-        var calendarContainers = document.getElementsByClassName('calendar-container');
-
-        for (var i = 0; i < calendarContainers.length; i++) {
-            var container = calendarContainers[i];
-            var calendar = container.getElementsByClassName('calendar')[0];
-            var daysContainer = calendar.getElementsByClassName('days-container')[0];
-
-            var daysInMonth = new Date(2023, month + 1, 0).getDate();
-            var monthName = new Date(2023, month, 1).toLocaleString('default', { month: 'long' });
-
-            var monthElement = calendar.getElementsByClassName('month')[0];
-            monthElement.textContent = monthName + ' 2023';
-
-            daysContainer.innerHTML = '';
-
-            for (var j = 1; j <= daysInMonth; j++) {
-                var dayElement = document.createElement('div');
-                dayElement.classList.add('day');
-                dayElement.textContent = j;
-
-                daysContainer.appendChild(dayElement);
-            }
-        }
-    }
-
-    function previousMonth() {
-        currentMonth--;
-        generateMonth(currentMonth);
-    }
-
-    function nextMonth() {
-        currentMonth++;
-        generateMonth(currentMonth);
-    }
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        initializeCalendar();
-    });
-</script>
-
-
-
-<SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
+@* <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
     <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
     <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
     <ScheduleViews>
@@ -168,18 +79,95 @@
         <ScheduleView Option="View.Year"></ScheduleView>
     </ScheduleViews>
 </SfSchedule>
+<MudExpansionPanels DisableBorders="true" Elevation="0">
+    <MudExpansionPanel Text="Datos Sensores">
+        <Usuarios></Usuarios>
+    </MudExpansionPanel>
+</MudExpansionPanels>
+<MudExpansionPanels DisableBorders="true" Elevation="0">
+    <MudExpansionPanel Text="Graficos">
+        <MudChart ChartType="ChartType.Donut" LegendPosition="@LegendPosition" Width="300px" Height="300px"
+                  InputData="@data" InputLabels="@labels">
+        </MudChart>
+
+    </MudExpansionPanel>
+</MudExpansionPanels> *@
+@* <MatAccordion>
+    <MatExpansionPanel @bind-Expanded="@panelOpenState">
+        <MatExpansionPanelSummary>
+            <MatExpansionPanelHeader>Datos Sensores</MatExpansionPanelHeader>
+        </MatExpansionPanelSummary>
+        <MatExpansionPanelDetails>
+            <Usuarios></Usuarios>
+        </MatExpansionPanelDetails>
+    </MatExpansionPanel>
+</MatAccordion>
+ *@
 
 @code {
+    private MudCarousel<string> _carousel;
+    private bool _arrows = true; 
+    private bool _bullets = true;
+    private bool _enableSwipeGesture = true;
+    private bool _autocycle = false;
+    private IList<string> _source = new List<string>() { "Ambiente 1", "Ambiente 2" };
+    private int selectedIndex = 0;
 
+
+
+    bool panelOpenState;
+    public int tabIndex = 0;
+    int activeIndex = 0;
+    int activeIndex2 = 0;
     protected async override Task OnInitializedAsync()
     {
         await IAppointment_ViewModel.ObtenerTodoPorDocumentoAsync();
     }
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    void ChangeTab(EventCallback<int> dato)
     {
-        if (firstRender)
+        tabIndex = tabIndex < 3 ? tabIndex + 1 : 0;
+    }
+    public void RunOnClick(MouseEventArgs e)
+    {
+        js.InvokeAsync<object>("window.alert", "Test");
+    }
+    private int _index = 0;
+    private int? _nextIndex = null;
+    public double[] data = { 25, 77, 28, 5 };
+    public string[] labels = { "Oil", "Coal", "Gas", "Biomass" };
+    public Position LegendPosition { get; set; } = Position.Right;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+
+    private async Task AddAsync()
+    {
+        _source.Add($"Item {_source.Count + 1}");
+        await Task.Delay(1);
+        _carousel.MoveTo(_source.Count - 1);
+    }
+
+    private async Task DeleteAsync(int index)
+    {
+        if (_source.Any())
         {
-            await js.InvokeVoidAsync("initializeCalendar");
+            _source.RemoveAt(index);
+            await Task.Delay(1);
+            _carousel.MoveTo(System.Math.Max(System.Math.Min(index, _source.Count - 1), 0));
+        }
+
+    }
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (_nextIndex.HasValue == true)
+        {
+            _index = _nextIndex.Value;
+            _nextIndex = null;
+            StateHasChanged();
         }
     }
 

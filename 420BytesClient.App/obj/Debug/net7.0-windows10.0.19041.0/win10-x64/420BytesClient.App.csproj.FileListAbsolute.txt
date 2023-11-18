@@ -408,6 +408,8 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\wi
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Http.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Localization.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Debug.dll
@@ -438,6 +440,7 @@ C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\wi
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MudBlazor.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.Web.Extensions.dll
 C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Buttons.dll

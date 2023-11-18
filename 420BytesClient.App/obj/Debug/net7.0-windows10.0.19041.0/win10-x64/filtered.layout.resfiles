@@ -74,7 +74,7 @@ wwwroot\css\open-iconic\font\fonts\open-iconic.woff
 wwwroot\css\open-iconic\FONT-LICENSE
 wwwroot\css\open-iconic\ICON-LICENSE
 wwwroot\css\open-iconic\README.md
-wwwroot\css\site.css
+wwwroot\css\stilos.css
 wwwroot\favicon.ico
 wwwroot\index.html
 wwwroot\js\signalr.js
@@ -123,9 +123,10 @@ wwwroot\js\bootstrap.js
 wwwroot\js\bootstrap.js.map
 wwwroot\js\bootstrap.min.js
 wwwroot\js\bootstrap.min.js.map
-Properties\launchSettings.json
 wwwroot\_content\MatBlazor\dist\matBlazor.css
 wwwroot\_content\MatBlazor\dist\matBlazor.js
+wwwroot\_content\MudBlazor\MudBlazor.min.css
+wwwroot\_content\MudBlazor\MudBlazor.min.js
 wwwroot\_content\Quick.AspNetCore.Components.Web.Extensions\headManager.js
 wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-calendarbase-7eb9d3.min.js
 wwwroot\_content\Syncfusion.Blazor.Calendars\scripts\sf-datepicker-7eb9d3.min.js

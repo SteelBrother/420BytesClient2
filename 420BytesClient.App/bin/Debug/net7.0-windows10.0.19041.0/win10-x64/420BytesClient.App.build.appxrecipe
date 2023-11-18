@@ -1441,7 +1441,7 @@
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.8.0\lib\netstandard2.1\MatBlazor.dll">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.10.0\lib\net6.0\MatBlazor.dll">
       <PackagePath>MatBlazor.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.aspnetcore.authentication.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll">
@@ -1588,6 +1588,12 @@
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.http\7.0.0\lib\net7.0\Microsoft.Extensions.Http.dll">
       <PackagePath>Microsoft.Extensions.Http.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.localization\7.0.5\lib\net7.0\Microsoft.Extensions.Localization.dll">
+      <PackagePath>Microsoft.Extensions.Localization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.localization.abstractions\7.0.5\lib\net7.0\Microsoft.Extensions.Localization.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Localization.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
     </AppxPackagedFile>
@@ -1677,6 +1683,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\mudblazor\6.11.0\lib\net7.0\MudBlazor.dll">
+      <PackagePath>MudBlazor.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -1804,8 +1813,8 @@
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\site.css">
-      <PackagePath>wwwroot\css\site.css</PackagePath>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\stilos.css">
+      <PackagePath>wwwroot\css\stilos.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
@@ -1951,11 +1960,17 @@
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map">
       <PackagePath>wwwroot\js\bootstrap.min.js.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.8.0\staticwebassets\dist\matBlazor.css">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.10.0\staticwebassets\dist\matBlazor.css">
       <PackagePath>wwwroot\_content\MatBlazor\dist\matBlazor.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.8.0\staticwebassets\dist\matBlazor.js">
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.10.0\staticwebassets\dist\matBlazor.js">
       <PackagePath>wwwroot\_content\MatBlazor\dist\matBlazor.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\mudblazor\6.11.0\staticwebassets\MudBlazor.min.css">
+      <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\mudblazor\6.11.0\staticwebassets\MudBlazor.min.js">
+      <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\quick.aspnetcore.components.web.extensions\6.0.2\staticwebassets\headManager.js">
       <PackagePath>wwwroot\_content\Quick.AspNetCore.Components.Web.Extensions\headManager.js</PackagePath>
@@ -2304,9 +2319,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\matblazor\2.8.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json">
-      <PackagePath>Properties\launchSettings.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Components\CalendarioHorizontalComponent.razor.css">
       <PackagePath>Components\CalendarioHorizontalComponent.razor.css</PackagePath>

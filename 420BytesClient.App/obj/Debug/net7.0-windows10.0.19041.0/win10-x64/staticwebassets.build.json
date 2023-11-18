@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oasKt5xHxVwtj6CiL0uIjCakXqZBRUjZ6yBgKaPBauA=",
+  "Hash": "Ma2DrwSgHYvwCwDiRRkGkgFqNLtn+tcMdPOsAVrPkVs=",
   "Source": "420BytesClient.App",
   "BasePath": "/",
   "Mode": "Root",
@@ -255,12 +255,12 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\css\\stilos.css",
       "SourceId": "420BytesClient.App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/stilos.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\stilos.css"
     },
     {
       "Identity": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\favicon.ico",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.8.0\\staticwebassets\\dist\\matBlazor.css",
+      "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.10.0\\staticwebassets\\dist\\matBlazor.css",
       "SourceId": "MatBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.8.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.10.0\\staticwebassets\\",
       "BasePath": "_content/MatBlazor",
       "RelativePath": "dist/matBlazor.css",
       "AssetKind": "All",
@@ -1102,13 +1102,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.8.0\\staticwebassets\\dist\\matBlazor.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.10.0\\staticwebassets\\dist\\matBlazor.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.8.0\\staticwebassets\\dist\\matBlazor.js",
+      "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.10.0\\staticwebassets\\dist\\matBlazor.js",
       "SourceId": "MatBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.8.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.10.0\\staticwebassets\\",
       "BasePath": "_content/MatBlazor",
       "RelativePath": "dist/matBlazor.js",
       "AssetKind": "All",
@@ -1119,7 +1119,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.8.0\\staticwebassets\\dist\\matBlazor.js"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\matblazor\\2.10.0\\staticwebassets\\dist\\matBlazor.js"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\mudblazor\\6.11.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\ADMIN\\.nuget\\packages\\mudblazor\\6.11.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\mudblazor\\6.11.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\mudblazor\\6.11.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\ADMIN\\.nuget\\packages\\mudblazor\\6.11.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\mudblazor\\6.11.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\quick.aspnetcore.components.web.extensions\\6.0.2\\staticwebassets\\headManager.js",

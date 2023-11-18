@@ -27,6 +27,8 @@ using _420BytesClient.App.Model.Ambiente.Interfaces;
 using _420BytesClient.App.Model.Ambiente;
 using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
 using _420BytesClient.App.ViewModels.Ambiente;
+using MatBlazor;
+using MudBlazor.Services;
 
 namespace _420BytesClient.App
 {
@@ -51,6 +53,7 @@ namespace _420BytesClient.App
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
 #endif
+            //builder.Services.AddMatBlazor();
             builder.Services.AddSingleton<IConexionRest, ConexionRest>();
             builder.Services.AddHttpClient();
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
@@ -77,24 +80,25 @@ namespace _420BytesClient.App
             builder.Services.AddScoped<IProveedorAutenticacionJWT, ProveedorAutenticacionJWT>(
                 provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
 
-      //      builder.Services.AddAuthenticationCore(JwtBearerDefaults.AuthenticationScheme)
-      //.AddJwtBearer(options =>
-      //{
-      //    options.TokenValidationParameters = new TokenValidationParameters
-      //    {
-      //        ValidateIssuer = true,
-      //        ValidIssuer = "https://localhost:7205",
+            //      builder.Services.AddAuthenticationCore(JwtBearerDefaults.AuthenticationScheme)
+            //.AddJwtBearer(options =>
+            //{
+            //    options.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateIssuer = true,
+            //        ValidIssuer = "https://localhost:7205",
 
-      //        ValidateAudience = true,
-      //        ValidAudience = "https://localhost:7205/api/Usuarios/ConsultaUsuarios",
+            //        ValidateAudience = true,
+            //        ValidAudience = "https://localhost:7205/api/Usuarios/ConsultaUsuarios",
 
-      //        ValidateLifetime = true,
-      //    };
-      //});
+            //        ValidateLifetime = true,
+            //    };
+            //});
 
 
             //ConfigureViewModels(builder.Services);
             //ConfigureModels(builder.Services);  
+            builder.Services.AddMudServices();
             return builder.Build();
         }
         private static void ConfigureViewModels(IServiceCollection services)
