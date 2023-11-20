@@ -19,6 +19,6 @@ namespace _420BytesClient.App.ViewModels.Usuarios.Interfaces
         Task ConsultarUsuarioPorCedulaAsync(int Cedula);
         Task ObtenerListaUsuariosAsync();
         Task InitializeAsync();
-        Task RegitrarUsuario(Usuario Usuario);
+        Task RegitrarUsuario(object Usuario);
     }
 }

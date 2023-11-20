@@ -1,0 +1,30 @@
+﻿@page "/Calendario"
+@using TestProyect.Services;
+@using _420BytesClient.DT.Scheduler;
+@* @inherits CalendarioViewModel *@
+@inject CalendarioViewModel ViewModel
+<h3>Calendario</h3>
+
+<SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@CurrentDate">
+    <ScheduleEvents TValue="AppointmentData"></ScheduleEvents>
+    <ScheduleEventSettings DataSource="ViewModel.Data"></ScheduleEventSettings>
+    <ScheduleViews>
+        <ScheduleView Option="View.Day"></ScheduleView>
+        <ScheduleView Option="View.Week"></ScheduleView>
+        <ScheduleView Option="View.Month"></ScheduleView>
+        <ScheduleView Option="View.Agenda"></ScheduleView>
+        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+        <ScheduleView Option="View.TimelineDay"></ScheduleView>
+        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+        <ScheduleView Option="View.Year"></ScheduleView>
+    </ScheduleViews>
+</SfSchedule>
+
+@code {
+    DateTime CurrentDate = DateTime.Now;
+    protected async override Task OnInitializedAsync()
+    {
+        await ViewModel.ObtenerPorDocAsync(1, 3, 1);
+        StateHasChanged();
+    }
+}

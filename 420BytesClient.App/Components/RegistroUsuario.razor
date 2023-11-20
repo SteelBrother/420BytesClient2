@@ -1,0 +1,115 @@
+﻿@using System.ComponentModel.DataAnnotations;
+@using _420BytesClient.App.ViewModels.Usuarios.Interfaces;
+@using _420BytesClient.App.ViewModels.Usuarios;
+@using _420BytesClient.DT.Usuario;
+@inject IIndiceUsuarios_ViewModel IIndiceUsuarios_ViewModel
+
+<MudDialog>
+    <DialogContent>
+        <EditForm Model="@IIndiceUsuarios_ViewModel.Usuario" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <MudGrid>
+                <MudItem xs="12" sm="12">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudTextField Label="Cedula" HelperText="Max. 8 characters"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.UsuarioID" For="@(() => IIndiceUsuarios_ViewModel.Usuario.UsuarioID)" />
+                            <MudTextField Label="Nombre" Class="mt-3"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.NombreUsuario" For="@(() => IIndiceUsuarios_ViewModel.Usuario.NombreUsuario)" />
+                            <MudTextField Label="NickName" HelperText="Max. 8 characters"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.NickName" For="@(() => IIndiceUsuarios_ViewModel.Usuario.NickName)" />
+                            <MudTextField Label="Email" Class="mt-3"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.Email" For="@(() => IIndiceUsuarios_ViewModel.Usuario.Email)" />
+                            <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.Password" For="@(() => IIndiceUsuarios_ViewModel.Usuario.Password)" InputType="InputType.Password" />
+                            <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                            @bind-Value="model.Password2" For="@(() => model.Password2)" InputType="InputType.Password" />
+                            <MudTextField Label="Ciudad" HelperText="Max. 8 characters"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.Ciudad" For="@(() => IIndiceUsuarios_ViewModel.Usuario.Ciudad)" />
+                            <MudTextField Label="Pais" HelperText="Max. 8 characters"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.Pais" For="@(() => IIndiceUsuarios_ViewModel.Usuario.Pais)" />
+                            <MudTextField Label="Edad" HelperText="Debes ser mayor de edad"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.Edad" For="@(() => IIndiceUsuarios_ViewModel.Usuario.Edad)" />
+                            <MudTextField T="DateTime" Format="yyyy-MM-dd" Label="Fecha de nacimiento" HelperText="Debes ser mayor de edad" InputType="InputType.Date"
+                            @bind-Value="IIndiceUsuarios_ViewModel.Usuario.FechaNacimiento" For="@(() => IIndiceUsuarios_ViewModel.Usuario.FechaNacimiento)" />
+
+                        </MudCardContent>
+                        <MudCardActions>
+                            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Register</MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                </MudItem>
+
+            </MudGrid>
+        </EditForm>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>
+
+
+
+@code {
+
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    void Submit() => MudDialog.Close(DialogResult.Ok(true));
+    void Cancel() => MudDialog.Cancel();
+    private Usuario UsuarioLlenar = new Usuario();
+    RegisterAccountForm model = new RegisterAccountForm();
+    bool success;
+    public class RegisterAccountForm
+    {
+        [Required]
+        [StringLength(8, ErrorMessage = "Name length can't be more than 8.")]
+        public string Username { get; set; }
+
+        [Required]
+        [StringLength(30, ErrorMessage = "Nombre must be at least 8 characters long.", MinimumLength = 8)]
+        public string NombreUsuario { get; set; }
+
+        [Required]
+        [StringLength(30, ErrorMessage = "NickName must be at least 8 characters long.", MinimumLength = 8)]
+        public string NickName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [StringLength(30, ErrorMessage = "Password must be at least 8 characters long.", MinimumLength = 8)]
+        public string Password { get; set; }
+
+        [Required]
+        [Compare(nameof(Password))]
+        public string Password2 { get; set; }
+
+        [Required]
+        [StringLength(30, ErrorMessage = "Ciudad must be at least 8 characters long.", MinimumLength = 8)]
+        public string Ciudad { get; set; }
+
+        [Required]
+        [StringLength(30, ErrorMessage = "Pais must be at least 8 characters long.", MinimumLength = 8)]
+        public string Pais { get; set; }
+
+        [Required]
+        public string Edad { get; set; }
+
+        [Required]
+        public string FechaNacimiento { get; set; }
+
+    }
+    // public async Task RegistrarUsuario()
+    // {
+    //     await IIndiceUsuarios_ViewModel.RegitrarUsuario(Usuario);
+    // }
+    private async void OnValidSubmit(EditContext context)
+    {
+        // var x = context.Model
+        await IIndiceUsuarios_ViewModel.RegitrarUsuario(context.Model);
+        success = true;
+        StateHasChanged();
+    }
+}

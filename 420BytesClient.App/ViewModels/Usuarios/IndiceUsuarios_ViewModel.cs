@@ -39,7 +39,7 @@ namespace _420BytesClient.App.ViewModels.Usuarios
             }
         }
 
-        public Usuario Usuario { get; set; }
+        public Usuario Usuario { get; set; } = new Usuario();
         public bool Respuesta { get; set; } = false;
        
         public event PropertyChangedEventHandler PropertyChanged;
@@ -83,9 +83,10 @@ namespace _420BytesClient.App.ViewModels.Usuarios
         {
             Usuarios = await IGestionUsuariosModel.ConsultarUsuarios();
         }
-        public async Task RegitrarUsuario(Usuario Usuario)
+        public async Task RegitrarUsuario(object Usuario)
         {
-            Respuesta = await IGestionUsuariosModel.RegistrarUsuario(Usuario);
+            var usu = (Usuario)Usuario;
+            Respuesta = await IGestionUsuariosModel.RegistrarUsuario(usu);
             await ObtenerListaUsuariosAsync();
         }
     }

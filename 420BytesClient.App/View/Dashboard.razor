@@ -1,0 +1,264 @@
+﻿@page "/dashboard"
+@using MatBlazor
+@using Syncfusion.Blazor.Buttons
+@using _420BytesClient.App.ViewModels.Scheduler.Interfaces;
+@using _420BytesClient.DT.Scheduler;
+@inject ISnackbar Snackbar
+@inject IAppointment_ViewModel IAppointment_ViewModel
+@inject IJSRuntime js
+
+<div style="max-width:100%">
+    @*  <h2 style="width:100%">Fecha+ Ciudad + Datos Climaticos</h2> *@
+
+    <MudCarousel Class="mud-width-full" @ref="_carousel" ItemsSource="@IAppointment_ViewModel._source" @bind-SelectedIndex="selectedIndex" Style="height:1000px;" ShowArrows="@_arrows" ShowBullets="@_bullets" EnableSwipeGesture="@_enableSwipeGesture" AutoCycle="@_autocycle">
+        <ItemTemplate>
+            <div class="d-flex flex-column flex-column justify-center">
+                @*  <MudItem md="12" xs="12" lg="12" >
+
+                <MudAlert Severity="Severity.Warning"  Variant="Variant.Outlined" Square="true" Class="my-2">Warning Square</MudAlert>
+
+                </MudItem> *@
+                @* <MudImage Src="/images/lunallena.png" style="width:5%;height:5%" Alt="Luna Llena" Elevation="25" Class="rounded-lg" /> *@
+                @* <MudImage Src="/images/lunamenguante.png" style="width:5%;height:5%; position: absolute; right: 0; top: 0;" Alt="Menguante" Elevation="20" Class="rounded-lg" /> *@
+
+                <br />
+                <MudText Align="@Align.Center" Class="mx-auto"><h2>@context</h2></MudText>
+                <br />
+
+                <MudTabs Elevation="4" Rounded="true" Color="Color.Dark">
+                    @foreach (var planta in @IAppointment_ViewModel.Plantas)
+                    {
+                        <MudTabPanel Text="@planta.NombrePlanta" />
+                    }
+
+                </MudTabs>
+                <br>
+                <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
+                    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
+                    <ScheduleEventSettings DataSource="@Citas"></ScheduleEventSettings>
+                    <ScheduleViews>
+                        <ScheduleView Option="View.Day"></ScheduleView>
+                        <ScheduleView Option="View.Week"></ScheduleView>
+                        <ScheduleView Option="View.Month"></ScheduleView>
+                        <ScheduleView Option="View.Agenda"></ScheduleView>
+                        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+                        <ScheduleView Option="View.TimelineDay"></ScheduleView>
+                        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+                        <ScheduleView Option="View.Year"></ScheduleView>
+                    </ScheduleViews>
+                </SfSchedule>
+            </div>
+            <br />
+        </ItemTemplate>
+
+    </MudCarousel>
+    <div>
+        <MudText Align="Align.Center" Typo="Typo.h6">Datos de la humedad al mes</MudText>
+        <MudChart ChartType="ChartType.Line" ChartSeries="@Series" @bind-SelectedIndex="Indexx" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+        <MudText Align="Align.Center" Typo="Typo.h6">Datos de la temperatura al mes</MudText>
+        <MudChart ChartType="ChartType.Line" ChartSeries="@Series" @bind-SelectedIndex="Indexx" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
+
+    </div>
+    <div>
+        <MudText Align="Align.Center" Typo="Typo.h6">Consumo del agua al mes</MudText>
+        <MudChart ChartType="ChartType.Bar" ChartSeries="@Seriess" @bind-SelectedIndex="Indexss" XAxisLabels="@XAxisLabelss" Width="100%" Height="350px"></MudChart>
+
+    </div>
+</div>
+
+
+@*
+<MudTabs Elevation="4" Rounded="true" Color="@Color.Success" PrevIcon="@Icons.Material.Filled.SkipPrevious" NextIcon="@Icons.Material.Filled.SkipNext">
+    <MudTabPanel Text="Ambiente 1" Icon="@Icons.Material.Filled.FilterVintage" />
+    <MudTabPanel Text="Ambiente 2" Icon="@Icons.Material.Filled.FilterVintage"  />
+    <MudTabPanel Text="Ambiente 3" Icon="@Icons.Material.Filled.FilterVintage" />
+    <MudTabPanel Text="Ambiente 4" Icon="@Icons.Material.Filled.FilterVintage" />
+</MudTabs>
+ *@
+@* <MudTabs Elevation="4" Rounded="true" Color="@Color.Success">
+    <MudTabPanel Text="Planta 1" />
+    <MudTabPanel Text="Planta 2" />
+</MudTabs>
+<br />
+<hr>
+<br /> *@
+
+@* <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
+    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
+    <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
+    <ScheduleViews>
+        <ScheduleView Option="View.Day"></ScheduleView>
+        <ScheduleView Option="View.Week"></ScheduleView>
+        <ScheduleView Option="View.Month"></ScheduleView>
+        <ScheduleView Option="View.Agenda"></ScheduleView>
+        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+        <ScheduleView Option="View.TimelineDay"></ScheduleView>
+        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+        <ScheduleView Option="View.Year"></ScheduleView>
+    </ScheduleViews>
+</SfSchedule>
+<MudExpansionPanels DisableBorders="true" Elevation="0">
+    <MudExpansionPanel Text="Datos Sensores">
+        <Usuarios></Usuarios>
+    </MudExpansionPanel>
+</MudExpansionPanels>
+<MudExpansionPanels DisableBorders="true" Elevation="0">
+    <MudExpansionPanel Text="Graficos">
+        <MudChart ChartType="ChartType.Donut" LegendPosition="@LegendPosition" Width="300px" Height="300px"
+                  InputData="@data" InputLabels="@labels">
+        </MudChart>
+
+    </MudExpansionPanel>
+</MudExpansionPanels> *@
+@* <MatAccordion>
+    <MatExpansionPanel @bind-Expanded="@panelOpenState">
+        <MatExpansionPanelSummary>
+            <MatExpansionPanelHeader>Datos Sensores</MatExpansionPanelHeader>
+        </MatExpansionPanelSummary>
+        <MatExpansionPanelDetails>
+            <Usuarios></Usuarios>
+        </MatExpansionPanelDetails>
+    </MatExpansionPanel>
+</MatAccordion>
+ *@
+
+@code {
+    private MudCarousel<string> _carousel;
+    private bool _arrows = true;
+    private bool _bullets = true;
+    private bool _enableSwipeGesture = true;
+    private bool _autocycle = false;
+    private IList<string> _source = new List<string>() { "Ambiente 1", "Ambiente 2" };
+    private int selectedIndex = 0;
+
+    private int Indexx = -1; //default value cannot be 0 -> first selectedindex is 0.
+    private int Indexss = -1; //default value cannot be 0 -> first selectedindex is 0.
+
+    public List<ChartSeries> Series = new List<ChartSeries>()
+    {
+        new ChartSeries() { Name = "United States", Data = new double[] { 40, 20, 25, 27, 46, 60, 48, 80, 15 } },
+        new ChartSeries() { Name = "Germany", Data = new double[] { 19, 24, 35, 13, 28, 15, 13, 16, 31 } },
+        new ChartSeries() { Name = "Sweden", Data = new double[] { 8, 6, 11, 13, 4, 16, 10, 16, 18 } },
+    };
+    public string[] XAxisLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+
+    public List<ChartSeries> Seriess = new List<ChartSeries>()
+    {
+        new ChartSeries() { Name = "Series 1", Data = new double[] { 90, 79, 72, 69, 62, 62, 55, 65, 70 } },
+        new ChartSeries() { Name = "Series 2", Data = new double[] { 10, 41, 35, 51, 49, 62, 69, 91, 148 } },
+    };
+    public string[] XAxisLabelss = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+
+    Random random = new Random();
+    public void RandomizeData()
+    {
+        var new_series = new List<ChartSeries>()
+        {
+            new ChartSeries() { Name = "Series 1", Data = new double[9] },
+            new ChartSeries() { Name = "Series 2", Data = new double[9] },
+        };
+        for (int i = 0; i < 9; i++)
+        {
+            new_series[0].Data[i] = random.NextDouble() * 100;
+            new_series[1].Data[i] = random.NextDouble() * 100;
+        }
+        Series = new_series;
+        StateHasChanged();
+    }
+
+    List<AppointmentData> Citas = new List<AppointmentData>();
+
+    bool panelOpenState;
+    public int tabIndex = 0;
+    int activeIndex = 0;
+    int activeIndex2 = 0;
+    // protected async override Task OnInitializedAsync()
+    // {
+    //     await IAppointment_ViewModel.ObtenerTodoPorDocumentoAsync();
+    // }
+    void ChangeTab(EventCallback<int> dato)
+    {
+        tabIndex = tabIndex < 3 ? tabIndex + 1 : 0;
+    }
+    public void RunOnClick(MouseEventArgs e)
+    {
+        js.InvokeAsync<object>("window.alert", "Test");
+    }
+    private int _index = 0;
+    private int? _nextIndex = null;
+    public double[] data = { 25, 77, 28, 5 };
+    public string[] labels = { "Oil", "Coal", "Gas", "Biomass" };
+    public Position LegendPosition { get; set; } = Position.Right;
+    protected async override Task OnInitializedAsync()
+    {
+        Citas = await IAppointment_ViewModel.ObtenerTodoPorDocumentoAsync();
+        await IAppointment_ViewModel.ConsultarAmbientes(1);
+        // await IAppointment_ViewModel.ConsultarPlantas(3);
+        StateHasChanged();
+        // base.OnInitialized();
+    }
+
+
+    private async Task AddAsync()
+    {
+        _source.Add($"Item {_source.Count + 1}");
+        await Task.Delay(1);
+        _carousel.MoveTo(_source.Count - 1);
+    }
+
+    private async Task DeleteAsync(int index)
+    {
+        if (_source.Any())
+        {
+            _source.RemoveAt(index);
+            await Task.Delay(1);
+            _carousel.MoveTo(System.Math.Max(System.Math.Min(index, _source.Count - 1), 0));
+        }
+
+    }
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (_nextIndex.HasValue == true)
+        {
+            _index = _nextIndex.Value;
+            _nextIndex = null;
+            StateHasChanged();
+        }
+    }
+
+    public async void OnActionBegin(ActionEventArgs<AppointmentData> args)
+    {
+        switch (args.ActionType)
+        {
+            case ActionType.EventCreate:
+                await IAppointment_ViewModel.AgregarCitaAsync(args.AddedRecords.FirstOrDefault());
+                Snackbar.Add("Dato guardado con exito");
+                break;
+            case ActionType.EventRemove:
+                await IAppointment_ViewModel.BorrarCitaAsync(args.DeletedRecords.FirstOrDefault().Id);
+                Snackbar.Add("Dato eliminado con exito");
+                break;
+            case ActionType.EventChange:
+                await IAppointment_ViewModel.ActualizarCitaAsync(args.ChangedRecords.FirstOrDefault());
+                Snackbar.Add("Dato actualizado con exito");
+                break;
+            case ActionType.DateNavigate:
+                var w = 1;
+                break;
+            case ActionType.ViewNavigate:
+                var g = 1;
+                break;
+            default:
+                break;
+        }
+    }
+
+} 

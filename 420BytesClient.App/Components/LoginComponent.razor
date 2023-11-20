@@ -1,9 +1,64 @@
-﻿<div class="Container">
-    <div class="row">
-        <div class="col-sm-12">
-            <EditForm>
+﻿@using _420BytesClient.App.ViewModels.Auth.Interfaces;
+@using _420BytesClient.DT.Usuario;
+@inject IDialogService DialogService
+@inject IAuth_ViewModel IAuth_ViewModel_
+@inject NavigationManager NavigationManager
 
-            </EditForm>
-        </div>
-    </div>
-</div>
+
+
+<MudContainer Class="d-flex justify-content-center align-items-center h-100">
+    <MudPaper Elevation="4" Class="p-4">
+        <EditForm Model="@IAuth_ViewModel_.Usuario" OnValidSubmit="AuthUsuario">
+            <DataAnnotationsValidator />
+            <MudGrid Class="text-center">
+                <MudItem xs="12" sm="12">
+                    <MudCard>
+                        <MudItem xs="12">
+                            <MudText Typo="Typo.body2" Align="Align.Center">
+                                ¡Hola, por favor ingresa tus credenciales para poder continuar!
+                            </MudText>
+                        </MudItem>
+                        <MudCardContent Class="my-3">
+                            <MudTextField Label="NickName" @bind-Value="@IAuth_ViewModel_.Usuario.NickName" />
+                            <ValidationMessage For="@(() => IAuth_ViewModel_.Usuario.NickName)" Class="mt-1" />
+
+                            <MudTextField Label="Contraseña" @bind-Value="@IAuth_ViewModel_.Usuario.Password" InputType="InputType.Password" Class="mt-3" />
+                            <ValidationMessage For="@(() => IAuth_ViewModel_.Usuario.Password)" Class="mt-1" />
+                        </MudCardContent>
+                        <MudCardActions Class="justify-content-center">
+                            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="mx-2">Ingresar</MudButton>
+                            <MudButton @onclick="OpenDialog" Variant="Variant.Filled" Color="Color.Primary">
+                                Registrar
+                            </MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+        </EditForm>
+    </MudPaper>
+</MudContainer>
+
+
+
+@code
+{
+    public Usuario _Usuario { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        // await CambiarContrasenaViewModel.InicializaViewModel();
+    }
+
+    public async Task AuthUsuario()
+    {
+        await IAuth_ViewModel_.Login();
+        NavigationManager.NavigateTo("/");
+        StateHasChanged();
+    }
+    bool license_accepted = false;
+
+    private void OpenDialog()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true };
+        DialogService.Show<RegistroUsuario>("Registro", options);
+    }
+}

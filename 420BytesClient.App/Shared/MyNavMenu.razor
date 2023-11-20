@@ -1,16 +1,16 @@
-﻿@* <MudNavMenu>
-    <MudNavLink Href="/" Match="NavLinkMatch.All">Dashboard</MudNavLink>
+﻿<MudNavMenu>
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Style="@($"text-decoration: none;")">Dashboard</MudNavLink>
     <MudNavLink Href="/servers" Match="NavLinkMatch.Prefix">Servers</MudNavLink>
     <MudNavGroup Title="Settings" Expanded="true">
         <MudNavLink Href="/login" Match="NavLinkMatch.Prefix">Users</MudNavLink>
-        <MudNavLink Href="/security" Match="NavLinkMatch.Prefix">Security</MudNavLink>
+        <MudNavLink Href="/counter" Match="NavLinkMatch.Prefix">Security</MudNavLink>
     </MudNavGroup>
     <MudNavLink Href="/about" Match="NavLinkMatch.Prefix">About</MudNavLink>
 </MudNavMenu>
- *@
 
-<MudPaper Width="250px" Elevation="0" Class="py-3">
-    <MudNavMenu Color="Color.Info">
+
+@* <MudPaper Width="250px" Elevation="0" Class="py-3">
+    <MudNavMenu Style="@($"color:{Colors.Green.Darken4}; background:{Colors.Green.Lighten2};")">
         <MudNavLink Href="/dashboard" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
         <MudNavLink Href="/components/navmenu" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Storage">Servers</MudNavLink>
         <MudNavLink Href="/billing" Disabled="true">Billing</MudNavLink>
@@ -24,6 +24,7 @@
 <MudPaper Width="250px" Elevation="0" Class="py-3">
     <MudNavMenu Color="Color.Success" Bordered="true">
         <MudNavLink Href="/dashboard" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+
         <MudNavLink Href="/components/navmenu" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Storage">Servers</MudNavLink>
         <MudNavLink Href="/billing" Disabled="true">Billing</MudNavLink>
         <MudNavGroup Title="Settings" Expanded="true">
@@ -32,4 +33,4 @@
         </MudNavGroup>
         <MudNavLink Href="/about">About</MudNavLink>
     </MudNavMenu>
-</MudPaper>
+</MudPaper> *@

@@ -1,4 +1,5 @@
 ﻿using _420BytesClient.DT.Ambiente;
+using _420BytesClient.DT.Plantas;
 using _420BytesClient.DT.Usuario;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.SignalR.Client;
@@ -19,6 +20,7 @@ namespace _420BytesClient.App.ViewModels.Usuarios
         public RegistroTemperaturaAmbiente RegistroTemperaturaAmbiente { get; set; } = new RegistroTemperaturaAmbiente();
         public RegistroHumedadAmbiente RegistroHumedadAmbiente { get; set; } = new RegistroHumedadAmbiente();
         public RegistroIntensidadLuz RegistroIntensidadLuz { get; set; } = new RegistroIntensidadLuz();
+        public RegistroNivelAgua RegistroNivelAgua { get; set; } = new RegistroNivelAgua();
 
         public UsuariosViewModel()
         {
@@ -26,14 +28,6 @@ namespace _420BytesClient.App.ViewModels.Usuarios
                 .WithUrl(url)  
                 .Build();
 
-            //_hubConnection.On<List<Usuario>>("UsuariosActualizados", async (users) =>
-            //{
-            //    await InvokeAsync(() =>
-            //    {
-            //        Usuarios = users;
-            //        StateHasChanged(); 
-            //    });
-            //});
             _hubConnection.On<RegistroTemperaturaAmbiente>("TemperaturaAmbiente", async (Temp) =>
             {
                 await InvokeAsync(() =>
@@ -55,6 +49,14 @@ namespace _420BytesClient.App.ViewModels.Usuarios
                 await InvokeAsync(() =>
                 {
                     RegistroIntensidadLuz = Lum;
+                    StateHasChanged();
+                });
+            });
+            _hubConnection.On<RegistroNivelAgua>("NivelAguaPlanta", async (NivAg) =>
+            {
+                await InvokeAsync(() =>
+                {
+                    RegistroNivelAgua = NivAg;
                     StateHasChanged();
                 });
             });

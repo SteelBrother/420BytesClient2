@@ -1,4 +1,6 @@
-﻿using _420BytesClient.DT.Scheduler;
+﻿using _420BytesClient.DT.Ambiente;
+using _420BytesClient.DT.Plantas;
+using _420BytesClient.DT.Scheduler;
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.Blazor.Schedule;
 using System;
@@ -14,8 +16,8 @@ namespace _420BytesClient.App.ViewModels.Scheduler.Interfaces
         int Id { get; set; }
         string Subject { get; set; }
         string Location { get; set; }
-        DateTime StartTime { get; set; }
-        DateTime EndTime { get; set; }
+        DateTimeOffset StartTime { get; set; }
+        DateTimeOffset EndTime { get; set; }
         string Description { get; set; }
         bool IsAllDay { get; set; }
         string RecurrenceRule { get; set; }
@@ -25,8 +27,12 @@ namespace _420BytesClient.App.ViewModels.Scheduler.Interfaces
 
         DateTime CurrentDate { get; set; }
         List<AppointmentData> DataSource { get; set; }
-
-        Task ObtenerTodoPorDocumentoAsync();
+        List<Ambiente2> Ambientes { get; set; }
+        List<Planta2> Plantas { get; set; }
+        IList<string> _source { get; set; }
+        Task<List<AppointmentData>> ObtenerTodoPorDocumentoAsync();
+        Task ConsultarAmbientes(int Cedula);
+        Task ConsultarPlantas(int IdAmbiente);
         Task AgregarCitaAsync(AppointmentData AppointmentData);
         Task ActualizarCitaAsync(AppointmentData AppointmentData);
         Task BorrarCitaAsync(int Id);

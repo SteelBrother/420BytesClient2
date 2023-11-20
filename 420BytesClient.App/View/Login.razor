@@ -1,27 +1,44 @@
 ﻿@page "/login"
 @using _420BytesClient.App.ViewModels.Auth.Interfaces;
 @using _420BytesClient.DT.Usuario;
+@inject IDialogService DialogService
 @inject IAuth_ViewModel IAuth_ViewModel_
 
-<EditForm Model="@IAuth_ViewModel_.Usuario" OnValidSubmit="AuthUsuario">
-    <DataAnnotationsValidator />
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <div class="fadeIn first">
-            </div>
-            <br>
-            <div class="fadeIn first">
-                <h4>¡Hola, por favor ingresa tus credenciales para poder continuar.</h4>
-            </div>
-            <input class="fadeIn third" id="NickName" @bind="@IAuth_ViewModel_.Usuario.NickName" name="NickName" placeholder="NickName" />
-            @* <InputPassword class="fadeIn third" id="password" @bind="@IAuth_ViewModel_.Usuario.Password" name="password" placeholder="Contraseña" /> *@
-            <input type="password" @bind="@IAuth_ViewModel_.Usuario.Password" />
-            <input type="submit" class="fadeIn fourth" value="Ingresar">
-            <div id="formFooter">
-            </div>
-        </div>
-    </div>
-</EditForm>
+
+
+<MudContainer Class="d-flex justify-content-center align-items-center h-100">
+    <MudPaper Elevation="4" Class="p-4">
+        <EditForm Model="@IAuth_ViewModel_.Usuario" OnValidSubmit="AuthUsuario">
+            <DataAnnotationsValidator />
+            <MudGrid Class="text-center">
+                <MudItem xs="12" sm="12">
+                    <MudCard>
+                        <MudItem xs="12">
+                            <MudText Typo="Typo.body2" Align="Align.Center">
+                                ¡Hola, por favor ingresa tus credenciales para poder continuar!
+                            </MudText>
+                        </MudItem>
+                        <MudCardContent Class="my-3">
+                            <MudTextField Label="NickName" @bind-Value="@IAuth_ViewModel_.Usuario.NickName" />
+                            <ValidationMessage For="@(() => IAuth_ViewModel_.Usuario.NickName)" Class="mt-1" />
+
+                            <MudTextField Label="Contraseña" @bind-Value="@IAuth_ViewModel_.Usuario.Password" InputType="InputType.Password" Class="mt-3" />
+                            <ValidationMessage For="@(() => IAuth_ViewModel_.Usuario.Password)" Class="mt-1" />
+                        </MudCardContent>
+                        <MudCardActions Class="justify-content-center">
+                            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="mx-2">Ingresar</MudButton>
+                            <MudButton @onclick="OpenDialog" Variant="Variant.Filled" Color="Color.Primary">
+                                Registrar
+                            </MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+        </EditForm>
+    </MudPaper>
+</MudContainer>
+
+
 
 @code
 {
@@ -34,6 +51,13 @@
     public async Task AuthUsuario()
     {
         await IAuth_ViewModel_.Login();
-        // await IIndiceUsuarios_ViewModel.
+        StateHasChanged();
+    }
+    bool license_accepted = false;
+
+    private void OpenDialog()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true };
+        DialogService.Show<RegistroUsuario>("¡Registrate!", options);
     }
 }

@@ -14,7 +14,7 @@ namespace _420BytesClient.DT.Scheduler
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public string? Description { get; set; }
-        public bool IsAllDay { get; set; }
+        public bool IsAllDay { get; set; } = false;
         public string? RecurrenceRule { get; set; }
         public string? RecurrenceException { get; set; }
         public Nullable<int> RecurrenceID { get; set; }

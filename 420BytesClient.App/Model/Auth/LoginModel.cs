@@ -55,6 +55,7 @@ namespace _420BytesClient.App.Model.Auth
                         if (httpResponse.Response.Expiration.Date >= DateTime.Now.Date)
                         {
                             await authModel.Login(httpResponse.Response);
+                            
                             navigationManager.NavigateTo("/");
                         }
                         else

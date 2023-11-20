@@ -1,0 +1,41 @@
+﻿@page "/RegistroPlantas"
+@inject IDialogService DialogService
+
+<h3>Registre sus plantas</h3>
+
+<div class="mx-auto" style="max-width: 400px;">
+    <MudExpansionPanels>
+        <MudExpansionPanel>
+            <TitleContent>
+                <div class="d-flex">
+                    <MudImage Src="..\wwwroot\Images\pngegg.png" Alt="" Elevation="25" Class="rounded-lg" />
+                    <MudText>Panel header as <strong>RenderFragment</strong></MudText>
+                </div>
+            </TitleContent>
+            <ChildContent>
+                Panel Content
+            </ChildContent>
+        </MudExpansionPanel>
+    </MudExpansionPanels>
+</div>
+<MudTooltip Text="Add">
+    <MudFab StartIcon="@Icons.Material.Filled.Add" @onclick="OpenDialog" Color="Color.Secondary" Class="fixed-bottom-right" />
+</MudTooltip>
+
+<style scoped>
+    .fixed-bottom-right {
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        z-index: 1000;
+    }
+</style>
+@code
+{
+    bool isOpen;
+    private void OpenDialog()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true };
+        DialogService.Show<RegistroAmbienteComponent>("Registro", options);
+    }
+}

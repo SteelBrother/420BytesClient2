@@ -29,6 +29,7 @@ using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
 using _420BytesClient.App.ViewModels.Ambiente;
 using MatBlazor;
 using MudBlazor.Services;
+using _420BytesClient.App.View;
 
 namespace _420BytesClient.App
 {
@@ -49,8 +50,9 @@ namespace _420BytesClient.App
             {
                 options.EnableRippleEffect = true;
             });
+			builder.Services.AddSingleton<PantallaCarga>(new PantallaCarga()); // Cambia "MainPage" por la página que desees iniciar
 #if DEBUG
-            builder.Services.AddBlazorWebViewDeveloperTools();
+			builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
 #endif
             //builder.Services.AddMatBlazor();
@@ -79,6 +81,8 @@ namespace _420BytesClient.App
                 provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
             builder.Services.AddScoped<IProveedorAutenticacionJWT, ProveedorAutenticacionJWT>(
                 provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
+
+
 
             //      builder.Services.AddAuthenticationCore(JwtBearerDefaults.AuthenticationScheme)
             //.AddJwtBearer(options =>

@@ -1,0 +1,23 @@
+﻿@inject NavigationManager NavigationManager
+
+<h1>Black</h1>
+
+@if (showLogo)
+{
+    <div class="logo-container">
+        <!-- Reemplaza con la ruta de tu logo -->
+        <img src="ruta/a/tu/logo.png" alt="Logo de mi empresa" />
+    </div>
+}
+
+@code {
+    private bool showLogo = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(3000); // Espera 3 segundos
+        showLogo = false;
+
+        NavigationManager.NavigateTo("/feed"); // Reemplaza con la ruta de tu siguiente página
+    }
+}

@@ -11,6 +11,8 @@ namespace _420BytesClient.DT.DTOs
     {
         public int Id { get; set; }
         public int Doc { get; set; }
+        public int IdAmbiente { get; set; }
+        public int IdPlanta { get; set; }
         public AppointmentData? AppointmentData { get; set; }
     }
 }

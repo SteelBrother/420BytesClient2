@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-18T22:55:18.551</Modified>
+      <Modified>2023-11-20T17:08:24.643</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-18T22:55:17.115</Modified>
+      <Modified>2023-11-20T17:06:39.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.runtimeconfig.json">
       <PackagePath>420BytesClient.App.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-18T22:55:16.784</Modified>
+      <Modified>2023-11-20T16:05:45.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.dll">
       <PackagePath>420BytesClient.App.dll</PackagePath>
-      <Modified>2023-11-18T22:55:13.745</Modified>
+      <Modified>2023-11-20T17:08:22.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>420BytesClient.App.exe</PackagePath>
-      <Modified>2023-11-18T22:55:13.782</Modified>
+      <Modified>2023-11-20T17:08:22.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\appsettings.json">
       <PackagePath>appsettings.json</PackagePath>
@@ -55,7 +55,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.deps.json">
       <PackagePath>420BytesClient.App.deps.json</PackagePath>
-      <Modified>2023-11-18T22:55:16.635</Modified>
+      <Modified>2023-11-20T16:05:45.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.12\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -2343,7 +2343,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.DT\bin\Debug\net6.0\420BytesClient.DT.dll">
       <PackagePath>420BytesClient.DT.dll</PackagePath>
-      <Modified>2023-11-18T22:54:28.889</Modified>
+      <Modified>2023-11-20T16:22:46.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.96\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -2363,11 +2363,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\420BytesClient.App.styles.css">
       <PackagePath>wwwroot\420BytesClient.App.styles.css</PackagePath>
-      <Modified>2023-11-18T22:55:02.317</Modified>
+      <Modified>2023-11-20T16:05:30.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\420BytesClient.App.bundle.scp.css">
       <PackagePath>wwwroot\420BytesClient.App.bundle.scp.css</PackagePath>
-      <Modified>2023-11-18T22:55:02.319</Modified>
+      <Modified>2023-11-20T16:05:30.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
@@ -2425,9 +2425,57 @@
       <PackagePath>wwwroot\favicon.ico</PackagePath>
       <Modified>2023-10-27T18:33:33.688</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedad.jpg">
+      <PackagePath>wwwroot\Images\humedad.jpg</PackagePath>
+      <Modified>2023-11-20T17:04:59.882</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER09.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER09.png</PackagePath>
+      <Modified>2023-11-20T16:01:55.255</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER10.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER10.png</PackagePath>
+      <Modified>2023-11-20T16:02:04.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER11.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER11.png</PackagePath>
+      <Modified>2023-11-20T16:02:16.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER12.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER12.png</PackagePath>
+      <Modified>2023-11-20T16:02:22.429</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER13.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER13.png</PackagePath>
+      <Modified>2023-11-20T16:02:29.910</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER14.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER14.png</PackagePath>
+      <Modified>2023-11-20T16:02:37.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER15.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER15.png</PackagePath>
+      <Modified>2023-11-20T16:01:43.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunallena.png">
+      <PackagePath>wwwroot\Images\lunallena.png</PackagePath>
+      <Modified>2023-11-20T00:29:59.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunamediomenguante.png">
+      <PackagePath>wwwroot\Images\lunamediomenguante.png</PackagePath>
+      <Modified>2023-11-20T00:30:56.013</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunamenguante.png">
+      <PackagePath>wwwroot\Images\lunamenguante.png</PackagePath>
+      <Modified>2023-11-20T00:32:00.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\pngegg.png">
+      <PackagePath>wwwroot\Images\pngegg.png</PackagePath>
+      <Modified>2023-11-19T20:48:42.345</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2023-11-18T20:13:19.548</Modified>
+      <Modified>2023-11-20T14:58:07.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\js\signalr.js">
       <PackagePath>wwwroot\js\signalr.js</PackagePath>
@@ -2867,23 +2915,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.379</Modified>
+      <Modified>2023-11-20T16:05:41.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.402</Modified>
+      <Modified>2023-11-20T16:05:41.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.430</Modified>
+      <Modified>2023-11-20T16:05:41.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.473</Modified>
+      <Modified>2023-11-20T16:05:41.575</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.651</Modified>
+      <Modified>2023-11-20T16:05:41.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -2891,207 +2939,223 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-11-18T22:55:04.697</Modified>
+      <Modified>2023-11-20T16:05:41.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:05.043</Modified>
+      <Modified>2023-11-20T16:05:42.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:05.059</Modified>
+      <Modified>2023-11-20T16:05:42.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:05.074</Modified>
+      <Modified>2023-11-20T16:05:42.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:05.097</Modified>
+      <Modified>2023-11-20T16:05:42.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:05.185</Modified>
+      <Modified>2023-11-20T16:05:42.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.796</Modified>
+      <Modified>2023-11-20T16:05:41.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.802</Modified>
+      <Modified>2023-11-20T16:05:41.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.822</Modified>
+      <Modified>2023-11-20T16:05:41.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.807</Modified>
+      <Modified>2023-11-20T16:05:41.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.811</Modified>
+      <Modified>2023-11-20T16:05:41.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.768</Modified>
+      <Modified>2023-11-20T16:05:41.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.773</Modified>
+      <Modified>2023-11-20T16:05:41.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.792</Modified>
+      <Modified>2023-11-20T16:05:41.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.777</Modified>
+      <Modified>2023-11-20T16:05:41.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.782</Modified>
+      <Modified>2023-11-20T16:05:41.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.713</Modified>
+      <Modified>2023-11-20T16:05:41.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.718</Modified>
+      <Modified>2023-11-20T16:05:41.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.723</Modified>
+      <Modified>2023-11-20T16:05:41.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.728</Modified>
+      <Modified>2023-11-20T16:05:41.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.735</Modified>
+      <Modified>2023-11-20T16:05:41.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.739</Modified>
+      <Modified>2023-11-20T16:05:41.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.744</Modified>
+      <Modified>2023-11-20T16:05:41.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.763</Modified>
+      <Modified>2023-11-20T16:05:41.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.748</Modified>
+      <Modified>2023-11-20T16:05:41.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.753</Modified>
+      <Modified>2023-11-20T16:05:41.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.892</Modified>
+      <Modified>2023-11-20T16:05:41.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.899</Modified>
+      <Modified>2023-11-20T16:05:41.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.907</Modified>
+      <Modified>2023-11-20T16:05:41.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.919</Modified>
+      <Modified>2023-11-20T16:05:41.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.940</Modified>
+      <Modified>2023-11-20T16:05:42.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.857</Modified>
+      <Modified>2023-11-20T16:05:41.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.863</Modified>
+      <Modified>2023-11-20T16:05:41.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.868</Modified>
+      <Modified>2023-11-20T16:05:41.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.873</Modified>
+      <Modified>2023-11-20T16:05:41.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.885</Modified>
+      <Modified>2023-11-20T16:05:41.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.827</Modified>
+      <Modified>2023-11-20T16:05:41.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.832</Modified>
+      <Modified>2023-11-20T16:05:41.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.838</Modified>
+      <Modified>2023-11-20T16:05:41.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.843</Modified>
+      <Modified>2023-11-20T16:05:41.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.852</Modified>
+      <Modified>2023-11-20T16:05:41.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.950</Modified>
+      <Modified>2023-11-20T16:05:42.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.960</Modified>
+      <Modified>2023-11-20T16:05:42.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.970</Modified>
+      <Modified>2023-11-20T16:05:42.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.988</Modified>
+      <Modified>2023-11-20T16:05:42.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:05.031</Modified>
+      <Modified>2023-11-20T16:05:42.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.764</Modified>
+      <Modified>2023-11-20T16:05:41.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.779</Modified>
+      <Modified>2023-11-20T16:05:41.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.800</Modified>
+      <Modified>2023-11-20T16:05:41.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.827</Modified>
+      <Modified>2023-11-20T16:05:41.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-11-18T22:55:04.897</Modified>
+      <Modified>2023-11-20T16:05:41.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lunallena.scale-100.png">
+      <PackagePath>lunallena.scale-100.png</PackagePath>
+      <Modified>2023-11-20T00:29:59.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lunamenguante.scale-100.png">
+      <PackagePath>lunamenguante.scale-100.png</PackagePath>
+      <Modified>2023-11-20T00:32:00.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\primerambiente.scale-100.jpg">
+      <PackagePath>primerambiente.scale-100.jpg</PackagePath>
+      <Modified>2023-11-20T02:25:26.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\segundoambiente.scale-100.jpg">
+      <PackagePath>segundoambiente.scale-100.jpg</PackagePath>
+      <Modified>2023-11-20T02:25:58.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Components\CalendarioHorizontalComponent.razor.css">
       <PackagePath>Components\CalendarioHorizontalComponent.razor.css</PackagePath>
@@ -3103,7 +3167,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>
-      <Modified>2023-10-27T18:33:23.631</Modified>
+      <Modified>2023-11-19T21:55:08.777</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

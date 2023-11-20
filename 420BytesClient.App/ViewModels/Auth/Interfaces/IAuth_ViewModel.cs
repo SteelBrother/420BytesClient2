@@ -14,6 +14,5 @@ namespace _420BytesClient.App.ViewModels.Auth.Interfaces
 
         Task Login(string NickName, string Password);
         Usuario Usuario { get; set; }
-
     }
 }

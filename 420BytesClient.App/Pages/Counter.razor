@@ -10,7 +10,7 @@
             <h1>Usuarios</h1>
 
             <div>
-                <EditForm Model="UsuarioLlenar" OnValidSubmit="RegistrarUsuario">
+    @*             <EditForm Model="UsuarioLlenar" OnValidSubmit="RegistrarUsuario">
 
                     <p>Registrar usuario</p>
                     <input placeholder="Cedula" type="text" @bind="@UsuarioLlenar.Cedula" />
@@ -33,7 +33,7 @@
                     <input value="Guardar" Type="submit">
 
                 </EditForm>
-
+ *@
 
             </div>
 
@@ -54,12 +54,12 @@
                         </tr>
                         @foreach (var item in IIndiceUsuarios_ViewModel.Usuarios)
                         {
-                            <tr>
+                            @* <tr>
                                 <td><input @bind-value="@item.Cedula"> </td>
                                 <td><input @bind-value="@item.Nombre"> </td>
                                 <td><button @onclick="() => ActualizarUsuario2(item)">Actualizar</button> </td>
                                 <td><button @onclick="() => BorrarUsuario(item.Cedula)">Borrar</button> </td>
-                            </tr>
+                            </tr> *@
                         }
                     </table>
                 </div>

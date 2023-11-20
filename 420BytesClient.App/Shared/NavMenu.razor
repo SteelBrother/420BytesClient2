@@ -1,44 +1,69 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">420BytesClient.App</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿@using _420BytesClient.App.Helpers;
+@inject IJSRuntime JSRuntime
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
+
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="/feed" Match="NavLinkMatch.All">
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="/dashboard" Match="NavLinkMatch.All">
+                <MudIcon Icon="@Icons.Material.TwoTone.ControlCamera" Title="Reddit" /> Dashboard
+
             </NavLink>
         </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="RegistroAmbientes">
+                <span class="oi oi-plus" aria-hidden="true"></span> Registro Ambientes
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="RegistroPlantas">
+                <span class="oi oi-plus" aria-hidden="true"></span> Registro Plantas
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="sensores">
+                <span class="oi oi-plus" aria-hidden="true"></span> Live
+            </NavLink>
+        </div>
+
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="login">
                 <span class="oi oi-account-login" aria-hidden="true"></span> Login
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="usuarios">
-                <span class="oi oi-account-login" aria-hidden="true"></span> Login
-            </NavLink>
-        </div>
+
+
     </nav>
 </div>
 
 @code {
     private bool collapseNavMenu = true;
+    private bool estaAutenticado = false;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JSRuntime.GetFromLocalStorage("TOKEN");
+        estaAutenticado = !string.IsNullOrEmpty(token);
+        StateHasChanged(); // Llama a StateHasChanged() después de actualizar la propiedad
+    }
+    protected override async void OnParametersSet()
+    {
+        var token = await JSRuntime.GetFromLocalStorage("TOKEN");
+        estaAutenticado = !string.IsNullOrEmpty(token);
+        StateHasChanged();
+    }
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
 }

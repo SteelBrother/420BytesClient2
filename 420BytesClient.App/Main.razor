@@ -10,38 +10,3 @@
     </NotFound>
 </Router>
 
-@* <MatPortalHost></MatPortalHost> *@
-
-@* 
-
- <Router AppAssembly="@typeof(MauiProgram).Assembly" PreferExactMatches="@true">
-    <Found Context="routeData">
-        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
-            <Authorizing>
-
-                <div style="display: block; text-align: center;  width:100%;">
-                    <img alt="PEDWEB" style="margin-top: 250px; max-height: 100px; " src="img/icon-144.png" />
-                </div>
-                <div style="display: block; text-align: center; width: 100%; margin-top: 10px;">
-                    <p><b>Pedidos web se esta iniciando...</b></p>
-                </div>
-                <div class="d-flex justify-content-center" style="height: 60px; margin-top:50px;">
-                    <!--!--><div role="progressbar" class="matBlazor_theme_45bbd2da-affa-47b3-a3d5-a9f485cae009 mat-progress-circle mdc-circular-progress mdc-circular-progress--large mdc-circular-progress--indeterminate" style="" id="matBlazor_id_121ab190-35a3-4d09-9b1c-f0c93f4d6618" _bl_40="">
-                        <div class="mdc-circular-progress__determinate-container"><svg style="stroke:black;" class="mdc-circular-progress__determinate-circle-graphic" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle class="mdc-circular-progress__determinate-circle" cx="24" cy="24" r="18" stroke-dasharray="113.097" stroke-dashoffset="113.097"></circle></svg></div><!--!-->
-                        <div class="mdc-circular-progress__indeterminate-container"><div class="mdc-circular-progress__spinner-layer "><div class="mdc-circular-progress__circle-clipper mdc-circular-progress__circle-left"><svg style="stroke:black;" class="mdc-circular-progress__indeterminate-circle-graphic" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke-dasharray="113.097" stroke-dashoffset="56.549"></circle></svg></div><div class="mdc-circular-progress__gap-patch"><svg style="stroke:black;" class="mdc-circular-progress__indeterminate-circle-graphic" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke-dasharray="113.097" stroke-dashoffset="56.549"></circle></svg></div><div class="mdc-circular-progress__circle-clipper mdc-circular-progress__circle-right"><svg style="stroke:black;" class="mdc-circular-progress__indeterminate-circle-graphic" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke-dasharray="113.097" stroke-dashoffset="56.549"></circle></svg></div></div></div>
-                    </div>
-                </div>
-            </Authorizing>
-            <NotAuthorized>
-                <text>No se encuentra autorizado para ver este contenido...</text>
-            </NotAuthorized>
-        </AuthorizeRouteView>
-    </Found>
-    <NotFound>
-        <CascadingAuthenticationState>
-            <LayoutView Layout="@typeof(MainLayout)">
-                <p>Discupe no se encuentra nada en esta dirección.</p>
-            </LayoutView>
-        </CascadingAuthenticationState>
-    </NotFound>
-</Router> *@

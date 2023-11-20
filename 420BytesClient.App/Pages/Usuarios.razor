@@ -1,41 +1,69 @@
-﻿@using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
+﻿@page "/sensores"
+@using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
 @using _420BytesClient.App.ViewModels.Usuarios;
 
 @* @inject IGestionAmbientes_ViewModel IGestionAmbientes_ViewModel *@
 @inherits UsuariosViewModel 
 
+
+
 @if (RegistroTemperaturaAmbiente == null || RegistroTemperaturaAmbiente.Temperatura == 0)
 {
-    <p>Obteniendo lectura de los sensores de temperatura...</p>
-  
+    @* <p>Obteniendo lectura de los sensores de temperatura...</p> *@
+    <MudProgressCircular Color="Color.Success" Indeterminate="true" />
 }
 else
 {
-    <h1>Temperatura Ambiente Actual: @RegistroTemperaturaAmbiente.Temperatura C° </h1>
-    
+    <MudCard>
+        <MudCardMedia Image="/images/humedad.jpg" Height="200"/>
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Temperatura ambiente</MudText>
+            <MudSlider @bind-Value="RegistroTemperaturaAmbiente.Temperatura" Min="0" Max="100" Color="Color.Info">Temperatura ambiente: @RegistroTemperaturaAmbiente.Temperatura.ToString() C°</MudSlider>
+        </MudCardContent>
+        <MudCardActions>
+            <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+        </MudCardActions>
+    </MudCard>
+    @* <MudSlider @bind-Value="value2" Min="-1" Max="1" Step="0.05" Color="Color.Error">Value: @value2.ToString("F2")</MudSlider> *@
 }
 
 @if (RegistroHumedadAmbiente == null || RegistroHumedadAmbiente.Humedad == 0)
 {
 
-    <p>Obteniendo lectura de los sensores de humedad...</p>
+    @* <p>Obteniendo lectura de los sensores de humedad...</p> *@
+    <MudProgressCircular Color="Color.Success" Indeterminate="true" />
 }
 else
 {
-    
-    <h1>Humedad Ambiente Actual: @RegistroHumedadAmbiente.Humedad %</h1>
+
+    <MudSlider @bind-Value="RegistroHumedadAmbiente.Humedad" Min="0" Max="100" Color="Color.Info">Humedad Ambiente: @RegistroHumedadAmbiente.Humedad.ToString() %</MudSlider>
 }
 @if (RegistroIntensidadLuz == null )
 {
 
-    <p>Obteniendo lectura de los sensores de Luz...</p>
+    @* <p>Obteniendo lectura de los sensores de Luz...</p> *@
+    <MudProgressCircular Color="Color.Success" Indeterminate="true" />
 }
 else
 {
 
-    <h1>Porcentaje Luz Ambiente Actual: @RegistroIntensidadLuz.Porcentaje %</h1>
+    @* <h1>Porcentaje Luz Ambiente Actual: @RegistroIntensidadLuz.Porcentaje %</h1> *@
+    <MudSlider @bind-Value="RegistroIntensidadLuz.Porcentaje" Min="0" Max="100" Color="Color.Info">Intensidad luz del Ambiente: @RegistroIntensidadLuz.Porcentaje.ToString() %</MudSlider>
+}
+@if (RegistroNivelAgua == null )
+{
+
+    @* <p>Obteniendo lectura de los sensores de agua...</p> *@
+    <MudProgressCircular Color="Color.Success" Indeterminate="true" />
+}
+else
+{
+
+    @* <h1>Porcentaje agua para la plantal: @RegistroNivelAgua.Nivel %</h1> *@
+    <MudSlider @bind-Value="RegistroNivelAgua.Nivel" Min="0" Max="100" Color="Color.Info">Nivel de agua del Ambiente: @RegistroNivelAgua.Nivel.ToString() %</MudSlider>
 }
 
 @code {
-
+    public double[] data = { 28};
+    public string[] labels = { "Temperatura" };
 }

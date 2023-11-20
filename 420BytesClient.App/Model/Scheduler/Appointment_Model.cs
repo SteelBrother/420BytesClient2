@@ -1,7 +1,9 @@
 ﻿using _420BytesClient.App.Helpers.Interfaces;
 using _420BytesClient.App.Model.Interfaces;
 using _420BytesClient.App.Model.Scheduler.Interfaces;
+using _420BytesClient.DT.Ambiente;
 using _420BytesClient.DT.DTOs;
+using _420BytesClient.DT.Plantas;
 using _420BytesClient.DT.Scheduler;
 using _420BytesClient.DT.Usuario;
 using Microsoft.Extensions.Logging;
@@ -92,12 +94,56 @@ namespace _420BytesClient.App.Model.Scheduler
             return false;
         }
 
-        public async Task<List<AppointmentData>> ObtenerPorDocAsync(int Cedula)
+        public async Task<List<Ambiente2>> ConsultarAmbientes(int Cedula)
         {
             try
             {
                 var ApiUrl = ISettings.GetApiUrl();
-                var HttpReponse = await ConexionRest.Get<List<AppointmentData>>($"{ApiUrl}/Appointment/ConsultarCitasPorCedula/{Cedula}");
+                var HttpReponse = await ConexionRest.Get<List<Ambiente2>>($"{ApiUrl}/Ambientes/ConsultarAmbientes?Cedula={Cedula}");
+                if (HttpReponse.Error)
+                {
+                    logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
+                }
+                else
+                {
+                    return HttpReponse.Response;
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
+            }
+            return new List<Ambiente2>();
+        }
+
+        public async Task<List<Planta2>> ConsultarPlantasAmbiente(int AmbienteId)
+        {
+            try
+            {
+                var ApiUrl = ISettings.GetApiUrl();
+                var HttpReponse = await ConexionRest.Get<List<Planta2>>($"{ApiUrl}/Ambientes/ConsultarPlantasAmbientes?AmbienteId={AmbienteId}");
+                if (HttpReponse.Error)
+                {
+                    logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");
+                }
+                else
+                {
+                    return HttpReponse.Response;
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}, Tipo: {ex.GetType()}, Error: {ex.Message}");
+            }
+            return new List<Planta2>();
+        }
+
+        public async Task<List<AppointmentData>> ObtenerPorDocAsync(int UsuarioId,int IdAmbiente,int IdPlanta)
+        {
+            try
+            {
+                var ApiUrl = ISettings.GetApiUrl();
+                var HttpReponse = await ConexionRest.Get<List<AppointmentData>>($"{ApiUrl}/Appointment/ConsultarCita?UsuarioId={UsuarioId}&IdAmbiente={IdAmbiente}&IdPlanta={IdPlanta}");
                 if (HttpReponse.Error)
                 {
                     logger.LogError($"Clase: {GetType().Name}, Metodo: {MethodBase.GetCurrentMethod().DeclaringType.Name}");

@@ -5,6 +5,54 @@
       "PackagePath": "staticwebassets\\420BytesClient.App.styles.css"
     },
     {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER09.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER09.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER10.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER10.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER11.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER11.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER12.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER12.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER13.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER13.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER14.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER14.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\LOGOBANNER15.png",
+      "PackagePath": "staticwebassets\\Images\\LOGOBANNER15.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\humedad.jpg",
+      "PackagePath": "staticwebassets\\Images\\humedad.jpg"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\lunallena.png",
+      "PackagePath": "staticwebassets\\Images\\lunallena.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\lunamediomenguante.png",
+      "PackagePath": "staticwebassets\\Images\\lunamediomenguante.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\lunamenguante.png",
+      "PackagePath": "staticwebassets\\Images\\lunamenguante.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\pngegg.png",
+      "PackagePath": "staticwebassets\\Images\\pngegg.png"
+    },
+    {
       "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

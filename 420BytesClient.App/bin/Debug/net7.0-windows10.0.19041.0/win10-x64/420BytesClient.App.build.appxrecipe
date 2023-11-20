@@ -1819,6 +1819,42 @@
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedad.jpg">
+      <PackagePath>wwwroot\Images\humedad.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER09.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER09.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER10.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER10.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER11.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER11.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER12.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER12.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER13.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER13.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER14.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER14.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER15.png">
+      <PackagePath>wwwroot\Images\LOGOBANNER15.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunallena.png">
+      <PackagePath>wwwroot\Images\lunallena.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunamediomenguante.png">
+      <PackagePath>wwwroot\Images\lunamediomenguante.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunamenguante.png">
+      <PackagePath>wwwroot\Images\lunamenguante.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\pngegg.png">
+      <PackagePath>wwwroot\Images\pngegg.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>
@@ -2319,6 +2355,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lunallena.scale-100.png">
+      <PackagePath>lunallena.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lunamenguante.scale-100.png">
+      <PackagePath>lunamenguante.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\primerambiente.scale-100.jpg">
+      <PackagePath>primerambiente.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\segundoambiente.scale-100.jpg">
+      <PackagePath>segundoambiente.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Components\CalendarioHorizontalComponent.razor.css">
       <PackagePath>Components\CalendarioHorizontalComponent.razor.css</PackagePath>

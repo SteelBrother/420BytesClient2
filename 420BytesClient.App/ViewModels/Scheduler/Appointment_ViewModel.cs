@@ -13,10 +13,14 @@ using _420BytesClient.DT.DTOs;
 using System.ComponentModel;
 using Syncfusion.Blazor.Schedule.Internal;
 using _420BytesClient.DT.Usuario;
+using System.Globalization;
+using _420BytesClient.DT.Ambiente;
+using _420BytesClient.DT.Plantas;
+using static MudBlazor.Colors;
 
 namespace _420BytesClient.App.ViewModels.Scheduler
 {
-    public class Appointment_ViewModel : IAppointment_ViewModel, INotifyPropertyChanged
+    public class Appointment_ViewModel : INotifyPropertyChanged, IAppointment_ViewModel
     {
         public static readonly string CEDULA = "CEDULA";
         private readonly IAppointment_Model IAppointment_Model;
@@ -24,8 +28,8 @@ namespace _420BytesClient.App.ViewModels.Scheduler
         public int Id { get; set; }
         public string Subject { get; set; }
         public string Location { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public DateTimeOffset StartTime { get; set; }
+        public DateTimeOffset EndTime { get; set; }
         public string Description { get; set; }
         public bool IsAllDay { get; set; }
         public string RecurrenceRule { get; set; }
@@ -41,11 +45,7 @@ namespace _420BytesClient.App.ViewModels.Scheduler
             DateTime now = DateTime.Now;
             string formattedDate = now.ToString("yyyy-MM-ddTHH:mm:ss");
             CurrentDate = DateTime.Parse(formattedDate);
-            DataSource = new List<AppointmentData>
-        {
-            new AppointmentData { Id = 1, Subject = "Paris", StartTime = new DateTime(2023, 11, 1, 10, 0, 0) , EndTime = new DateTime(2023, 11, 1, 12, 0, 0) },
-            new AppointmentData { Id = 2, Subject = "Germany", StartTime = new DateTime(2023, 11, 2, 10, 0, 0) , EndTime = new DateTime(2023, 11, 2, 12, 0, 0) }
-        };
+            DataSource = new List<AppointmentData>();
         }
         public Appointment_ViewModel(AppointmentData appointment, IJSRuntime js, IAppointment_Model IAppointment_Model)
         {
@@ -73,13 +73,15 @@ namespace _420BytesClient.App.ViewModels.Scheduler
             get { return _DataSource; }
             set
             {
-                if (_DataSource != value)
-                {
-                    _DataSource = value;
-                    OnPropertyChanged(nameof(DataSource));
-                }
+                _DataSource = value;
+                OnPropertyChanged(nameof(DataSource));
             }
         }
+
+        public List<Ambiente2> Ambientes { get; set; } = new List<Ambiente2>();
+        public List<Planta2> Plantas { get; set; } = new List<Planta2>();
+        public IList<string> _source { get; set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
@@ -87,27 +89,67 @@ namespace _420BytesClient.App.ViewModels.Scheduler
         }
 
 
-        public async Task ObtenerTodoPorDocumentoAsync()
+        public async Task<List<AppointmentData>> ObtenerTodoPorDocumentoAsync()
         {
             var doc = await js.GetFromLocalStorage(CEDULA);
             if (doc != null)
             {
-                var Citas = await IAppointment_Model.ObtenerPorDocAsync(int.Parse(doc));
+                var Citas = await IAppointment_Model.ObtenerPorDocAsync(1, 3, 1);
                 if (Citas != null)
                 {
-                    DataSource = Citas;
+                    foreach (var item in Citas)
+                    {
+                        int anoInicio = item.StartTime.Year;
+                        int mesInicio = item.StartTime.Month;
+                        int diaInicio = item.StartTime.Day;
+                        int horaInicio = item.StartTime.Hour;
+                        int minutosInicio = item.StartTime.Minute;
+
+                        int anoFinal = item.EndTime.Year;
+                        int mesFinal = item.EndTime.Month;
+                        int diaFinal = item.EndTime.Day;
+                        int horaFinal = item.EndTime.Hour;
+                        int minutosFinal = item.EndTime.Minute;
+
+                        var dato = new AppointmentData 
+                        { 
+                            Id = item.Id,
+                            Subject = item.Subject,
+                            Location = item.Location,
+                            Description = item.Description,
+                            IsAllDay = item.IsAllDay,
+                            RecurrenceRule = item.RecurrenceRule,
+                            StartTime = new DateTime(anoInicio, mesInicio, diaInicio, horaInicio, minutosInicio, 0),
+                            EndTime = new DateTime(anoFinal, mesFinal, diaFinal, horaFinal, minutosFinal, 0)
+                        };
+                        DataSource.Add(dato);
+                    }
+                    return DataSource;
+                }
+                else
+                {
+                    return null;
                 }
             }
-           
+            else
+            {
+                return null;
+            }
+
         }
 
         public async Task AgregarCitaAsync(AppointmentData AppointmentData)
         {
             var doc = await js.GetFromLocalStorage(CEDULA);
+            //var ambiente = await js.GetFromLocalStorage(AMBIENTE);
+            int ambiente = 3;
             var AppointmentDTO = new AppointmentDataDTO
             {
                 Doc = int.Parse(doc),
+                IdAmbiente = ambiente,
+                IdPlanta = 1,
                 AppointmentData = AppointmentData
+
             };
             var x = await IAppointment_Model.AgregarCitaAsync(AppointmentDTO);
             //await ObtenerTodoPorDocumentoAsync();
@@ -136,5 +178,25 @@ namespace _420BytesClient.App.ViewModels.Scheduler
             await IAppointment_Model.BorrarCitaAsync(AppointmentDTO);
         }
 
+        public async Task ConsultarAmbientes(int Cedula)
+        {
+            List<string> NombreAmbientes = new List<string>();
+            Ambientes = await IAppointment_Model.ConsultarAmbientes(Cedula);
+            if (Ambientes != null && Ambientes.Count > 0)
+            {
+                foreach (var item in Ambientes)
+                {
+                    NombreAmbientes.Add(item.NombreAmbiente.ToString());
+                }
+             
+                _source = NombreAmbientes;
+                await ConsultarPlantas(Ambientes.FirstOrDefault().AmbienteID);
+            }
+        }
+
+        public async Task ConsultarPlantas(int IdAmbiente)
+        {
+           Plantas = await IAppointment_Model.ConsultarPlantasAmbiente(IdAmbiente);
+        }
     }
 }

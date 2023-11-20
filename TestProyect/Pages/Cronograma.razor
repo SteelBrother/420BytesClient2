@@ -1,0 +1,55 @@
+﻿@page "/Cronograma"
+@using TestProyect.Services;
+@using _420BytesClient.DT.Scheduler;
+@inject IAppointmentService IAppointmentService
+<h3>Cronograma</h3>
+
+
+ <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@CurrentDate">
+                    <ScheduleEvents TValue="AppointmentData"></ScheduleEvents>
+                    <ScheduleEventSettings DataSource="@Citas"></ScheduleEventSettings>
+                    <ScheduleViews>
+                        <ScheduleView Option="View.Day"></ScheduleView>
+                        <ScheduleView Option="View.Week"></ScheduleView>
+                        <ScheduleView Option="View.Month"></ScheduleView>
+                        <ScheduleView Option="View.Agenda"></ScheduleView>
+                        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+                        <ScheduleView Option="View.TimelineDay"></ScheduleView>
+                        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+                        <ScheduleView Option="View.Year"></ScheduleView>
+                    </ScheduleViews>
+                </SfSchedule>
+
+@code {
+    public List<AppointmentData> Citas { get; set; } = new List<AppointmentData>();
+    DateTime CurrentDate = DateTime.Now;
+
+    protected async override Task OnInitializedAsync()
+    {
+        Citas = await IAppointmentService.ObtenerPorDocAsync(1,3,1);
+        StateHasChanged();
+    }
+    // public async void OnActionBegin(ActionEventArgs<AppointmentData> args)
+    // {
+    //     switch (args.ActionType)
+    //     {
+    //         case ActionType.EventCreate:
+    //             await IAppointmentService.AgregarCitaAsync(args.AddedRecords.FirstOrDefault());
+    //             break;
+    //         case ActionType.EventRemove:
+    //             await IAppointmentService.BorrarCitaAsync(args.DeletedRecords.FirstOrDefault().Id);
+    //             break;
+    //         case ActionType.EventChange:
+    //             await IAppointmentService.ActualizarCitaAsync(args.ChangedRecords.FirstOrDefault());
+    //             break;
+    //         case ActionType.DateNavigate:
+    //             var w = 1;
+    //             break;
+    //         case ActionType.ViewNavigate:
+    //             var g = 1;
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // }
+}

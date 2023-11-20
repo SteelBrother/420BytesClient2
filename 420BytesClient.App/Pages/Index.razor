@@ -1,197 +1,24 @@
 ﻿@page "/"
-@using MatBlazor
-@using Syncfusion.Blazor.Buttons
-@using _420BytesClient.App.ViewModels.Scheduler.Interfaces;
-@using _420BytesClient.DT.Scheduler;
-@inject IAppointment_ViewModel IAppointment_ViewModel
-@inject IJSRuntime js
-@*
-<MudTabs Outlined="true" @bind-ActivePanelIndex="activeIndex" Centered="true">
-    <MudTabPanel Text="Ambiente 1" Icon="@Icons.Material.Filled.FilterVintage" />
-    <MudTabPanel Text="Ambiente 2" Icon="@Icons.Material.Filled.FilterVintage" />
-    <MudTabPanel Text="Ambiente 3" Icon="@Icons.Material.Filled.FilterVintage" />
-</MudTabs>
-<br />
-<MudTabs Outlined="true" @bind-ActivePanelIndex="activeIndex2" Centered="true">
-    <MudTabPanel Text="Planta 1" Icon="@Icons.Material.Filled.Yard" />
-    <MudTabPanel Text="Planta 2" Icon="@Icons.Material.Filled.Yard" />
-    <MudTabPanel Text="Planta 3" Icon="@Icons.Material.Filled.Yard" />
-</MudTabs> *@
-<div style="max-width:100%">
-    <h2 style="width:100%">Fecha+ Ciudad + Datos Climaticos</h2>
-    <MudCarousel Class="mud-width-full" @ref="_carousel" ItemsSource="@_source" @bind-SelectedIndex="selectedIndex" Style="height:1000px;" ShowArrows="@_arrows" ShowBullets="@_bullets" EnableSwipeGesture="@_enableSwipeGesture" AutoCycle="@_autocycle">
-        <ItemTemplate>
-            <div class="d-flex flex-column flex-column justify-center" style="height:100%">
-                <MudText Align="@Align.Center" Class="mx-auto">@context</MudText>
-                <br />
-                <MudTabs Elevation="4" Rounded="true" Color="Color.Dark">
-                    <MudTabPanel Text="Planta 1" />
-                    <MudTabPanel Text="Planta 2" />
-                </MudTabs>
-                <br>
-                <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
-                    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
-                    <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
-                    <ScheduleViews>
-                        <ScheduleView Option="View.Day"></ScheduleView>
-                        <ScheduleView Option="View.Week"></ScheduleView>
-                        <ScheduleView Option="View.Month"></ScheduleView>
-                        <ScheduleView Option="View.Agenda"></ScheduleView>
-                        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
-                        <ScheduleView Option="View.TimelineDay"></ScheduleView>
-                        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
-                        <ScheduleView Option="View.Year"></ScheduleView>
-                    </ScheduleViews>
-                </SfSchedule>
-            </div>
-        </ItemTemplate>
-    </MudCarousel>
-</div>
+@inject NavigationManager NavigationManager
 
+<h1>Black</h1>
 
-@*
-<MudTabs Elevation="4" Rounded="true" Color="@Color.Success" PrevIcon="@Icons.Material.Filled.SkipPrevious" NextIcon="@Icons.Material.Filled.SkipNext">
-    <MudTabPanel Text="Ambiente 1" Icon="@Icons.Material.Filled.FilterVintage" />
-    <MudTabPanel Text="Ambiente 2" Icon="@Icons.Material.Filled.FilterVintage"  />
-    <MudTabPanel Text="Ambiente 3" Icon="@Icons.Material.Filled.FilterVintage" />
-    <MudTabPanel Text="Ambiente 4" Icon="@Icons.Material.Filled.FilterVintage" />
-</MudTabs>
- *@
-@* <MudTabs Elevation="4" Rounded="true" Color="@Color.Success">
-    <MudTabPanel Text="Planta 1" />
-    <MudTabPanel Text="Planta 2" />
-</MudTabs>
-<br />
-<hr>
-<br /> *@
-
-@* <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
-    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
-    <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
-    <ScheduleViews>
-        <ScheduleView Option="View.Day"></ScheduleView>
-        <ScheduleView Option="View.Week"></ScheduleView>
-        <ScheduleView Option="View.Month"></ScheduleView>
-        <ScheduleView Option="View.Agenda"></ScheduleView>
-        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
-        <ScheduleView Option="View.TimelineDay"></ScheduleView>
-        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
-        <ScheduleView Option="View.Year"></ScheduleView>
-    </ScheduleViews>
-</SfSchedule>
-<MudExpansionPanels DisableBorders="true" Elevation="0">
-    <MudExpansionPanel Text="Datos Sensores">
-        <Usuarios></Usuarios>
-    </MudExpansionPanel>
-</MudExpansionPanels>
-<MudExpansionPanels DisableBorders="true" Elevation="0">
-    <MudExpansionPanel Text="Graficos">
-        <MudChart ChartType="ChartType.Donut" LegendPosition="@LegendPosition" Width="300px" Height="300px"
-                  InputData="@data" InputLabels="@labels">
-        </MudChart>
-
-    </MudExpansionPanel>
-</MudExpansionPanels> *@
-@* <MatAccordion>
-    <MatExpansionPanel @bind-Expanded="@panelOpenState">
-        <MatExpansionPanelSummary>
-            <MatExpansionPanelHeader>Datos Sensores</MatExpansionPanelHeader>
-        </MatExpansionPanelSummary>
-        <MatExpansionPanelDetails>
-            <Usuarios></Usuarios>
-        </MatExpansionPanelDetails>
-    </MatExpansionPanel>
-</MatAccordion>
- *@
+@if (showLogo)
+{
+    <div class="logo-container">
+        <!-- Reemplaza con la ruta de tu logo -->
+        <img src="ruta/a/tu/logo.png" alt="Logo de mi empresa" />
+    </div>
+}
 
 @code {
-    private MudCarousel<string> _carousel;
-    private bool _arrows = true; 
-    private bool _bullets = true;
-    private bool _enableSwipeGesture = true;
-    private bool _autocycle = false;
-    private IList<string> _source = new List<string>() { "Ambiente 1", "Ambiente 2" };
-    private int selectedIndex = 0;
+    private bool showLogo = true;
 
-
-
-    bool panelOpenState;
-    public int tabIndex = 0;
-    int activeIndex = 0;
-    int activeIndex2 = 0;
-    protected async override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        await IAppointment_ViewModel.ObtenerTodoPorDocumentoAsync();
-    }
-    void ChangeTab(EventCallback<int> dato)
-    {
-        tabIndex = tabIndex < 3 ? tabIndex + 1 : 0;
-    }
-    public void RunOnClick(MouseEventArgs e)
-    {
-        js.InvokeAsync<object>("window.alert", "Test");
-    }
-    private int _index = 0;
-    private int? _nextIndex = null;
-    public double[] data = { 25, 77, 28, 5 };
-    public string[] labels = { "Oil", "Coal", "Gas", "Biomass" };
-    public Position LegendPosition { get; set; } = Position.Right;
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-    }
+        await Task.Delay(3000); // Espera 3 segundos
+        showLogo = false;
 
-
-    private async Task AddAsync()
-    {
-        _source.Add($"Item {_source.Count + 1}");
-        await Task.Delay(1);
-        _carousel.MoveTo(_source.Count - 1);
+        NavigationManager.NavigateTo("/Login"); // Reemplaza con la ruta de tu siguiente página
     }
-
-    private async Task DeleteAsync(int index)
-    {
-        if (_source.Any())
-        {
-            _source.RemoveAt(index);
-            await Task.Delay(1);
-            _carousel.MoveTo(System.Math.Max(System.Math.Min(index, _source.Count - 1), 0));
-        }
-
-    }
-
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (_nextIndex.HasValue == true)
-        {
-            _index = _nextIndex.Value;
-            _nextIndex = null;
-            StateHasChanged();
-        }
-    }
-
-    public async void OnActionBegin(ActionEventArgs<AppointmentData> args)
-    {
-        switch (args.ActionType)
-        {
-            case ActionType.EventCreate:
-                await IAppointment_ViewModel.AgregarCitaAsync(args.AddedRecords.FirstOrDefault());
-                break;
-            case ActionType.EventRemove:
-                await IAppointment_ViewModel.BorrarCitaAsync(args.DeletedRecords.FirstOrDefault().Id);
-                break;
-            case ActionType.EventChange:
-                await IAppointment_ViewModel.ActualizarCitaAsync(args.ChangedRecords.FirstOrDefault());
-                break;
-            case ActionType.DateNavigate:
-                var w = 1;
-                break;
-            case ActionType.ViewNavigate:
-                var g = 1;
-                break;
-            default:
-                break;
-        }
-    }
-} 
+}
