@@ -69,6 +69,7 @@ namespace _420BytesClient.App
             builder.Services.AddTransient<ILoginModel, Login_Model>();
             builder.Services.AddTransient<IAuth_ViewModel, Auth_ViewModel>();
             builder.Services.AddTransient<IGestionAmbiente_Model, GestionAmbiente_Model>();
+            builder.Services.AddTransient<IRegistroAmbientes_ViewModel, RegistroAmbientes_ViewModel>();
             //builder.Services.AddTransient<IGestionAmbientes_ViewModel, GestionAmbientesViewModel>();
             builder.Services.AddTransient<IAuth_ViewModel, Auth_ViewModel>();
             builder.Services.AddSingleton<UsuariosViewModel>();

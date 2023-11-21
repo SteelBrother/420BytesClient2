@@ -2,7 +2,6 @@
 @using _420BytesClient.DT.Usuario;
 @inject IDialogService DialogService
 @inject IAuth_ViewModel IAuth_ViewModel_
-@inject NavigationManager NavigationManager
 
 
 
@@ -26,8 +25,8 @@
                             <ValidationMessage For="@(() => IAuth_ViewModel_.Usuario.Password)" Class="mt-1" />
                         </MudCardContent>
                         <MudCardActions Class="justify-content-center">
-                            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="mx-2">Ingresar</MudButton>
-                            <MudButton @onclick="OpenDialog" Variant="Variant.Filled" Color="Color.Primary">
+                            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Dark" Class="mx-2">Ingresar</MudButton>
+                            <MudButton @onclick="OpenDialog" Variant="Variant.Filled" Color="Color.Dark">
                                 Registrar
                             </MudButton>
                         </MudCardActions>
@@ -51,7 +50,6 @@
     public async Task AuthUsuario()
     {
         await IAuth_ViewModel_.Login();
-        NavigationManager.NavigateTo("/");
         StateHasChanged();
     }
     bool license_accepted = false;
@@ -59,6 +57,6 @@
     private void OpenDialog()
     {
         var options = new DialogOptions { CloseOnEscapeKey = true };
-        DialogService.Show<RegistroUsuario>("Registro", options);
+        DialogService.Show<RegistroUsuario>("¡Registrate!", options);
     }
 }

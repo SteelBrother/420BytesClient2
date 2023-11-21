@@ -29,6 +29,7 @@ namespace _420BytesClient.App.ViewModels.Scheduler.Interfaces
         List<AppointmentData> DataSource { get; set; }
         List<Ambiente2> Ambientes { get; set; }
         List<Planta2> Plantas { get; set; }
+        List<Planta2> PlantasRespaldo { get; set; }
         IList<string> _source { get; set; }
         Task<List<AppointmentData>> ObtenerTodoPorDocumentoAsync();
         Task ConsultarAmbientes(int Cedula);
@@ -36,5 +37,6 @@ namespace _420BytesClient.App.ViewModels.Scheduler.Interfaces
         Task AgregarCitaAsync(AppointmentData AppointmentData);
         Task ActualizarCitaAsync(AppointmentData AppointmentData);
         Task BorrarCitaAsync(int Id);
+        Task BuscarIndexAmbiente(int index);
     }
 }

@@ -7,7 +7,7 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="F1D63548-DCAB-49FF-9E69-66BB4BD7C445" Publisher="CN=ADMIN" Version="0.1.1.0" ProcessorArchitecture="x64" />
+  <Identity Name="F1D63548-DCAB-49FF-9E69-66BB4BD7C445" Publisher="CN=ADMIN" Version="0.1.2.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="706C9E57-4733-430B-B8A6-076C26E888A2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>420BytesClient.App</DisplayName>

@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\Images\\humedad.jpg"
     },
     {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\humedadicon.png",
+      "PackagePath": "staticwebassets\\Images\\humedadicon.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\humedadvector.jpg",
+      "PackagePath": "staticwebassets\\Images\\humedadvector.jpg"
+    },
+    {
       "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\lunallena.png",
       "PackagePath": "staticwebassets\\Images\\lunallena.png"
     },
@@ -49,8 +57,32 @@
       "PackagePath": "staticwebassets\\Images\\lunamenguante.png"
     },
     {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\luzicon.png",
+      "PackagePath": "staticwebassets\\Images\\luzicon.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\nivelaguaicon.png",
+      "PackagePath": "staticwebassets\\Images\\nivelaguaicon.png"
+    },
+    {
       "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\pngegg.png",
       "PackagePath": "staticwebassets\\Images\\pngegg.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\primerambiente.jpg",
+      "PackagePath": "staticwebassets\\Images\\primerambiente.jpg"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\segundoambiente.jpg",
+      "PackagePath": "staticwebassets\\Images\\segundoambiente.jpg"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\temperaturaicon.png",
+      "PackagePath": "staticwebassets\\Images\\temperaturaicon.png"
+    },
+    {
+      "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\Images\\vientooicon-transformed.png",
+      "PackagePath": "staticwebassets\\Images\\vientooicon-transformed.png"
     },
     {
       "Id": "C:\\Git\\420BytesClient\\420BytesClient.App\\wwwroot\\css\\app.css",

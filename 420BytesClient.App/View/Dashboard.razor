@@ -1,132 +1,99 @@
 ﻿@page "/dashboard"
 @using MatBlazor
 @using Syncfusion.Blazor.Buttons
+@using _420BytesClient.App.Pages;
 @using _420BytesClient.App.ViewModels.Scheduler.Interfaces;
 @using _420BytesClient.DT.Scheduler;
 @inject ISnackbar Snackbar
+@inject IDialogService DialogService
 @inject IAppointment_ViewModel IAppointment_ViewModel
 @inject IJSRuntime js
 
 <div style="max-width:100%">
-    @*  <h2 style="width:100%">Fecha+ Ciudad + Datos Climaticos</h2> *@
 
-    <MudCarousel Class="mud-width-full" @ref="_carousel" ItemsSource="@IAppointment_ViewModel._source" @bind-SelectedIndex="selectedIndex" Style="height:1000px;" ShowArrows="@_arrows" ShowBullets="@_bullets" EnableSwipeGesture="@_enableSwipeGesture" AutoCycle="@_autocycle">
-        <ItemTemplate>
-            <div class="d-flex flex-column flex-column justify-center">
-                @*  <MudItem md="12" xs="12" lg="12" >
+
+    @if (IAppointment_ViewModel._source != null)
+    {
+        @*  <h2 style="width:100%">Fecha+ Ciudad + Datos Climaticos</h2> *@
+
+        <MudCarousel Class="mud-width-full" @ref="_carousel" ItemsSource="@IAppointment_ViewModel._source" @bind-SelectedIndex="selectedIndex" Style="height:1000px;" ShowArrows="@_arrows" ShowBullets="@_bullets" EnableSwipeGesture="@_enableSwipeGesture" AutoCycle="@_autocycle">
+            <ItemTemplate>
+                <div class="d-flex flex-column flex-column justify-center">
+                    @*  <MudItem md="12" xs="12" lg="12" >
 
                 <MudAlert Severity="Severity.Warning"  Variant="Variant.Outlined" Square="true" Class="my-2">Warning Square</MudAlert>
 
                 </MudItem> *@
-                @* <MudImage Src="/images/lunallena.png" style="width:5%;height:5%" Alt="Luna Llena" Elevation="25" Class="rounded-lg" /> *@
-                @* <MudImage Src="/images/lunamenguante.png" style="width:5%;height:5%; position: absolute; right: 0; top: 0;" Alt="Menguante" Elevation="20" Class="rounded-lg" /> *@
+                    @* <MudImage Src="/images/lunallena.png" style="width:5%;height:5%" Alt="Luna Llena" Elevation="25" Class="rounded-lg" /> *@
+                    @* <MudImage Src="/images/lunamenguante.png" style="width:5%;height:5%; position: absolute; right: 0; top: 0;" Alt="Menguante" Elevation="20" Class="rounded-lg" /> *@
 
+                    <br />
+                    <MudText Align="@Align.Center" Class="mx-auto"><h2>@context</h2></MudText>
+                    <br />
+
+                    <MudTabs Elevation="4" Rounded="true" Color="Color.Dark">
+                        @foreach (var planta in @IAppointment_ViewModel.Plantas)
+                        {
+                            <MudTabPanel Text="@planta.NombrePlanta" />
+                        }
+
+                    </MudTabs>
+                    <br>
+                    <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
+                        <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
+                        <ScheduleEventSettings DataSource="@Citas"></ScheduleEventSettings>
+                        <ScheduleViews>
+                            <ScheduleView Option="View.Day"></ScheduleView>
+                            <ScheduleView Option="View.Week"></ScheduleView>
+                            <ScheduleView Option="View.Month"></ScheduleView>
+                            <ScheduleView Option="View.Agenda"></ScheduleView>
+                            <ScheduleView Option="View.MonthAgenda"></ScheduleView>
+                            <ScheduleView Option="View.TimelineDay"></ScheduleView>
+                            <ScheduleView Option="View.TimelineMonth"></ScheduleView>
+                            <ScheduleView Option="View.Year"></ScheduleView>
+                        </ScheduleViews>
+                    </SfSchedule>
+                </div>
                 <br />
-                <MudText Align="@Align.Center" Class="mx-auto"><h2>@context</h2></MudText>
-                <br />
+            </ItemTemplate>
 
-                <MudTabs Elevation="4" Rounded="true" Color="Color.Dark">
-                    @foreach (var planta in @IAppointment_ViewModel.Plantas)
-                    {
-                        <MudTabPanel Text="@planta.NombrePlanta" />
-                    }
+        </MudCarousel>
+        <div>
+            <MudText Align="Align.Center" Typo="Typo.h6">Datos de la humedad al mes</MudText>
+            <MudChart ChartType="ChartType.Line" ChartSeries="@Series" @bind-SelectedIndex="Indexx" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
 
-                </MudTabs>
-                <br>
-                <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
-                    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
-                    <ScheduleEventSettings DataSource="@Citas"></ScheduleEventSettings>
-                    <ScheduleViews>
-                        <ScheduleView Option="View.Day"></ScheduleView>
-                        <ScheduleView Option="View.Week"></ScheduleView>
-                        <ScheduleView Option="View.Month"></ScheduleView>
-                        <ScheduleView Option="View.Agenda"></ScheduleView>
-                        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
-                        <ScheduleView Option="View.TimelineDay"></ScheduleView>
-                        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
-                        <ScheduleView Option="View.Year"></ScheduleView>
-                    </ScheduleViews>
-                </SfSchedule>
-            </div>
-            <br />
-        </ItemTemplate>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div>
+            <MudText Align="Align.Center" Typo="Typo.h6">Datos de la temperatura al mes</MudText>
+            <MudChart ChartType="ChartType.Line" ChartSeries="@Series" @bind-SelectedIndex="Indexx" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
 
-    </MudCarousel>
-    <div>
-        <MudText Align="Align.Center" Typo="Typo.h6">Datos de la humedad al mes</MudText>
-        <MudChart ChartType="ChartType.Line" ChartSeries="@Series" @bind-SelectedIndex="Indexx" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
+        </div>
+        <div>
+            <MudText Align="Align.Center" Typo="Typo.h6">Consumo del agua al mes</MudText>
+            <MudChart ChartType="ChartType.Bar" ChartSeries="@Seriess" @bind-SelectedIndex="Indexss" XAxisLabels="@XAxisLabelss" Width="100%" Height="350px"></MudChart>
 
-    </div>
-    <br />
-    <br />
-    <br />
-    <div>
-        <MudText Align="Align.Center" Typo="Typo.h6">Datos de la temperatura al mes</MudText>
-        <MudChart ChartType="ChartType.Line" ChartSeries="@Series" @bind-SelectedIndex="Indexx" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
-
-    </div>
-    <div>
-        <MudText Align="Align.Center" Typo="Typo.h6">Consumo del agua al mes</MudText>
-        <MudChart ChartType="ChartType.Bar" ChartSeries="@Seriess" @bind-SelectedIndex="Indexss" XAxisLabels="@XAxisLabelss" Width="100%" Height="350px"></MudChart>
-
-    </div>
+        </div>
+        <MudTooltip Text="Add">
+            <MudFab StartIcon="@Icons.Material.Filled.RemoveRedEye" @onclick="OpenDialog" Color="Color.Secondary" Class="fixed-bottom-right" />
+        </MudTooltip>
+    }
+    else
+    {
+        <MudProgressLinear Color="Color.Success" Indeterminate="true" Class="my-12" />
+    }
 </div>
 
-
-@*
-<MudTabs Elevation="4" Rounded="true" Color="@Color.Success" PrevIcon="@Icons.Material.Filled.SkipPrevious" NextIcon="@Icons.Material.Filled.SkipNext">
-    <MudTabPanel Text="Ambiente 1" Icon="@Icons.Material.Filled.FilterVintage" />
-    <MudTabPanel Text="Ambiente 2" Icon="@Icons.Material.Filled.FilterVintage"  />
-    <MudTabPanel Text="Ambiente 3" Icon="@Icons.Material.Filled.FilterVintage" />
-    <MudTabPanel Text="Ambiente 4" Icon="@Icons.Material.Filled.FilterVintage" />
-</MudTabs>
- *@
-@* <MudTabs Elevation="4" Rounded="true" Color="@Color.Success">
-    <MudTabPanel Text="Planta 1" />
-    <MudTabPanel Text="Planta 2" />
-</MudTabs>
-<br />
-<hr>
-<br /> *@
-
-@* <SfSchedule TValue="AppointmentData" Height="600px" @bind-SelectedDate="@IAppointment_ViewModel.CurrentDate">
-    <ScheduleEvents TValue="AppointmentData" OnActionBegin="OnActionBegin"></ScheduleEvents>
-    <ScheduleEventSettings DataSource="@IAppointment_ViewModel.DataSource"></ScheduleEventSettings>
-    <ScheduleViews>
-        <ScheduleView Option="View.Day"></ScheduleView>
-        <ScheduleView Option="View.Week"></ScheduleView>
-        <ScheduleView Option="View.Month"></ScheduleView>
-        <ScheduleView Option="View.Agenda"></ScheduleView>
-        <ScheduleView Option="View.MonthAgenda"></ScheduleView>
-        <ScheduleView Option="View.TimelineDay"></ScheduleView>
-        <ScheduleView Option="View.TimelineMonth"></ScheduleView>
-        <ScheduleView Option="View.Year"></ScheduleView>
-    </ScheduleViews>
-</SfSchedule>
-<MudExpansionPanels DisableBorders="true" Elevation="0">
-    <MudExpansionPanel Text="Datos Sensores">
-        <Usuarios></Usuarios>
-    </MudExpansionPanel>
-</MudExpansionPanels>
-<MudExpansionPanels DisableBorders="true" Elevation="0">
-    <MudExpansionPanel Text="Graficos">
-        <MudChart ChartType="ChartType.Donut" LegendPosition="@LegendPosition" Width="300px" Height="300px"
-                  InputData="@data" InputLabels="@labels">
-        </MudChart>
-
-    </MudExpansionPanel>
-</MudExpansionPanels> *@
-@* <MatAccordion>
-    <MatExpansionPanel @bind-Expanded="@panelOpenState">
-        <MatExpansionPanelSummary>
-            <MatExpansionPanelHeader>Datos Sensores</MatExpansionPanelHeader>
-        </MatExpansionPanelSummary>
-        <MatExpansionPanelDetails>
-            <Usuarios></Usuarios>
-        </MatExpansionPanelDetails>
-    </MatExpansionPanel>
-</MatAccordion>
- *@
+<style scoped>
+    .fixed-bottom-right {
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        z-index: 1000;
+    }
+</style>
 
 @code {
     private MudCarousel<string> _carousel;
@@ -135,25 +102,59 @@
     private bool _enableSwipeGesture = true;
     private bool _autocycle = false;
     private IList<string> _source = new List<string>() { "Ambiente 1", "Ambiente 2" };
-    private int selectedIndex = 0;
 
+    private int _selectedIndex = 0;
+
+    public int selectedIndex
+    {
+        get => _selectedIndex;
+        set
+        {
+            if (_selectedIndex != value)
+            {
+                _selectedIndex = value;
+                OnSelectedIndexChanged(_selectedIndex); // Disparar el evento al cambiar el valor
+            }
+        }
+    }
+
+    public event EventHandler SelectedIndexChanged;
+
+    public async Task OnSelectedIndexChanged(int index)
+    {
+        await IAppointment_ViewModel.BuscarIndexAmbiente(index);
+    }
     private int Indexx = -1; //default value cannot be 0 -> first selectedindex is 0.
     private int Indexss = -1; //default value cannot be 0 -> first selectedindex is 0.
 
+    bool isOpen;
+    bool license_accepted = false;
+
+    async Task OpenDialog()
+    {
+        var result = await DialogService.Show<Live>("").Result;
+
+        if (!result.Canceled)
+        {
+            license_accepted = (bool)(result.Data ?? false);
+        }
+    }
     public List<ChartSeries> Series = new List<ChartSeries>()
     {
-        new ChartSeries() { Name = "United States", Data = new double[] { 40, 20, 25, 27, 46, 60, 48, 80, 15 } },
-        new ChartSeries() { Name = "Germany", Data = new double[] { 19, 24, 35, 13, 28, 15, 13, 16, 31 } },
-        new ChartSeries() { Name = "Sweden", Data = new double[] { 8, 6, 11, 13, 4, 16, 10, 16, 18 } },
+        new ChartSeries() { Name = "OG Kush", Data = new double[] { 19, 24, 20, 18, 28, 15, 15, 34, 31 } },
+        new ChartSeries() { Name = "Tropical", Data = new double[] { 22, 24, 35, 13, 28, 15, 13, 16, 31 } },
+        new ChartSeries() { Name = "Akk7", Data = new double[] { 19, 24, 40, 13, 28, 10, 13, 15, 18 } },
+
     };
-    public string[] XAxisLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+    public string[] XAxisLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep","Nov","Dic" };
 
     public List<ChartSeries> Seriess = new List<ChartSeries>()
     {
-        new ChartSeries() { Name = "Series 1", Data = new double[] { 90, 79, 72, 69, 62, 62, 55, 65, 70 } },
-        new ChartSeries() { Name = "Series 2", Data = new double[] { 10, 41, 35, 51, 49, 62, 69, 91, 148 } },
+        new ChartSeries() { Name = "OG Kush", Data = new double[] { 45, 67, 20, 67, 28, 23, 15, 56, 32 } },
+        new ChartSeries() { Name = "Tropical", Data = new double[] { 34, 56, 35, 13, 32, 15, 13, 16, 31 } },
+        new ChartSeries() { Name = "Akk7", Data = new double[] { 32, 78, 40, 13, 28, 10, 45, 15, 18 } },
     };
-    public string[] XAxisLabelss = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+    public string[] XAxisLabelss = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Dic" };
 
     Random random = new Random();
     public void RandomizeData()

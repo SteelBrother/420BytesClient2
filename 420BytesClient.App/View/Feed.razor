@@ -1,50 +1,90 @@
 ﻿@page "/feed"
-
-
-<MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
-    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+@using _420BytesClient.App.Helpers;
+@inject IJSRuntime js;
+<MudAlert Severity="Severity.Normal" NoIcon="true"  Variant="Variant.Filled" Elevation="8" >
+    <MudAvatar Color="Color.Primary">NM</MudAvatar>
+    Bienvenido @usuario
+</MudAlert>
+<br/>
+<MudCarousel Class="mud-width-full" Style="height:246px;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+    <MudCarouselItem Transition="transition">
         <div class="d-flex" style="height:100%">
-            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
-        </div>
-    </MudCarouselItem>
-    <MudCarouselItem Transition="transition" Color="@Color.Secondary">
-        <div class="d-flex" style="height:100%">
-            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+            @* <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" /> *@
+            <MudImage Src="/images/logobanner09.png" Alt="Mony the dog" Elevation="25" Size="@Size.Large" Class="rounded-lg" />
         </div>
     </MudCarouselItem>
     <MudCarouselItem Transition="transition">
         <div class="d-flex" style="height:100%">
-            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" />
+            @* <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" /> *@
+            <MudImage Src="/images/logobanner10.png" Alt="Mony the dog" Elevation="25" Size="@Size.Large" Class="rounded-lg" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="transition">
+        <div class="d-flex" style="height:100%">
+            <MudImage Src="/images/logobanner11.png" Alt="Mony the dog" Elevation="25" Size="@Size.Large" Class="rounded-lg" />
         </div>
     </MudCarouselItem>
 </MudCarousel>
 <br />
 <br />
-<MudTextField @ref="multilineReference" T="string" Label="Multiline Select" Lines="3" Variant="Variant.Outlined" Text="@sampleText" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" OnAdornmentClick="@(() => multilineReference.SelectAsync())" />
+<MudTextField @ref="multilineReference" T="string" Label="¿Que quieres compartir?" Lines="3" Variant="Variant.Outlined" Text="@sampleText" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" OnAdornmentClick="@(() => multilineReference.SelectAsync())" />
+    <br />
 <MudFileUpload T="IBrowserFile" FilesChanged="UploadFiles">
     <ButtonTemplate>
         <MudFab HtmlTag="label"
-                Color="Color.Secondary"
+                Color="Color.Dark"
                 Icon="@Icons.Material.Filled.Image"
-                Label="Load picture"
+                Label="Compartir foto"
                 for="@context" />
     </ButtonTemplate>
 </MudFileUpload>
 <MudTable Items="@GetElements()">
     <ToolBarContent>
-        <MudText Typo="Typo.h6">Busca y comparte el proceso de otros cultivadores!</MudText>
         <MudSpacer />
-        <MudTextField @bind-Value="_searchTerm" Placeholder="Search" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0" Immediate="true"></MudTextField>
+        <MudTextField @bind-Value="_searchTerm" Placeholder="Buscar" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0" Immediate="true"></MudTextField>
     </ToolBarContent>
     <RowTemplate>
-        <MudTd DataLabel="Name">
+        <MudTd DataLabel="">
             <MudCard>
                 <MudCardHeader>
                     <CardHeaderAvatar>
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                        <MudAvatar Color="Color.Error">NM</MudAvatar>
                     </CardHeaderAvatar>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.body1">Bogota</MudText>
+                        <MudText Typo="Typo.body1">Nicolas Moreno</MudText>
+                        <MudText Typo="Typo.body2">Colombia</MudText>
+                    </CardHeaderContent>
+                    <CardHeaderActions>
+                        <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Default" />
+                    </CardHeaderActions>
+                </MudCardHeader>
+                <MudCardMedia Image="images/primerambiente.jpg"  Height="250" />
+                @* <MudImage ObjectFit="ObjectFit.None" ObjectPosition="@ObjectPosition.Center" Height="200" Width="400" Src="images/primerambiente.jpg" Alt="Öxarárfoss, Iceland" Elevation="25" Class="rounded-lg" /> *@
+                @* <MudImage ObjectFit="ObjectFit.None" ObjectPosition="@ImagePosition" Height="200" Width="400" Src="images/iceland.jpg" Alt="Öxarárfoss, Iceland" Elevation="25" Class="rounded-lg" /> *@
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">Imagen en ciclo de vegetacion</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+                    <MudIconButton Icon="@Icons.Material.Filled.ModeComment" Color="Color.Default" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                </MudCardActions>
+            </MudCard>
+        </MudTd>
+    </RowTemplate>
+
+</MudTable>
+
+<MudTable Items="@GetElements2()">
+    <RowTemplate>
+        <MudTd DataLabel="">
+            <MudCard>
+                <MudCardHeader>
+                    <CardHeaderAvatar>
+                        <MudAvatar Color="Color.Success">NB</MudAvatar>
+                    </CardHeaderAvatar>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.body1">Giovanny Beltran</MudText>
                         <MudText Typo="Typo.body2">Colombia</MudText>
                     </CardHeaderContent>
                     <CardHeaderActions>
@@ -53,7 +93,7 @@
                 </MudCardHeader>
                 <MudCardMedia Image="/images/segundoambiente.jpg" Height="250" />
                 <MudCardContent>
-                    <MudText Typo="Typo.body2">Imagen en ciclo de floracion</MudText>
+                    <MudText Typo="Typo.body2">Semana 10</MudText>
                 </MudCardContent>
                 <MudCardActions>
                     <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
@@ -67,8 +107,15 @@
 </MudTable>
 
 @code {
-    private string _searchTerm = "H";
+    ObjectPosition ImagePosition = ObjectPosition.Center;
+
+    void SetImagePosition(ObjectPosition value)
+    {
+        ImagePosition = value;
+    }
+    private string _searchTerm = "";
     private IEnumerable<Element> _elements = new List<Element>();
+    private IEnumerable<Element> _elements2 = new List<Element>();
     private bool arrows = false;
     private bool bullets = false;
     private bool enableSwipeGesture = false;
@@ -77,6 +124,7 @@
     private MudTextField<string> multilineReference;
     private MudTextField<string> singleLineReference;
     string sampleText = "";
+    string usuario = "";
     public class Element
     {
         public string Group { get; set; }
@@ -101,11 +149,15 @@
 
     protected override async Task OnInitializedAsync()
     {
+        usuario = await js.GetFromLocalStorage("NICKNAME");
         List<Element> Lista = new List<Element>();
+        List<Element> Lista2 = new List<Element>();
         Lista.Add(new Element() { Name ="Prueba"});
-        Lista.Add(new Element() { Name ="Prueba2"});
+        Lista2.Add(new Element() { Name ="Prueba"});
         _elements = Lista;
+        _elements2 = Lista2;
     }
 
-    private IEnumerable<Element> GetElements() => _elements.Where(e => e.Name.Contains("Pr"));
+    private IEnumerable<Element> GetElements() => _elements.Where(e => e.Name.Contains(""));
+    private IEnumerable<Element> GetElements2() => _elements.Where(e => e.Name.Contains(""));
 }

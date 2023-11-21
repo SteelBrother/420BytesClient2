@@ -81,6 +81,8 @@ wwwroot\css\open-iconic\README.md
 wwwroot\css\stilos.css
 wwwroot\favicon.ico
 wwwroot\Images\humedad.jpg
+wwwroot\Images\humedadicon.png
+wwwroot\Images\humedadvector.jpg
 wwwroot\Images\LOGOBANNER09.png
 wwwroot\Images\LOGOBANNER10.png
 wwwroot\Images\LOGOBANNER11.png
@@ -91,7 +93,13 @@ wwwroot\Images\LOGOBANNER15.png
 wwwroot\Images\lunallena.png
 wwwroot\Images\lunamediomenguante.png
 wwwroot\Images\lunamenguante.png
+wwwroot\Images\luzicon.png
+wwwroot\Images\nivelaguaicon.png
 wwwroot\Images\pngegg.png
+wwwroot\Images\primerambiente.jpg
+wwwroot\Images\segundoambiente.jpg
+wwwroot\Images\temperaturaicon.png
+wwwroot\Images\vientooicon-transformed.png
 wwwroot\index.html
 wwwroot\js\signalr.js
 wwwroot\js\Utilidades.js

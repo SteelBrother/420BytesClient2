@@ -1,24 +1,34 @@
 ﻿@page "/RegistroAmbientes"
+@using _420BytesClient.App.Helpers;
+@using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
+@using _420BytesClient.App.ViewModels.Scheduler.Interfaces;
 @inject IDialogService DialogService
-
+@inject IJSRuntime js
+@inject IRegistroAmbientes_ViewModel IRegistroAmbientes_ViewModel
 <h3>Registre sus ambientes</h3>
 
 <div class="mx-auto" style="max-width: 400px;">
     <MudExpansionPanels>
-        <MudExpansionPanel>
-            <TitleContent>
-                <div class="d-flex">
-                    <MudImage Src="..\wwwroot\Images\pngegg.png" Alt="" Elevation="25" Class="rounded-lg" />
-                    <MudText>Panel header as <strong>RenderFragment</strong></MudText>
-                </div>
-            </TitleContent>
-            <ChildContent>
-                Panel Content
-            </ChildContent>
-        </MudExpansionPanel>
+        @foreach (var iten in IRegistroAmbientes_ViewModel.Ambientes)
+        {
+            var IdTipoSuelo = @iten.IdTipoSuelo == 1 ? "Hidrophonia" : "Coco";
+            var IdTipoCultivo = @iten.IdTipoCultivo == 1 ? "Indor" : "Outdor";
+            <MudExpansionPanel>
+                <TitleContent>
+                    <div class="d-flex">
+                        <MudText>@iten.NombreAmbiente</MudText>
+                    </div>
+                </TitleContent>
+                <ChildContent>
+                    <MudText>Ambiente en sistema de :@IdTipoSuelo</MudText>
+                    <MudText>Tipo de ambiente :@IdTipoCultivo</MudText>
+                </ChildContent>
+            </MudExpansionPanel>
+        }
+       
     </MudExpansionPanels>
 </div>
-<MudTooltip Text="Add">
+<MudTooltip >
     <MudFab StartIcon="@Icons.Material.Filled.Add" @onclick="OpenDialog" Color="Color.Secondary" Class="fixed-bottom-right" />
 </MudTooltip>
 
@@ -36,6 +46,18 @@
     private void OpenDialog()
     {
         var options = new DialogOptions { CloseOnEscapeKey = true };
-        DialogService.Show<RegistroAmbienteComponent>("Registro", options);
+        DialogService.Show<RegistroAmbienteComponent>("Registra tu ambiente!", options);
     }
+    protected async override Task OnInitializedAsync()
+    {
+        var cedula = await js.GetFromLocalStorage("CEDULA");
+        if (cedula != null)
+        {
+            await IRegistroAmbientes_ViewModel.ConsultarAmbientes(int.Parse(cedula));
+        }
+      
+        // await IAppointment_ViewModel.ConsultarPlantas(3);
+        StateHasChanged();
+    }
+
 }

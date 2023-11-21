@@ -1822,6 +1822,12 @@
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedad.jpg">
       <PackagePath>wwwroot\Images\humedad.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedadicon.png">
+      <PackagePath>wwwroot\Images\humedadicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedadvector.jpg">
+      <PackagePath>wwwroot\Images\humedadvector.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER09.png">
       <PackagePath>wwwroot\Images\LOGOBANNER09.png</PackagePath>
     </AppxPackagedFile>
@@ -1852,8 +1858,26 @@
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\lunamenguante.png">
       <PackagePath>wwwroot\Images\lunamenguante.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\luzicon.png">
+      <PackagePath>wwwroot\Images\luzicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\nivelaguaicon.png">
+      <PackagePath>wwwroot\Images\nivelaguaicon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\pngegg.png">
       <PackagePath>wwwroot\Images\pngegg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\primerambiente.jpg">
+      <PackagePath>wwwroot\Images\primerambiente.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\segundoambiente.jpg">
+      <PackagePath>wwwroot\Images\segundoambiente.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\temperaturaicon.png">
+      <PackagePath>wwwroot\Images\temperaturaicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\vientooicon-transformed.png">
+      <PackagePath>wwwroot\Images\vientooicon-transformed.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>

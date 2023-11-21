@@ -1,40 +1,41 @@
 ﻿@using _420BytesClient.App.Helpers;
 @inject IJSRuntime JSRuntime
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+<div class="@($"{NavMenuCssClass} custom-menu-class")" @onclick="ToggleNavMenu">
     <nav class="flex-column">
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="/feed" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                @* <span class="oi oi-home" aria-hidden="true"></span> Home *@
+                <MudIcon Icon="@Icons.Material.Filled.PeopleAlt" Title="Reddit" Style="margin-right: 8px" /> Inicio
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="/dashboard" Match="NavLinkMatch.All">
-                <MudIcon Icon="@Icons.Material.TwoTone.ControlCamera" Title="Reddit" /> Dashboard
+                <MudIcon Icon="@Icons.Material.Filled.EditCalendar" Title="Reddit" Style="margin-right: 8px" />  Asistente
 
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="RegistroAmbientes">
-                <span class="oi oi-plus" aria-hidden="true"></span> Registro Ambientes
+                <MudIcon Icon="@Icons.Material.Filled.Fence" Title="Reddit" Style="margin-right: 8px" /> Ambientes
+                @* <span class="oi oi-plus" aria-hidden="true"></span>  *@
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="RegistroPlantas">
-                <span class="oi oi-plus" aria-hidden="true"></span> Registro Plantas
+                <MudIcon Icon="@Icons.Material.Filled.Nature" Title="Reddit" Style="margin-right: 8px" /> Plantas
+                @* <span class="oi oi-plus" aria-hidden="true"></span> Registro Plantas *@
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="sensores">
-                <span class="oi oi-plus" aria-hidden="true"></span> Live
-            </NavLink>
-        </div>
-
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="login">
-                <span class="oi oi-account-login" aria-hidden="true"></span> Login
+                <span class="oi oi-account-login" aria-hidden="true"></span> Cerrar Sesion
             </NavLink>
         </div>
 

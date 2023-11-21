@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\dotnet_bot.png" />
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\dotnet_bot@2x.png" />
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\dotnet_bot@3x.png" />
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\lunallena.png" />
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\lunamenguante.png" />
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\primerambiente.jpg" />
+    <BundleResource Include="C:\Git\420BytesClient\420BytesClient.App\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\segundoambiente.jpg" />
+    <BundleResource Include="obj\Release\net7.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+  </ItemGroup>
+</Project>

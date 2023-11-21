@@ -78,8 +78,21 @@ namespace _420BytesClient.App.ViewModels.Scheduler
             }
         }
 
+        private List<Planta2> _Plantas = new List<Planta2>();
+
+        public List<Planta2> Plantas
+        {
+            get { return _Plantas; }
+            set
+            {
+                _Plantas = value;
+                OnPropertyChanged(nameof(Plantas));
+            }
+        }
+
         public List<Ambiente2> Ambientes { get; set; } = new List<Ambiente2>();
-        public List<Planta2> Plantas { get; set; } = new List<Planta2>();
+        //public List<Planta2> Plantas { get; set; } = new List<Planta2>();
+        public List<Planta2> PlantasRespaldo { get; set; } = new List<Planta2>();
         public IList<string> _source { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -177,6 +190,14 @@ namespace _420BytesClient.App.ViewModels.Scheduler
             };
             await IAppointment_Model.BorrarCitaAsync(AppointmentDTO);
         }
+        public async Task BuscarIndexAmbiente(int index)
+        {
+            if (Ambientes != null)
+            {
+                var AmbienteID = Ambientes.ElementAt(index).AmbienteID;
+                await ConsultarPlantas(AmbienteID);
+            }
+        }
 
         public async Task ConsultarAmbientes(int Cedula)
         {
@@ -196,7 +217,9 @@ namespace _420BytesClient.App.ViewModels.Scheduler
 
         public async Task ConsultarPlantas(int IdAmbiente)
         {
-           Plantas = await IAppointment_Model.ConsultarPlantasAmbiente(IdAmbiente);
+            PlantasRespaldo.AddRange(await IAppointment_Model.ConsultarPlantasAmbiente(IdAmbiente));
+            var elementosConID3 = PlantasRespaldo.Where(objeto => objeto.AmbienteID == IdAmbiente).ToList();
+            Plantas.AddRange(elementosConID3);
         }
     }
 }

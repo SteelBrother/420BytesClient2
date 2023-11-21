@@ -1,5 +1,6 @@
-﻿@inherits LayoutComponentBase
-
+﻿@using _420BytesClient.App.Helpers;
+@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
 
 <MudThemeProvider />
 <MudDialogProvider />
@@ -9,15 +10,22 @@
     <MudAppBar Style="@($"color:{Colors.Green.Lighten4}; background:{Colors.Green.Darken1};")">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@ToggleDrawer" />
         <MudSpacer />
+
+      @*   @if (estaAutenticado)
+        {
+            <MudBadge Color="Color.Success" Overlap="true" Bordered="true">
+                <MudAvatar Color="Color.Error">NM</MudAvatar>
+            </MudBadge>
+        } *@
     </MudAppBar>
     <MudDrawer @bind-Open="@open" Elevation="1">
         <MudDrawerHeader>
             <MudText Typo="Typo.h6">GanjApp</MudText>
         </MudDrawerHeader>
-  
+
         <NavMenu></NavMenu>
     </MudDrawer>
-    <MudMainContent Class="pt-16 px-16">
+    <MudMainContent Class="pt-16 px-16" Style="background-color: #0000001c">
         <MudContainer Class="mt-6">
             @Body
         </MudContainer>
@@ -27,9 +35,18 @@
 
 @code {
     bool open = false;
-
+    private bool estaAutenticado = false;
     void ToggleDrawer()
     {
         open = !open;
     }
+    private async Task ValidateAuthenticationAsync()
+    {
+        var token = await JSRuntime.GetFromLocalStorage("TOKEN");
+        estaAutenticado = !string.IsNullOrEmpty(token);
+        StateHasChanged(); // Update the UI
+    }
+
+   
+
 }

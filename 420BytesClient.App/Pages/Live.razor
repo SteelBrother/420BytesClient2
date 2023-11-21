@@ -1,0 +1,155 @@
+﻿@using System.Net
+@using System.Text
+@using _420BytesClient.App.ViewModels.Ambiente.Interfaces;
+@using _420BytesClient.App.ViewModels.Usuarios;
+
+@* @inject IGestionAmbientes_ViewModel IGestionAmbientes_ViewModel *@
+@inherits UsuariosViewModel
+
+
+<MudDialog DisableSidePadding="true">
+    <DialogContent>
+        @* <MudText Style="white-space: pre-wrap">!Visualiza tu ambiente en vivo!</MudText> *@
+        <h6 style="text-align: center;margin-bottom: revert;" class="mud-typography mud-typography-h6 __web-inspector-hide-shortcut__">
+            ¡Monitoriza tu ambiente en vivo!
+        </h6>
+        <MudContainer Style="max-height: 300px; overflow-y: scroll">
+            @if (RegistroTemperaturaAmbiente == null || RegistroTemperaturaAmbiente.Temperatura == 0)
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/temperaturaicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Temperatura ambiente</MudText>
+                        <MudSlider @bind-Value="RegistroTemperaturaAmbiente.Temperatura" Min="0" Max="100"  Color="Color.Info">Temperatura ambiente: 0 C°</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            }
+            else
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/temperaturaicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Temperatura ambiente</MudText>
+                        <MudSlider @bind-Value="RegistroTemperaturaAmbiente.Temperatura" Min="0" Max="100" Color="Color.Info">Temperatura ambiente: @RegistroTemperaturaAmbiente.Temperatura.ToString() C°</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+
+            }
+            @if (RegistroHumedadAmbiente == null || RegistroHumedadAmbiente.Humedad == 0)
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/humedadicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Humedad ambiente</MudText>
+                        <MudSlider @bind-Value="RegistroHumedadAmbiente.Humedad" Min="0" Max="100" Color="Color.Info">Humedad Ambiente: 0 %</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            }
+            else
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/humedadicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Humedad ambiente</MudText>
+                        <MudSlider @bind-Value="RegistroHumedadAmbiente.Humedad" Min="0" Max="100" Color="Color.Info">Humedad Ambiente: @RegistroHumedadAmbiente.Humedad %</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+
+            }
+
+            @if (RegistroIntensidadLuz == null || RegistroIntensidadLuz.Porcentaje == 0)
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/luzicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Intensidad Luz </MudText>
+                        <MudSlider @bind-Value="RegistroIntensidadLuz.Porcentaje" Min="0" Max="100" Color="Color.Info">Intensidad de luz del ambiente: 0 %</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            }
+            else
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/luzicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Intensidad Luz </MudText>
+                        <MudSlider @bind-Value="RegistroIntensidadLuz.Porcentaje" Min="0" Max="100" Color="Color.Info">Intensidad de luz del ambiente:  @RegistroIntensidadLuz.Porcentaje %</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            }
+
+            @if (RegistroNivelAgua == null || RegistroNivelAgua.Nivel == 0)
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/nivelaguaicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Nivel agua</MudText>
+                        <MudSlider @bind-Value="RegistroNivelAgua.Nivel" Min="0" Max="100" Color="Color.Info">Nivel agua de la planta: 0 %</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            }
+            else
+            {
+                <MudCard Class="mud-elevation-4 py-8 px-10 rounded white">
+                    <MudCardMedia Image="/images/nivelaguaicon.png" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Nivel agua</MudText>
+                        <MudSlider @bind-Value="RegistroNivelAgua.Nivel" Min="0" Max="100" Color="Color.Info">Nivel agua de la planta: @RegistroNivelAgua.Nivel %</MudSlider>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary">Compartir</MudButton>
+                    </MudCardActions>
+                </MudCard>
+
+            }
+
+
+        </MudContainer>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Primary" OnClick="Ok">Accept</MudButton>
+    </DialogActions>
+</MudDialog>
+@code {
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    [Inject] HttpClient HttpClient { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        Loading = true;
+        var response = await HttpClient.GetAsync("https://raw.githubusercontent.com/MudBlazor/MudBlazor/master/LICENSE");
+        LicenseText = await response.Content.ReadAsStringAsync();
+        Loading = false;
+    }
+
+    private string LicenseText;
+    private bool Loading = false;
+
+    private void Ok()
+    {
+        MudDialog.Close(DialogResult.Ok(true));
+    }
+}

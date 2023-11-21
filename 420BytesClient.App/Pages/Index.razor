@@ -1,16 +1,31 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 
-<h1>Black</h1>
 
-@if (showLogo)
-{
-    <div class="logo-container">
-        <!-- Reemplaza con la ruta de tu logo -->
-        <img src="ruta/a/tu/logo.png" alt="Logo de mi empresa" />
+   <div class="logo-container">
+        @* <img src="ruta/a/tu/logo.png" alt="Logo de mi empresa" /> *@
+        <img src="/images/logobanner14.png" />
     </div>
-}
+    @* <MudAlert  Severity="Severity.Warning">¡Debes tener 18 años para poder usar esta app!</MudAlert> *@
+    <LoginComponent></LoginComponent>
+<style>
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
 
+        .logo-container img {
+            margin: auto;
+            width: 50%;
+        }
+
+    .MudAlert {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
 @code {
     private bool showLogo = true;
 
@@ -19,6 +34,6 @@
         await Task.Delay(3000); // Espera 3 segundos
         showLogo = false;
 
-        NavigationManager.NavigateTo("/Login"); // Reemplaza con la ruta de tu siguiente página
+        // NavigationManager.NavigateTo("/Login"); // Reemplaza con la ruta de tu siguiente página
     }
 }

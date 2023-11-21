@@ -56,7 +56,7 @@ namespace _420BytesClient.App.Model.Auth
                         {
                             await authModel.Login(httpResponse.Response);
                             
-                            navigationManager.NavigateTo("/");
+                            navigationManager.NavigateTo("/feed");
                         }
                         else
                         {

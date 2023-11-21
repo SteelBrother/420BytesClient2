@@ -18,36 +18,36 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6004F5AF719C9D7DC26D45017721F21A9D52D823CBBDE139A0D4775971F5670F</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>F1D63548-DCAB-49FF-9E69-66BB4BD7C445_0.1.1.0_x64__mdtdy63a0eab0</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>3F5B02F0FB04A2D994F7CFF4EA8FB800897510547A421E9774F71AD3CDCFE6D2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>F1D63548-DCAB-49FF-9E69-66BB4BD7C445_0.1.2.0_x64__mdtdy63a0eab0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>F1D63548-DCAB-49FF-9E69-66BB4BD7C445_mdtdy63a0eab0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>F1D63548-DCAB-49FF-9E69-66BB4BD7C445</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=ADMIN</RegisteredPackagePublisher>
-    <RegisteredVersion>0.1.1.0</RegisteredVersion>
+    <RegisteredVersion>0.1.2.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-20T17:08:24.643</Modified>
+      <Modified>2023-11-21T21:18:42.448</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-20T17:06:39.621</Modified>
+      <Modified>2023-11-21T19:17:53.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.runtimeconfig.json">
       <PackagePath>420BytesClient.App.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-20T16:05:45.943</Modified>
+      <Modified>2023-11-21T15:25:44.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.dll">
       <PackagePath>420BytesClient.App.dll</PackagePath>
-      <Modified>2023-11-20T17:08:22.572</Modified>
+      <Modified>2023-11-21T20:36:06.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>420BytesClient.App.exe</PackagePath>
-      <Modified>2023-11-20T17:08:22.591</Modified>
+      <Modified>2023-11-21T20:36:06.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\appsettings.json">
       <PackagePath>appsettings.json</PackagePath>
@@ -55,7 +55,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\420BytesClient.App.deps.json">
       <PackagePath>420BytesClient.App.deps.json</PackagePath>
-      <Modified>2023-11-20T16:05:45.805</Modified>
+      <Modified>2023-11-21T15:25:44.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ADMIN\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.12\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -2363,11 +2363,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\420BytesClient.App.styles.css">
       <PackagePath>wwwroot\420BytesClient.App.styles.css</PackagePath>
-      <Modified>2023-11-20T16:05:30.751</Modified>
+      <Modified>2023-11-21T15:27:48.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\420BytesClient.App.bundle.scp.css">
       <PackagePath>wwwroot\420BytesClient.App.bundle.scp.css</PackagePath>
-      <Modified>2023-11-20T16:05:30.754</Modified>
+      <Modified>2023-11-21T15:27:48.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
@@ -2429,6 +2429,14 @@
       <PackagePath>wwwroot\Images\humedad.jpg</PackagePath>
       <Modified>2023-11-20T17:04:59.882</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedadicon.png">
+      <PackagePath>wwwroot\Images\humedadicon.png</PackagePath>
+      <Modified>2023-11-21T02:19:16.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\humedadvector.jpg">
+      <PackagePath>wwwroot\Images\humedadvector.jpg</PackagePath>
+      <Modified>2023-11-21T01:53:16.242</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\LOGOBANNER09.png">
       <PackagePath>wwwroot\Images\LOGOBANNER09.png</PackagePath>
       <Modified>2023-11-20T16:01:55.255</Modified>
@@ -2469,9 +2477,33 @@
       <PackagePath>wwwroot\Images\lunamenguante.png</PackagePath>
       <Modified>2023-11-20T00:32:00.893</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\luzicon.png">
+      <PackagePath>wwwroot\Images\luzicon.png</PackagePath>
+      <Modified>2023-11-21T02:27:55.229</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\nivelaguaicon.png">
+      <PackagePath>wwwroot\Images\nivelaguaicon.png</PackagePath>
+      <Modified>2023-11-21T02:18:59.437</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\pngegg.png">
       <PackagePath>wwwroot\Images\pngegg.png</PackagePath>
       <Modified>2023-11-19T20:48:42.345</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\primerambiente.jpg">
+      <PackagePath>wwwroot\Images\primerambiente.jpg</PackagePath>
+      <Modified>2023-11-20T02:25:26.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\segundoambiente.jpg">
+      <PackagePath>wwwroot\Images\segundoambiente.jpg</PackagePath>
+      <Modified>2023-11-20T02:25:58.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\temperaturaicon.png">
+      <PackagePath>wwwroot\Images\temperaturaicon.png</PackagePath>
+      <Modified>2023-11-21T02:18:43.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\Images\vientooicon-transformed.png">
+      <PackagePath>wwwroot\Images\vientooicon-transformed.png</PackagePath>
+      <Modified>2023-11-21T02:29:12.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
@@ -3163,7 +3195,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>
-      <Modified>2023-10-27T18:33:23.631</Modified>
+      <Modified>2023-11-21T15:26:31.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\420BytesClient\420BytesClient.App\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>

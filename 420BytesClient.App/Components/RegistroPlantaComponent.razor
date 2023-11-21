@@ -1,0 +1,70 @@
+﻿@using System.ComponentModel.DataAnnotations;
+<MudDialog>
+    <DialogContent>
+        <MudGrid>
+            <MudItem xs="12" sm="12" md="12">
+                <MudPaper Class="pa-12">
+                    <MudForm @ref="form" @bind-IsValid="@success" @bind-Errors="@errors">
+                        <MudTextField T="string" Label="Nombre de tu planta" Required="true"  RequiredError="Dale un nombre a tu planta!"/>
+                        <br />
+                        <MudTextField T="string" Label="Nombre de tu genetica" Required="true" />
+                        <br />
+                        <MudSlider TickMarks="true" TickMarkLabels="@labels" Step="25" Value="@value" />
+
+                        <br /><br /><br />
+
+                        <MudField Label="Tipo de suelo" Variant="Variant.Text" InnerPadding="false">
+                            <MudRadioGroup T="string">
+                                <MudRadio T="string">Hidrophonia</MudRadio>
+                                <MudRadio T="string">Living soil</MudRadio>
+                                <MudRadio T="string">Super soil</MudRadio>
+                            </MudRadioGroup>
+                        </MudField>
+
+                    </MudForm>
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
+
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Registrar planta</MudButton>
+    </DialogActions>
+</MudDialog>
+
+
+@code {
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    void Submit() => MudDialog.Close(DialogResult.Ok(true));
+    void Cancel() => MudDialog.Cancel();
+
+    bool success;
+    string[] errors = { };
+    MudTextField<string> pwField1;
+    MudForm form;
+     int value = 10;
+    string[] labels = new string[] { "Germinacion", "Plantula", "Vegetativo", "Flora", "Secado", "Curado" };
+    IList<IBrowserFile> files = new List<IBrowserFile>();
+    private void UploadFiles(IBrowserFile file)
+    {
+        files.Add(file);
+        //TODO upload the files to the server
+    }
+    private IEnumerable<string> PasswordStrength(string pw)
+    {
+        if (string.IsNullOrWhiteSpace(pw))
+        {
+            yield return "Password is required!";
+            yield break;
+        }
+    }
+
+    private string PasswordMatch(string arg)
+    {
+        if (pwField1.Value != arg)
+            return "Passwords don't match";
+        return null;
+    }
+}
